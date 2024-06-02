@@ -11,7 +11,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#787373"
+        android:background="#66bb6a"
         android:padding="40dp"
         tools:context=".MainActivity">
 
@@ -53,7 +53,7 @@
             android:id="@+id/titlelbl"
             android:layout_width="45dp"
             android:layout_height="38dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="28dp"
             android:text="Title"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="20sp"
@@ -64,14 +64,11 @@
 
         <EditText
             android:id="@+id/titleFld"
-            android:layout_width="192dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="24dp"
-            android:ems="10"
+            style="@style/AddTextFields"
+            android:layout_marginTop="16dp"
             android:inputType="text"
-            android:text=""
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.688"
+            app:layout_constraintHorizontal_bias="0.84"
             app:layout_constraintStart_toEndOf="@+id/titlelbl"
             app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -90,11 +87,12 @@
 
         <Spinner
             android:id="@+id/typeSpin"
-            android:layout_width="161dp"
-            android:layout_height="61dp"
-            android:layout_marginTop="12dp"
+            style="@style/spinner"
+            android:layout_width="199dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.467"
+            app:layout_constraintHorizontal_bias="0.887"
             app:layout_constraintStart_toEndOf="@+id/typelbl"
             app:layout_constraintTop_toBottomOf="@+id/titleFld" />
 
@@ -113,14 +111,11 @@
 
         <EditText
             android:id="@+id/destinationFld"
-            android:layout_width="192dp"
-            android:layout_height="42dp"
-            android:layout_marginTop="24dp"
-            android:ems="10"
+            style="@style/AddTextFields"
+            android:layout_marginTop="40dp"
             android:inputType="text"
-            android:text=""
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.558"
+            app:layout_constraintHorizontal_bias="0.735"
             app:layout_constraintStart_toEndOf="@+id/destinationlbl"
             app:layout_constraintTop_toBottomOf="@+id/typeSpin" />
 
@@ -141,9 +136,9 @@
             android:id="@+id/picturebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="36dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.313"
+            app:layout_constraintHorizontal_bias="0.412"
             app:layout_constraintStart_toEndOf="@+id/picturelbl"
             app:layout_constraintTop_toBottomOf="@+id/destinationFld"
             app:srcCompat="@android:drawable/ic_menu_camera" />
@@ -164,14 +159,11 @@
 
         <EditText
             android:id="@+id/startpointFld"
-            android:layout_width="178dp"
-            android:layout_height="45dp"
+            style="@style/AddTextFields"
             android:layout_marginTop="20dp"
-            android:ems="10"
             android:inputType="text"
-            android:text=""
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.642"
+            app:layout_constraintHorizontal_bias="0.714"
             app:layout_constraintStart_toEndOf="@+id/startpointlbl"
             app:layout_constraintTop_toBottomOf="@+id/picturebtn" />
 
@@ -190,14 +182,11 @@
 
         <EditText
             android:id="@+id/endpointFld"
-            android:layout_width="178dp"
-            android:layout_height="45dp"
+            style="@style/AddTextFields"
             android:layout_marginTop="20dp"
-            android:ems="10"
             android:inputType="text"
-            android:text=""
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.736"
+            app:layout_constraintHorizontal_bias="0.79"
             app:layout_constraintStart_toEndOf="@+id/endpointlbl"
             app:layout_constraintTop_toBottomOf="@+id/startpointFld" />
 
@@ -216,11 +205,12 @@
 
         <Spinner
             android:id="@+id/durationSpin"
+            style="@style/spinner"
             android:layout_width="133dp"
             android:layout_height="53dp"
             android:layout_marginTop="28dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.44"
+            app:layout_constraintHorizontal_bias="0.528"
             app:layout_constraintStart_toEndOf="@+id/durationlbl"
             app:layout_constraintTop_toBottomOf="@+id/endpointFld" />
 
@@ -239,14 +229,12 @@
 
         <EditText
             android:id="@+id/startdateFld"
-            android:layout_width="168dp"
-            android:layout_height="39dp"
+            style="@style/AddTextFields"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="32dp"
-            android:ems="10"
+            android:layout_marginTop="28dp"
             android:inputType="date"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintHorizontal_bias="0.566"
             app:layout_constraintStart_toEndOf="@+id/startdatelbl"
             app:layout_constraintTop_toBottomOf="@+id/durationSpin" />
 
@@ -265,13 +253,12 @@
 
         <EditText
             android:id="@+id/enddateFld"
-            android:layout_width="168dp"
-            android:layout_height="39dp"
-            android:layout_marginTop="40dp"
-            android:ems="10"
+            style="@style/AddTextFields"
+            android:layout_marginTop="28dp"
+
             android:inputType="date"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintHorizontal_bias="0.671"
             app:layout_constraintStart_toEndOf="@+id/enddatelbl"
             app:layout_constraintTop_toBottomOf="@+id/startdateFld" />
 
@@ -291,13 +278,11 @@
 
         <EditText
             android:id="@+id/priceFld"
-            android:layout_width="168dp"
-            android:layout_height="39dp"
-            android:layout_marginTop="28dp"
-            android:ems="10"
+            style="@style/AddTextFields"
+            android:layout_marginTop="32dp"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.546"
+            app:layout_constraintHorizontal_bias="0.741"
             app:layout_constraintStart_toEndOf="@+id/picelbl"
             app:layout_constraintTop_toBottomOf="@+id/enddateFld" />
 
@@ -320,7 +305,7 @@
             android:layout_height="29dp"
             android:layout_marginTop="44dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.593"
+            app:layout_constraintHorizontal_bias="0.674"
             app:layout_constraintStart_toEndOf="@+id/risklbl"
             app:layout_constraintTop_toBottomOf="@+id/priceFld" />
 
@@ -328,22 +313,19 @@
             android:id="@+id/descriptionlbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="52dp"
             android:layout_marginEnd="244dp"
             android:text="Description"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/risklbl" />
 
-        <EditText
+        <EditText style="@style/AddTextFields"
             android:id="@+id/descriptionFld"
-            android:layout_width="173dp"
-            android:layout_height="47dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="40dp"
-            android:ems="10"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
@@ -351,19 +333,78 @@
             app:layout_constraintStart_toEndOf="@+id/descriptionlbl"
             app:layout_constraintTop_toBottomOf="@+id/riskBar" />
 
+        <LinearLayout
+            android:id="@+id/checkboxContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/descriptionFld"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- First row of CheckBoxes (3 items) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <CheckBox
+                    android:id="@+id/grillingBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Grilling" />
+
+                <CheckBox
+                    android:id="@+id/campingBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Camping" />
+
+                <CheckBox
+                    android:id="@+id/swimBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Swimming" />
+            </LinearLayout>
+
+            <!-- Second row of CheckBoxes (2 items) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <CheckBox
+                    android:id="@+id/suitableBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Suitable for children" />
+
+                <CheckBox
+                    android:id="@+id/parkingBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Parking" />
+            </LinearLayout>
+        </LinearLayout>
+
         <ImageButton
             android:id="@+id/insertbtn"
-            android:layout_width="94dp"
-            android:layout_height="78dp"
-            android:layout_marginTop="44dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="79dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintHorizontal_bias="0.488"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/descriptionFld"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintTop_toBottomOf="@+id/checkboxContainer"
             app:srcCompat="@android:drawable/ic_input_add" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
