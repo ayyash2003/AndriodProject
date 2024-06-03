@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,17 @@ public class MainActivity extends AppCompatActivity {
         });
 
         Button ahmad = (Button) findViewById(R.id.ahmadbtn);
+        Button qais = (Button) findViewById(R.id.qaisbtn);
+        qais.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "FirstDone", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
+
+                startActivity(intent);
+            }
+        });
+
         ahmad.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
