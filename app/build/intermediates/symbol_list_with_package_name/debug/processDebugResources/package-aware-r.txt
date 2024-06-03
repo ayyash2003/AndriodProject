@@ -3033,8 +3033,15 @@ drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable add
+drawable adventrue_icon
+drawable adventure
 drawable avd_hide_password
 drawable avd_show_password
+drawable beach
+drawable beach2
+drawable beach3
+drawable beach4
+drawable beach_icon
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3043,11 +3050,15 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable cultural
+drawable cultural_icon
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable entertainment_icon
+drawable entertinment
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3141,6 +3152,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable search
+drawable test
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3252,6 +3265,7 @@ id bounceStart
 id buttonPanel
 id cache_measures
 id callMeasure
+id campingBox
 id cancel_button
 id carryVelocity
 id center
@@ -3263,6 +3277,7 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkboxContainer
 id checked
 id chronometer
 id circle_center
@@ -3381,6 +3396,7 @@ id ghost_view_holder
 id gone
 id graph
 id graph_wrap
+id grillingBox
 id group_divider
 id grouping
 id groups
@@ -3403,6 +3419,9 @@ id image
 id imageButton3
 id imageView
 id image_layout
+id imgLogoMainPage
+id imgMainPage
+id imgTripMainPage
 id immediateStop
 id included
 id indeterminate
@@ -3414,6 +3433,8 @@ id italic
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id lHeader
+id lMainPage
 id labeled
 id layout
 id left
@@ -3422,6 +3443,7 @@ id legacy
 id line1
 id line3
 id linear
+id linearImage
 id listMode
 id list_item
 id locale
@@ -3429,6 +3451,7 @@ id login_button
 id ltr
 id m3_side_sheet
 id main
+id mainPage
 id male
 id marquee
 id masked
@@ -3539,6 +3562,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id parkingBox
 id pass_layout
 id password
 id password_label
@@ -3561,9 +3585,11 @@ id pressed
 id priceFld
 id progress_circular
 id progress_horizontal
+id qaisbtn
 id radio
 id ratio
 id rectangles
+id recyclerViewMainPage
 id report_drawn
 id reverseSawtooth
 id right
@@ -3583,6 +3609,7 @@ id screen
 id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
+id scrollMainPage
 id scrollView
 id scrollable
 id search_badge
@@ -3642,7 +3669,9 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id suitableBox
 id supportScrollUp
+id swimBox
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3695,6 +3724,9 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtLogin
+id txtTripName
+id txtType
 id typeSpin
 id typelbl
 id unchecked
@@ -3839,6 +3871,7 @@ layout activity_add_company
 layout activity_add_trip
 layout activity_login_page
 layout activity_main
+layout activity_main_page
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3914,6 +3947,8 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout recycle_view_main_page
+layout recycle_view_view_page
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -3979,6 +4014,7 @@ string first_fragment_label
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
+string login
 string lorem_ipsum
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -4097,6 +4133,8 @@ string second_fragment_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+style AddLabels
+style AddTextFields
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -5226,6 +5264,8 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style edtTextAddCompany
+style login
+style spinner
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

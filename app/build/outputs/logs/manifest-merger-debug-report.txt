@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-38:12
-INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-38:12
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:2:1-42:12
 MERGED from [androidx.databinding:viewbinding:8.3.1] C:\Users\dell\.gradle\caches\transforms-3\320a4a8694ead811a6148edb04a56a99\transformed\viewbinding-8.3.1\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.navigation:navigation-common:2.6.0] C:\Users\dell\.gradle\caches\transforms-3\666ad4d96425b8e28b1a48bfdbe14da3\transformed\navigation-common-2.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-runtime:2.6.0] C:\Users\dell\.gradle\caches\transforms-3\0789b73054335df5c47e09b6544f6297\transformed\navigation-runtime-2.6.0\AndroidManifest.xml:17:1-22:12
@@ -18,6 +18,7 @@ MERGED from [androidx.fragment:fragment-ktx:1.6.0] C:\Users\dell\.gradle\caches\
 MERGED from [androidx.fragment:fragment:1.6.0] C:\Users\dell\.gradle\caches\transforms-3\2017881bf1c9868b0e397985f2e899c4\transformed\fragment-1.6.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\dell\.gradle\caches\transforms-3\28f26fe6b2abaf97497315ccd88d4286\transformed\activity-ktx-1.8.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\dell\.gradle\caches\transforms-3\f52d1b41cc73fa4af3a01c2617c83ba6\transformed\activity-1.8.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\dell\.gradle\caches\transforms-3\459737db696ca8e008a617f0948f2ab7\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\efef27ef437a6f033fc2a4e64f541e2b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\a15e33a8f2c2a39a4991509c39ba05ce\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\14fe2ba4bcae05490a05a8c33ffe879a\transformed\emoji2-1.2.0\AndroidManifest.xml:17:1-35:12
@@ -30,7 +31,6 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\del
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\f9716552dadb7ca0e2fc173e093a7da2\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\dell\.gradle\caches\transforms-3\76ada1290d4f21d279f7dbaa73d6cc29\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\8e4f84215bda140a39ff78dc70d1b7e1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\370cc9f3fb0327f11d761ca35f7e76b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\0b0ffa9987362fedead32f16380142bb\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\ef9de8be0797bad7968c897f8f0ba572\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\c3c63985df1e37b76fd1200d88810c9c\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -73,8 +73,8 @@ ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\Andro
 	android:name
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:4:22-77
 application
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:6:5-36:19
-INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:6:5-36:19
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:6:5-40:19
+INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:6:5-40:19
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\dell\.gradle\caches\transforms-3\05b52001daa1dfe0fe7355e9b20ab34d\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] C:\Users\dell\.gradle\caches\transforms-3\05b52001daa1dfe0fe7355e9b20ab34d\transformed\material-1.12.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\dell\.gradle\caches\transforms-3\83850fdc06dcec6abcd2b00aa3f174e4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -98,7 +98,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\de
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.0] C:\Users\dell\.gradle\caches\transforms-3\d7f6bcdb0e1d6a5fdf6cdba9ab3b3771\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:13:9-36
 	android:label
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:11:9-41
 	android:fullBackupContent
@@ -135,22 +135,28 @@ ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\Andro
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:26:13-49
 	android:name
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:24:13-36
-activity#com.example.project.MainActivity
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:27:9-35:20
+activity#com.example.project.MainPageActivity
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:27:9-30:16
 	android:exported
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:29:13-36
 	android:name
-		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:28:13-41
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:28:13-45
+activity#com.example.project.MainActivity
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:31:9-39:20
+	android:exported
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:32:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:31:13-34:29
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:35:13-38:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:32:17-69
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:32:25-66
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:33:17-77
+ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:37:17-77
 	android:name
-		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:33:27-74
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml:37:27-74
 uses-sdk
 INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\dell\AndroidStudioProjects\AndriodProject\app\src\main\AndroidManifest.xml
@@ -183,6 +189,8 @@ MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\dell\.gradle\caches\
 MERGED from [androidx.activity:activity-ktx:1.8.0] C:\Users\dell\.gradle\caches\transforms-3\28f26fe6b2abaf97497315ccd88d4286\transformed\activity-ktx-1.8.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\dell\.gradle\caches\transforms-3\f52d1b41cc73fa4af3a01c2617c83ba6\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity:1.8.0] C:\Users\dell\.gradle\caches\transforms-3\f52d1b41cc73fa4af3a01c2617c83ba6\transformed\activity-1.8.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\dell\.gradle\caches\transforms-3\459737db696ca8e008a617f0948f2ab7\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\dell\.gradle\caches\transforms-3\459737db696ca8e008a617f0948f2ab7\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\efef27ef437a6f033fc2a4e64f541e2b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\efef27ef437a6f033fc2a4e64f541e2b\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] C:\Users\dell\.gradle\caches\transforms-3\a15e33a8f2c2a39a4991509c39ba05ce\transformed\emoji2-views-helper-1.2.0\AndroidManifest.xml:5:5-44
@@ -207,8 +215,6 @@ MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\dell\.gradle\cac
 MERGED from [androidx.savedstate:savedstate-ktx:1.2.1] C:\Users\dell\.gradle\caches\transforms-3\76ada1290d4f21d279f7dbaa73d6cc29\transformed\savedstate-ktx-1.2.1\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\8e4f84215bda140a39ff78dc70d1b7e1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\8e4f84215bda140a39ff78dc70d1b7e1\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\370cc9f3fb0327f11d761ca35f7e76b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\370cc9f3fb0327f11d761ca35f7e76b9\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\0b0ffa9987362fedead32f16380142bb\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dell\.gradle\caches\transforms-3\0b0ffa9987362fedead32f16380142bb\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.1.0] C:\Users\dell\.gradle\caches\transforms-3\ef9de8be0797bad7968c897f8f0ba572\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
