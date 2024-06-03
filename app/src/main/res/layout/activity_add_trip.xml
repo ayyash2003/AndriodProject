@@ -30,6 +30,13 @@
             android:orientation="vertical"
             app:layout_constraintGuide_percent="0.0" />
 
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1.0" />
+
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="297dp"
@@ -41,13 +48,6 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toTopOf="@+id/guideline"
             app:srcCompat="@drawable/add" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="1.0" />
 
         <TextView
             android:id="@+id/titlelbl"
@@ -160,59 +160,36 @@
         <EditText
             android:id="@+id/startpointFld"
             style="@style/AddTextFields"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="16dp"
             android:inputType="text"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintHorizontal_bias="0.75"
             app:layout_constraintStart_toEndOf="@+id/startpointlbl"
             app:layout_constraintTop_toBottomOf="@+id/picturebtn" />
-
-        <TextView
-            android:id="@+id/endpointlbl"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="End Point"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/startpointlbl" />
-
-        <EditText
-            android:id="@+id/endpointFld"
-            style="@style/AddTextFields"
-            android:layout_marginTop="20dp"
-            android:inputType="text"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.79"
-            app:layout_constraintStart_toEndOf="@+id/endpointlbl"
-            app:layout_constraintTop_toBottomOf="@+id/startpointFld" />
 
         <TextView
             android:id="@+id/durationlbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="36dp"
             android:text="Duration"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="19sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/endpointlbl" />
+            app:layout_constraintTop_toBottomOf="@+id/startpointlbl" />
 
         <Spinner
             android:id="@+id/durationSpin"
             style="@style/spinner"
             android:layout_width="133dp"
             android:layout_height="53dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintHorizontal_bias="0.564"
             app:layout_constraintStart_toEndOf="@+id/durationlbl"
-            app:layout_constraintTop_toBottomOf="@+id/endpointFld" />
+            app:layout_constraintTop_toBottomOf="@+id/startpointFld" />
 
         <TextView
             android:id="@+id/startdatelbl"
@@ -255,7 +232,6 @@
             android:id="@+id/enddateFld"
             style="@style/AddTextFields"
             android:layout_marginTop="28dp"
-
             android:inputType="date"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
             app:layout_constraintHorizontal_bias="0.671"
@@ -290,7 +266,7 @@
             android:id="@+id/risklbl"
             android:layout_width="66dp"
             android:layout_height="30dp"
-            android:layout_marginTop="68dp"
+            android:layout_marginTop="64dp"
             android:text="Risk"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="20sp"
@@ -313,7 +289,7 @@
             android:id="@+id/descriptionlbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="244dp"
             android:text="Description"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -322,14 +298,15 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/risklbl" />
 
-        <EditText style="@style/AddTextFields"
+        <EditText
             android:id="@+id/descriptionFld"
+            style="@style/AddTextFields"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="28dp"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.444"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/descriptionlbl"
             app:layout_constraintTop_toBottomOf="@+id/riskBar" />
 
@@ -405,6 +382,19 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/checkboxContainer"
             app:srcCompat="@android:drawable/ic_input_add" />
+
+        <TextView
+            android:id="@+id/risklvl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="140dp"
+            android:text="Level: 0"
+            app:layout_constraintBottom_toTopOf="@+id/riskBar"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/priceFld"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

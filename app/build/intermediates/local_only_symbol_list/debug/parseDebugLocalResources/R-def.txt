@@ -44,8 +44,6 @@ id email_label
 id email_layout
 id enddateFld
 id enddatelbl
-id endpointFld
-id endpointlbl
 id faceUrl
 id faceUrl_label
 id faceUrl_layout
@@ -90,6 +88,7 @@ id qaisbtn
 id recyclerViewMainPage
 id riskBar
 id risklbl
+id risklvl
 id scrollMainPage
 id selectedImageView
 id startdateFld

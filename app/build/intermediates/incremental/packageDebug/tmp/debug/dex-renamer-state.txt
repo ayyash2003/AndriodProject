@@ -1,8 +1,8 @@
-#Mon Jun 03 18:34:51 EET 2024
-base.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.2=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
-base.3=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+#Mon Jun 03 20:28:08 EEST 2024
+base.0=C\:\\Users\\LENOVO\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\LENOVO\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\LENOVO\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.3=C\:\\Users\\LENOVO\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=2/classes.dex

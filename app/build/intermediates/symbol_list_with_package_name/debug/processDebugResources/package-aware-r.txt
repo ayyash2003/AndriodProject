@@ -3360,8 +3360,6 @@ id end
 id endToStart
 id enddateFld
 id enddatelbl
-id endpointFld
-id endpointlbl
 id enterAlways
 id enterAlwaysCollapsed
 id escape
@@ -3598,6 +3596,7 @@ id right_icon
 id right_side
 id riskBar
 id risklbl
+id risklvl
 id rounded
 id row_index_key
 id rtl
