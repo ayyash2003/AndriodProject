@@ -122,6 +122,9 @@ public final class ActivityAddTripBinding implements ViewBinding {
   public final CheckBox swimBox;
 
   @NonNull
+  public final ImageView test;
+
+  @NonNull
   public final EditText titleFld;
 
   @NonNull
@@ -145,8 +148,9 @@ public final class ActivityAddTripBinding implements ViewBinding {
       @NonNull SeekBar riskBar, @NonNull TextView risklbl, @NonNull TextView risklvl,
       @NonNull EditText startdateFld, @NonNull TextView startdatelbl,
       @NonNull EditText startpointFld, @NonNull TextView startpointlbl,
-      @NonNull CheckBox suitableBox, @NonNull CheckBox swimBox, @NonNull EditText titleFld,
-      @NonNull TextView titlelbl, @NonNull Spinner typeSpin, @NonNull TextView typelbl) {
+      @NonNull CheckBox suitableBox, @NonNull CheckBox swimBox, @NonNull ImageView test,
+      @NonNull EditText titleFld, @NonNull TextView titlelbl, @NonNull Spinner typeSpin,
+      @NonNull TextView typelbl) {
     this.rootView = rootView;
     this.campingBox = campingBox;
     this.checkboxContainer = checkboxContainer;
@@ -179,6 +183,7 @@ public final class ActivityAddTripBinding implements ViewBinding {
     this.startpointlbl = startpointlbl;
     this.suitableBox = suitableBox;
     this.swimBox = swimBox;
+    this.test = test;
     this.titleFld = titleFld;
     this.titlelbl = titlelbl;
     this.typeSpin = typeSpin;
@@ -398,6 +403,12 @@ public final class ActivityAddTripBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.test;
+      ImageView test = ViewBindings.findChildViewById(rootView, id);
+      if (test == null) {
+        break missingId;
+      }
+
       id = R.id.titleFld;
       EditText titleFld = ViewBindings.findChildViewById(rootView, id);
       if (titleFld == null) {
@@ -427,7 +438,7 @@ public final class ActivityAddTripBinding implements ViewBinding {
           enddateFld, enddatelbl, grillingBox, guideline, guideline2, guideline3, imageView,
           insertbtn, main, parkingBox, picelbl, picturebtn, picturelbl, priceFld, riskBar, risklbl,
           risklvl, startdateFld, startdatelbl, startpointFld, startpointlbl, suitableBox, swimBox,
-          titleFld, titlelbl, typeSpin, typelbl);
+          test, titleFld, titlelbl, typeSpin, typelbl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

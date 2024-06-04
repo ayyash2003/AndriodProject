@@ -97,6 +97,7 @@ id startpointFld
 id startpointlbl
 id suitableBox
 id swimBox
+id test
 id textView
 id titleFld
 id titlelbl

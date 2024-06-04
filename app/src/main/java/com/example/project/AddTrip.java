@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
@@ -22,6 +23,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultCallback;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContract;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
@@ -34,19 +40,24 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AddTrip extends AppCompatActivity {
-    EditText titlefield, destfield, startPointfield, startDatefield,
+    private EditText titlefield, destfield, startPointfield, startDatefield,
             endDatefield, pricefield, descfield;
-    TextView risklvl;
+    private TextView risklvl;
 
-    Spinner typeSpnMenu, durSpnMenu;
-    ImageButton picturebtn, insertbtn;
-    CheckBox grillingbox,campingbox,swimbox,suitablebox,parkingbox;
-    SeekBar riskbar;
-     List<String> typeItems,durItems;
+    private Spinner typeSpnMenu, durSpnMenu;
+    private ImageButton picturebtn, insertbtn;
+    private CheckBox grillingbox, campingbox, swimbox, suitablebox, parkingbox;
+    private SeekBar riskbar;
 
+    private List<String> typeItems, durItems;
+
+    private ActivityResultLauncher<Intent> resultLauncher;
+    private ImageView testimage;
     private static final int PICK_IMAGE_REQUEST = 1;
 
     private String imageName;
+    private StringBuilder boxesString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,75 +72,48 @@ public class AddTrip extends AppCompatActivity {
         populateTypeSpinner();
         populateDurSpinner();
         seekBarListner(riskbar, risklvl);
+        registerResult();
+        picturebtn.setOnClickListener(View -> pickImage());
 
-        picturebtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openGallery();
-            }
-        });
+
     }
 
-    private void openGallery() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        startActivityForResult(intent, PICK_IMAGE_REQUEST);
+    private void pickImage() {
+        Intent intent = new Intent(MediaStore.ACTION_PICK_IMAGES);
+        resultLauncher.launch(intent);
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
+    private void registerResult() {
+        resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
+                new ActivityResultCallback<ActivityResult>() {
+                    @Override
+                    public void onActivityResult(ActivityResult o) {
+                        try {
+                            Uri imageUri = o.getData().getData();
+                            testimage.setImageURI(imageUri);
+                        } catch (Exception e) {
+                            Toast.makeText(AddTrip.this, "Error", Toast.LENGTH_SHORT);
+                        }
+                    }
+                });
 
-        if (requestCode == PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null) {
-            Uri imageUri = data.getData();
-            String imageName = getImageName(imageUri);
-            Toast.makeText(this, "Selected Image: " + imageName, Toast.LENGTH_SHORT).show();
-        }
     }
 
-    @SuppressLint("Range")
-    private String getImageName(Uri uri) {
-        String result = null;
-        if (uri.getScheme().equals("content")) {
-            Cursor cursor = getContentResolver().query(uri, null, null, null, null);
-            try {
-                if (cursor != null && cursor.moveToFirst()) {
-                    result = cursor.getString(cursor.getColumnIndex(MediaStore.Images.Media.DISPLAY_NAME));
-                }
-            } finally {
-                if (cursor != null) {
-                    cursor.close();
-                }
-            }
-        }
-        if (result == null) {
-            // If fetching image name fails, use the last segment of the URI
-            result = uri.getLastPathSegment();
-        }
-        return result;
-    }
+    private void populateTypeSpinner() {
+        typeItems = new ArrayList<>();
+        typeItems.add("Beach");
+        typeItems.add("Adventure");
+        typeItems.add("Cultural ");
+        typeItems.add("Entertainment");
 
 
-
-
-
-
-    
-
-
-    public void populateTypeSpinner(){
-    typeItems = new ArrayList<>();
-    typeItems.add("Beach");
-    typeItems.add("Adventure");
-    typeItems.add("Cultural ");
-    typeItems.add("Entertainment");
-
-
-    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-            android.R.layout.simple_spinner_item, typeItems);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, typeItems);
         typeSpnMenu.setAdapter(adapter);
 
     }
-    public void populateDurSpinner(){
+
+    private void populateDurSpinner() {
         durItems = new ArrayList<>();
         durItems.add("1 Day");
         durItems.add("2 Days");
@@ -164,9 +148,11 @@ public class AddTrip extends AppCompatActivity {
         insertbtn = findViewById(R.id.insertbtn);
         riskbar = findViewById(R.id.riskBar);
         risklvl = findViewById(R.id.risklvl);
+        testimage = findViewById(R.id.test);
 
     }
-    public void seekBarListner(SeekBar bar, TextView label){
+
+    private void seekBarListner(SeekBar bar, TextView label) {
         bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -187,4 +173,20 @@ public class AddTrip extends AppCompatActivity {
         });
     }
 
+    private void getBoxes() {
+        if (grillingbox.isSelected()) {
+            boxesString.append(grillingbox.getText());
+        } else if (campingbox.isSelected()) {
+            boxesString.append(campingbox.getText());
+        }
+        else if (swimbox.isSelected()) {
+            boxesString.append(swimbox.getText());
+        }
+        else if (suitablebox.isSelected()) {
+            boxesString.append(suitablebox.getText());
+        }else if (parkingbox.isSelected()) {
+            boxesString.append(parkingbox.getText());
+        }
+
     }
+}
