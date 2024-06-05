@@ -25,25 +25,45 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        Button ahmad = (Button) findViewById(R.id.ahmadbtn);
-        Button qais = (Button) findViewById(R.id.qaisbtn);
-        qais.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "FirstDone", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
 
-                startActivity(intent);
-            }
-        });
+        Button ahmad = findViewById(R.id.ahmadbtn);
+        Button openLoginButton = findViewById(R.id.login_button);
+        Button addCompanyButton = findViewById(R.id.addCompany_button);
+        ahmad.setOnClickListener(v -> {
+                    Intent intent = new Intent(MainActivity.this, AddTrip.class);
+                    startActivity(intent);
+              });
+            Button qais = (Button) findViewById(R.id.qaisbtn);
+            qais.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Toast.makeText(MainActivity.this, "FirstDone", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(MainActivity.this, MainPageActivity.class);
 
-        ahmad.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, AddTrip.class);
+                    startActivity(intent);
+                }
+            });
+
+            ahmad.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, AddTrip.class);
+                    startActivity(intent);
+                }
+                //
+
+            });
+
+            openLoginButton.setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, LoginPage.class);
                 startActivity(intent);
-            }
-            //
-        });
+            });
+
+            addCompanyButton.setOnClickListener(v -> {
+                Intent intent = new Intent(MainActivity.this, addCompany.class);
+                startActivity(intent);
+            });
+
+        }
+
     }
-}
