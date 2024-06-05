@@ -4,7 +4,7 @@
             "outputFile": "com.example.project.app-mergeDebugResources-41:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\ae84d8aca42a81dfd99e3005da004281\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\3d18e9a6edd3f7cef322acf9c413b0e2\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -15,7 +15,26 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\fd00c0e396077c64fa5684c38cb41e35\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\383c6c7c2738b135979076a4a03a157c\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,9,13,16,19,22,25,28,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,271,413,574,784,991,1198,1401,1603,1868",
+                        "endLines": "4,8,12,15,18,21,24,27,31,35",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "266,408,569,779,986,1193,1396,1598,1863,2136"
+                    },
+                    "to": {
+                        "startLines": "59,62,66,70,73,76,79,82,85,89",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "3701,3917,4059,4220,4430,4637,4844,5047,5249,5514",
+                        "endLines": "61,65,69,72,75,78,81,84,88,92",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "3912,4054,4215,4425,4632,4839,5042,5244,5509,5782"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\60f98a54f660d1c09153cb1adfc91132\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -50,25 +69,6 @@
                         "endLines": "58",
                         "endColumns": "12",
                         "endOffsets": "3696"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\LENOVO\\.gradle\\caches\\transforms-3\\05b52001daa1dfe0fe7355e9b20ab34d\\transformed\\material-1.12.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,5,9,13,16,19,22,25,28,32",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,271,413,574,784,991,1198,1401,1603,1868",
-                        "endLines": "4,8,12,15,18,21,24,27,31,35",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "266,408,569,779,986,1193,1396,1598,1863,2136"
-                    },
-                    "to": {
-                        "startLines": "59,62,66,70,73,76,79,82,85,89",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "3701,3917,4059,4220,4430,4637,4844,5047,5249,5514",
-                        "endLines": "61,65,69,72,75,78,81,84,88,92",
-                        "endColumns": "10,10,10,10,10,10,10,10,10,10",
-                        "endOffsets": "3912,4054,4215,4425,4632,4839,5042,5244,5509,5782"
                     }
                 }
             ]

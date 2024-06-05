@@ -8,6 +8,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -36,8 +37,20 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class AddTrip extends AppCompatActivity {
     private EditText titlefield, destfield, startPointfield, startDatefield,
@@ -56,7 +69,11 @@ public class AddTrip extends AppCompatActivity {
     private static final int PICK_IMAGE_REQUEST = 1;
 
     private String imageName;
-    private StringBuilder boxesString;
+    private final StringBuilder boxesString = new StringBuilder();
+
+    public AddTrip() {
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,8 +90,16 @@ public class AddTrip extends AppCompatActivity {
         populateDurSpinner();
         seekBarListner(riskbar, risklvl);
         registerResult();
-        picturebtn.setOnClickListener(View -> pickImage());
 
+        picturebtn.setOnClickListener(View -> pickImage());
+        insertbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getBoxes();
+                insertData();
+
+            }
+        });
 
     }
 
@@ -174,19 +199,97 @@ public class AddTrip extends AppCompatActivity {
     }
 
     private void getBoxes() {
-        if (grillingbox.isSelected()) {
-            boxesString.append(grillingbox.getText());
-        } else if (campingbox.isSelected()) {
-            boxesString.append(campingbox.getText());
+        if (grillingbox.isChecked()) {
+            boxesString.append(grillingbox.getText()).append(", ");
+        }  if (campingbox.isChecked()) {
+            boxesString.append(campingbox.getText()).append(", ");
         }
-        else if (swimbox.isSelected()) {
-            boxesString.append(swimbox.getText());
+         if (swimbox.isChecked()) {
+            boxesString.append(swimbox.getText()).append(", ");
         }
-        else if (suitablebox.isSelected()) {
-            boxesString.append(suitablebox.getText());
-        }else if (parkingbox.isSelected()) {
-            boxesString.append(parkingbox.getText());
+         if (suitablebox.isChecked()) {
+            boxesString.append(suitablebox.getText()).append(", ");
+        } if (parkingbox.isChecked()) {
+            boxesString.append(parkingbox.getText()).append("\n");
         }
 
     }
+    private void insertData() {
+
+        String title = titlefield.getText().toString().trim();
+        String type = typeSpnMenu.getSelectedItem().toString();
+        String destination = destfield.getText().toString().trim();
+        String image = "image_placeholder"; // Replace this with actual image handling code
+        String startingpoint = startPointfield.getText().toString().trim();
+        String duration = durSpnMenu.getSelectedItem().toString();
+        String startdate = startDatefield.getText().toString().trim();
+        String enddate = endDatefield.getText().toString().trim();
+        String price = pricefield.getText().toString().trim();
+        String risk = (String) risklvl.getText();
+        String description = descfield.getText().toString().trim();
+        String checkbox = boxesString.toString();
+        Log.e("TAG", "boxes is: " + checkbox);
+
+        String url = "http://192.168.1.249/AndroidProject/insert_trip.php";
+        RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
+        StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.e("TAG", "RESPONSE IS " + response);
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    // on below line we are displaying a success toast message.
+                    String msg = jsonObject.getString("message");
+                    Toast.makeText(AddTrip.this,msg
+                            , Toast.LENGTH_SHORT).show();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }, new com.android.volley.Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                // method to handle errors.
+                Toast.makeText(AddTrip.this,
+                        "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+            public String getBodyContentType() {
+                // as we are passing data in the form of url encoded
+                // so we are passing the content type below
+                return "application/x-www-form-urlencoded; charset=UTF-8";
+            }
+
+            @Override
+            protected Map<String, String> getParams() {
+
+                // below line we are creating a map for storing
+                // our values in key and value pair.
+                Map<String, String> params = new HashMap<String, String>();
+
+                // on below line we are passing our
+                // key and value pair to our parameters.
+                params.put("title", title);
+                params.put("type", type);
+                params.put("destination", destination);
+                params.put("image", image);
+                params.put("startingpoint", startingpoint);
+                params.put("duration", duration);
+                params.put("startdate", startdate);
+                params.put("enddate", enddate);
+                params.put("price", price);
+                params.put("risk", risk);
+                params.put("description", description);
+                params.put("checkbox", checkbox);
+                return params;
+
+            }
+        };
+        // below line is to make
+        // a json object request.
+        queue.add(request);
+    }
+
 }

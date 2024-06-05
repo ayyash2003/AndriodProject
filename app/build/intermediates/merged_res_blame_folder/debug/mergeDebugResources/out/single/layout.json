@@ -1,34 +1,30 @@
 [
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\recycle_view_main_page.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\recycle_view_main_page.xml"
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/activity_main_page.xml",
+        "source": "com.example.project.app-main-45:/layout/activity_main_page.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\activity_login_page.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\activity_login_page.xml"
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/recycle_view_view_page.xml",
+        "source": "com.example.project.app-main-45:/layout/recycle_view_view_page.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\activity_main_page.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\activity_main_page.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\recycle_view_view_page.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\recycle_view_view_page.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\activity_add_trip.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\activity_add_trip.xml"
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/activity_add_company.xml",
+        "source": "com.example.project.app-main-45:/layout/activity_add_company.xml"
     },
     {
         "merged": "com.example.project.app-mergeDebugResources-42:/layout/activity_add_trip.xml",
         "source": "com.example.project.app-main-45:/layout/activity_add_trip.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\activity_main.xml"
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "com.example.project.app-main-45:/layout/activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-42:\\layout\\activity_add_company.xml",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-45:\\layout\\activity_add_company.xml"
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/recycle_view_main_page.xml",
+        "source": "com.example.project.app-main-45:/layout/recycle_view_main_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-42:/layout/activity_login_page.xml",
+        "source": "com.example.project.app-main-45:/layout/activity_login_page.xml"
     }
 ]

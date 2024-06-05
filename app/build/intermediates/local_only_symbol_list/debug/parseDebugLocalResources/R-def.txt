@@ -132,3 +132,4 @@ style login
 style spinner
 xml backup_rules
 xml data_extraction_rules
+xml network_security_config
