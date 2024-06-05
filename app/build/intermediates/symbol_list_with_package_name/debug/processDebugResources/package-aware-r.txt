@@ -3091,6 +3091,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable map_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3391,6 +3392,7 @@ id gender_group
 id gender_label
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3417,9 +3419,10 @@ id image
 id imageButton3
 id imageView
 id image_layout
+id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
-id imgTripMainPage
+id imgType
 id immediateStop
 id included
 id indeterminate
@@ -3435,6 +3438,7 @@ id lHeader
 id lMainPage
 id labeled
 id layout
+id layoutLocation
 id left
 id leftToRight
 id legacy
@@ -3450,6 +3454,7 @@ id ltr
 id m3_side_sheet
 id main
 id mainPage
+id main_type
 id male
 id marquee
 id masked
@@ -3588,6 +3593,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewMainPage
+id recyclerViewType
 id report_drawn
 id reverseSawtooth
 id right
@@ -3724,6 +3730,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtLocationTypes
 id txtLogin
 id txtTripName
 id txtType
@@ -3872,6 +3879,7 @@ layout activity_add_trip
 layout activity_login_page
 layout activity_main
 layout activity_main_page
+layout activity_type
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3948,7 +3956,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recycle_view_main_page
-layout recycle_view_view_page
+layout recycle_view_type_page
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

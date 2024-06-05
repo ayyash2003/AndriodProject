@@ -23,7 +23,6 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        Toast.makeText(this, "Second Done", Toast.LENGTH_SHORT).show();
 
         setContentView(R.layout.activity_main_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainPage), (v, insets) -> {
@@ -44,7 +43,6 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mainRecyclerView.setAdapter(new MainPageAdapter(getApplicationContext(),items,this) );
-        Toast.makeText(this, "Successful", Toast.LENGTH_SHORT).show();
     }
     private void set(){
         mainRecyclerView=findViewById(R.id.recyclerViewMainPage);
@@ -56,7 +54,6 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
         Intent intent =new Intent(this,MainActivityType.class);
         intent.putExtra("type",item.getType());
         startActivity(intent);
-        Toast.makeText(this, item.getType(), Toast.LENGTH_SHORT).show();
 
     }
 

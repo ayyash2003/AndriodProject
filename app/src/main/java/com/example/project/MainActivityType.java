@@ -53,7 +53,7 @@ public class MainActivityType extends AppCompatActivity {
         String type = intent.getStringExtra("type");
         BASE_URL=url(type);
         Toast.makeText(MainActivityType.this,type,Toast.LENGTH_SHORT).show();
-  //      loadItems();
+        loadItems();
 
 
     }

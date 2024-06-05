@@ -17,6 +17,7 @@ drawable entertainment_icon
 drawable entertinment
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable map_icon
 drawable search
 drawable test
 id FirstFragment
@@ -57,16 +58,19 @@ id guideline3
 id imageButton3
 id imageView
 id image_layout
+id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
-id imgTripMainPage
+id imgType
 id insertbtn
 id lHeader
 id lMainPage
+id layoutLocation
 id linearImage
 id login_button
 id main
 id mainPage
+id main_type
 id male
 id name
 id name_label
@@ -86,6 +90,7 @@ id picturelbl
 id priceFld
 id qaisbtn
 id recyclerViewMainPage
+id recyclerViewType
 id riskBar
 id risklbl
 id risklvl
@@ -101,6 +106,7 @@ id test
 id textView
 id titleFld
 id titlelbl
+id txtLocationTypes
 id txtLogin
 id txtTripName
 id txtType
@@ -111,8 +117,9 @@ layout activity_add_trip
 layout activity_login_page
 layout activity_main
 layout activity_main_page
+layout activity_type
 layout recycle_view_main_page
-layout recycle_view_view_page
+layout recycle_view_type_page
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph

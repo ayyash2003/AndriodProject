@@ -48,6 +48,9 @@
             android:name="com.example.project.MainPageActivity"
             android:exported="true" />
         <activity
+            android:name="com.example.project.MainActivityType"
+            android:exported="true" />
+        <activity
             android:name="com.example.project.MainActivity"
             android:exported="true" >
             <intent-filter>
