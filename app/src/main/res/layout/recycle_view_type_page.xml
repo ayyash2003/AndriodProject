@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="140dp"
-        android:id="@+id/imgMainPage"
+        android:layout_height="165dp"
+        android:id="@+id/imgType"
         />
     <TextView
         android:layout_width="wrap_content"
@@ -17,7 +19,7 @@
         android:text="Name"
         android:textSize="22sp"
         android:textStyle="italic"
-        android:layout_below="@+id/imgMainPage"
+        android:layout_below="@+id/imgType"
         android:layout_marginTop="18dp"
         android:layout_marginLeft="15dp"
 
@@ -25,6 +27,7 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/layoutLocation"
         android:layout_below="@+id/txtTripName"
         android:orientation="horizontal"
         android:layout_marginStart="15dp"
@@ -33,17 +36,23 @@
 
         >
     <ImageView
-        android:layout_width="15dp"
-        android:layout_height="15dp"
-        android:layout_marginTop="25dp"
-        android:id="@+id/imgTripMainPage"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:id="@+id/imgLocationTypes"
+        android:layout_marginRight="25dp"
+        android:src="@drawable/map_icon"
+
         />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nablus"
+            android:id="@+id/txtLocationTypes"
             android:layout_marginLeft="0dp"
             />
     </LinearLayout>
+
+
+
 </RelativeLayout>
 </androidx.cardview.widget.CardView>

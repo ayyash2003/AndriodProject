@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -14,9 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainPageActivity extends AppCompatActivity {
+public class MainPageActivity extends AppCompatActivity implements SelectMainPage ,SelectType{
     RecyclerView mainRecyclerView ;
-    List<TripeTypes> items ;
+    List<TripTypes> items ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -33,20 +34,36 @@ public class MainPageActivity extends AppCompatActivity {
         set();
 
         items =new ArrayList<>();
-        items.add(new TripeTypes(R.drawable.adventure,R.drawable.adventrue_icon,"Adventure"));
-        items.add(new TripeTypes(R.drawable.cultural,R.drawable.cultural_icon,"Cultural"));
-        items.add(new TripeTypes(R.drawable.beach4,R.drawable.beach_icon,"Beach"));
+        items.add(new TripTypes(R.drawable.adventure,R.drawable.adventrue_icon,"Adventure"));
+        items.add(new TripTypes(R.drawable.cultural,R.drawable.cultural_icon,"Cultural"));
+        items.add(new TripTypes(R.drawable.beach4,R.drawable.beach_icon,"Beach"));
 
-        items.add(new TripeTypes(R.drawable.entertinment,R.drawable.entertainment_icon,"Entertainment"));
+        items.add(new TripTypes(R.drawable.entertinment,R.drawable.entertainment_icon,"Entertainment"));
 
 
 
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        mainRecyclerView.setAdapter(new MainPageAdapter(getApplicationContext(),items) );
+        mainRecyclerView.setAdapter(new MainPageAdapter(getApplicationContext(),items,this) );
         Toast.makeText(this, "Successful", Toast.LENGTH_SHORT).show();
     }
     private void set(){
         mainRecyclerView=findViewById(R.id.recyclerViewMainPage);
 
     }
+
+    @Override
+    public void onItemClick(TripTypes item) {
+        Intent intent =new Intent(this,MainActivityType.class);
+        intent.putExtra("type",item.getType());
+        startActivity(intent);
+        Toast.makeText(this, item.getType(), Toast.LENGTH_SHORT).show();
+
+    }
+
+    @Override
+    public void onTypeClick(Trips item) {
+
+
+    }
+
 }
