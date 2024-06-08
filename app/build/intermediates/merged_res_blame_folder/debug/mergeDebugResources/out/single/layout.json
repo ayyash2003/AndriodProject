@@ -1,34 +1,46 @@
 [
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_login_page.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_login_page.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_images.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_images.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/recycle_view_main_page.xml",
-        "source": "com.example.project.app-main-46:/layout/recycle_view_main_page.xml"
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_admin.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_admin.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_add_trip.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_add_trip.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\recycle_view_main_page.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\recycle_view_main_page.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_main_page.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_main_page.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_add_trip.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_add_trip.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_type.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_type.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_login_page.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_add_company.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_add_company.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_type.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_type.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/recycle_view_type_page.xml",
-        "source": "com.example.project.app-main-46:/layout/recycle_view_type_page.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_main_page.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_main_page.xml"
     },
     {
-        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_main.xml",
-        "source": "com.example.project.app-main-46:/layout/activity_main.xml"
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\recycle_view_type_page.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\recycle_view_type_page.xml"
+    },
+    {
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_admin.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_admin.xml"
+    },
+    {
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_add_company.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_add_company.xml"
+    },
+    {
+        "merged": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-43:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\EasyLife\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_main.xml"
     }
 ]

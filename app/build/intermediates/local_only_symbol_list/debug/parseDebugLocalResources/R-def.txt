@@ -27,9 +27,11 @@ id action_SecondFragment_to_FirstFragment
 id addCompany_button
 id ahmadbtn
 id campingBox
+id card_view
 id checkboxContainer
 id city_label
 id city_spinner
+id company_recycler
 id confirmPass_layout
 id confirm_password
 id confirm_password_label
@@ -55,6 +57,7 @@ id grillingBox
 id guideline
 id guideline2
 id guideline3
+id image
 id imageButton3
 id imageView
 id image_layout
@@ -67,6 +70,7 @@ id lHeader
 id lMainPage
 id layoutLocation
 id linearImage
+id listView
 id login_button
 id main
 id mainPage
@@ -108,12 +112,15 @@ id titleFld
 id titlelbl
 id txtLocationTypes
 id txtLogin
+id txtName
 id txtTripName
 id txtType
 id typeSpin
 id typelbl
 layout activity_add_company
 layout activity_add_trip
+layout activity_admin
+layout activity_images
 layout activity_login_page
 layout activity_main
 layout activity_main_page

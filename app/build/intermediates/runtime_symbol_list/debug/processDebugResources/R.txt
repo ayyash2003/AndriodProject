@@ -3267,6 +3267,7 @@ int id cache_measures 0x7f08006a
 int id callMeasure 0x7f08006b
 int id campingBox 0x7f08006c
 int id cancel_button 0x7f08006d
+int id card_view 0x7f080259
 int id carryVelocity 0x7f08006e
 int id center 0x7f08006f
 int id centerCrop 0x7f080070
@@ -3289,6 +3290,7 @@ int id clip_vertical 0x7f080080
 int id clockwise 0x7f080081
 int id closest 0x7f080082
 int id collapseActionView 0x7f080083
+int id company_recycler 0x7f08025d
 int id compress 0x7f080084
 int id confirmPass_layout 0x7f080085
 int id confirm_button 0x7f080086
@@ -3446,6 +3448,7 @@ int id line3 0x7f08011d
 int id linear 0x7f08011e
 int id linearImage 0x7f08011f
 int id listMode 0x7f080120
+int id listView 0x7f08025a
 int id list_item 0x7f080121
 int id locale 0x7f080122
 int id login_button 0x7f080123
@@ -3731,6 +3734,7 @@ int id transition_transform 0x7f08023a
 int id triangle 0x7f08023b
 int id txtLocationTypes 0x7f08023c
 int id txtLogin 0x7f08023d
+int id txtName 0x7f08025c
 int id txtTripName 0x7f08023e
 int id txtType 0x7f08023f
 int id typeSpin 0x7f080240
@@ -3875,6 +3879,8 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_add_company 0x7f0b001c
 int layout activity_add_trip 0x7f0b001d
+int layout activity_admin 0x7f0b0073
+int layout activity_images 0x7f0b0074
 int layout activity_login_page 0x7f0b001e
 int layout activity_main 0x7f0b001f
 int layout activity_main_page 0x7f0b0020
