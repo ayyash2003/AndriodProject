@@ -17,6 +17,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -49,71 +56,18 @@ public class addCompany extends AppCompatActivity {
         selectedImageView = findViewById(R.id.selectedImageView);
 
         addCompanyButton = findViewById(R.id.addCompany_button);
-        addCompanyButton.setOnClickListener(view -> { //when the user press the add button so will check all the validations and add them to dataBase
+        addCompanyButton.setOnClickListener(view -> {
             if (checkFields()) {
                 if (validatePassword() && validateConfirmPassword() && validateEmail() && validatePhoneNumber() && validateFaceUrl()) {
-                    Toast.makeText(addCompany.this, "Company added successfully!", Toast.LENGTH_SHORT).show();
-
+                    String name = nameTxt.getText().toString();
+                    String email = emailTxt.getText().toString();
+                    String password = passwordTxt.getText().toString();
+                    String phoneNumber = phoneNumberTxt.getText().toString();
+                    String faceUrl = faceUrlTxt.getText().toString();
+                    addCompanyInfo(name, email, password, phoneNumber, faceUrl);
                 }
             }
         });
-//        public void btnAdd_Click(View view) {
-//            String name = nameTxt.getText().toString();
-//            String  = nameTxt.getText().toString();
-//            String password = passwordTxt.getText().toString();
-//            String confirmPassword = confirmPasswordTxt.getText().toString();
-//            String phoneNumber = phoneNumberTxt.getText().toString();
-//            String faceUrl = faceUrlTxt.getText().toString();
-//
-//
-//            addCompany(name, bookCat, bookPages);
-//        }
-//
-//        private void addCompany(String name, String email, int password,int phoneNumber,Image image){
-//            String url = "http://10.0.2.2:84/rest/addbook_json.php";
-//            RequestQueue queue = Volley.newRequestQueue(addCompany.this);
-//            StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
-//                @Override
-//                public void onResponse(String response) {
-//                    Log.e("TAG", "RESPONSE IS " + response);
-//                    try {
-//                        JSONObject jsonObject = new JSONObject(response);
-//                        String msg = jsonObject.getString("message");
-//                        Toast.makeText(MainActivity2.this,msg
-//                                , Toast.LENGTH_SHORT).show();
-//                    } catch (JSONException e) {
-//                        e.printStackTrace();
-//                    }
-//
-//                }
-//            }, new com.android.volley.Response.ErrorListener() {
-//                @Override
-//                public void onErrorResponse(VolleyError error) {
-//                    // method to handle errors.
-//                    Toast.makeText(addCompany.this,
-//                            "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
-//                }
-//            }) {
-//                @Override
-//                public String getBodyContentType() {
-//                    // as we are passing data in the form of url encoded
-//                    // so we are passing the content type below
-//                    return "application/x-www-form-urlencoded; charset=UTF-8";
-//                }
-//
-//                @Override
-//                protected Map<String, String> getParams() {
-//                    Map<String, String> params = new HashMap<String, String>();
-//                    params.put("name", name);
-//                    params.put("email", email);
-//                    params.put("password", password);
-//                    params.put("phone number", phoneNumber);
-//                    params.put("image",image);
-//                    return params;
-//                }
-//            };
-//            queue.add(request);
-//        }
 
         imageButton.setOnClickListener(view -> {
             if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.READ_EXTERNAL_STORAGE)
@@ -215,5 +169,45 @@ public class addCompany extends AppCompatActivity {
             return false;
         }
         return true;
+    }
+
+    private void addCompanyInfo(String name, String email, String password, String phoneNumber, String faceUrl) {
+        String url = "http://192.168.56.1/android/addCompany.php";
+        RequestQueue queue = Volley.newRequestQueue(addCompany.this);
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.e("TAG", "RESPONSE IS " + response);
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    String msg = jsonObject.getString("message");
+                    Toast.makeText(addCompany.this, msg, Toast.LENGTH_SHORT).show();
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(addCompany.this, "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
+            }
+        }) {
+            @Override
+            public String getBodyContentType() {
+                return "application/x-www-form-urlencoded; charset=UTF-8";
+            }
+
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                params.put("name", name);
+                params.put("email", email);
+                params.put("password", password);
+                params.put("phoneNumber", phoneNumber);
+                params.put("faceUrl", faceUrl);
+                return params;
+            }
+        };
+        queue.add(request);
     }
 }

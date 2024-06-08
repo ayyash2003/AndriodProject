@@ -27,26 +27,26 @@ public final class ActivityMainBinding implements ViewBinding {
   public final Button ahmadbtn;
 
   @NonNull
-  public final Button loginButton;
-
-  @NonNull
   public final ConstraintLayout main;
 
   @NonNull
   public final Button qaisbtn;
 
   @NonNull
+  public final Button signButton;
+
+  @NonNull
   public final TextView textView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button addCompanyButton,
-      @NonNull Button ahmadbtn, @NonNull Button loginButton, @NonNull ConstraintLayout main,
-      @NonNull Button qaisbtn, @NonNull TextView textView) {
+      @NonNull Button ahmadbtn, @NonNull ConstraintLayout main, @NonNull Button qaisbtn,
+      @NonNull Button signButton, @NonNull TextView textView) {
     this.rootView = rootView;
     this.addCompanyButton = addCompanyButton;
     this.ahmadbtn = ahmadbtn;
-    this.loginButton = loginButton;
     this.main = main;
     this.qaisbtn = qaisbtn;
+    this.signButton = signButton;
     this.textView = textView;
   }
 
@@ -89,17 +89,17 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.login_button;
-      Button loginButton = ViewBindings.findChildViewById(rootView, id);
-      if (loginButton == null) {
-        break missingId;
-      }
-
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.qaisbtn;
       Button qaisbtn = ViewBindings.findChildViewById(rootView, id);
       if (qaisbtn == null) {
+        break missingId;
+      }
+
+      id = R.id.sign_button;
+      Button signButton = ViewBindings.findChildViewById(rootView, id);
+      if (signButton == null) {
         break missingId;
       }
 
@@ -109,8 +109,8 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, addCompanyButton, ahmadbtn,
-          loginButton, main, qaisbtn, textView);
+      return new ActivityMainBinding((ConstraintLayout) rootView, addCompanyButton, ahmadbtn, main,
+          qaisbtn, signButton, textView);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
