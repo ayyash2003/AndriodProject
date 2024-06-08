@@ -8,7 +8,6 @@
         android:minSdkVersion="33"
         android:targetSdkVersion="34" />
 
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -46,6 +45,9 @@
             android:theme="@style/Theme.Project" />
         <activity
             android:name="com.example.project.MainPageActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.project.MainActivityType"
             android:exported="true" />
         <activity
             android:name="com.example.project.MainActivity"

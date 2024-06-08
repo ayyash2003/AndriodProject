@@ -45,6 +45,9 @@ dependencies {
     implementation ("androidx.recyclerview:recyclerview:1.2.1")
     implementation(libs.volley)
 
+    implementation(libs.glide)
+
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)

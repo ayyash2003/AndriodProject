@@ -16,10 +16,13 @@ import java.util.List;
 public class MainPageAdapter extends RecyclerView.Adapter<MainPageAdapter.MainPageViewHolder> {
 
     private Context context ;
-    private List<TripeTypes> items ;
-    public MainPageAdapter(Context context ,List<TripeTypes> items){
+    private List<TripTypes> items ;
+    SelectMainPage listener ;
+
+    public MainPageAdapter(Context context , List<TripTypes> items, SelectMainPage listener){
         this.context=context;
         this.items=items;
+        this.listener=listener;
     }
     @NonNull
     @Override
@@ -32,11 +35,17 @@ public class MainPageAdapter extends RecyclerView.Adapter<MainPageAdapter.MainPa
 
     @Override
     public void onBindViewHolder(@NonNull MainPageViewHolder holder, int position) {
-    final TripeTypes tripeTypes =items.get(position);
+    final TripTypes tripTypes =items.get(position);
     CardView cardView = holder.cardView ;
     holder.imgLogoMainPage.setImageResource(items.get(position).getLogoImage());
     holder.imgMainPage.setImageResource(items.get(position).getMainimage());
     holder.txtType.setText(items.get(position).getType());
+    holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onItemClick(items.get(position));
+            }
+        });
 
     }
 
