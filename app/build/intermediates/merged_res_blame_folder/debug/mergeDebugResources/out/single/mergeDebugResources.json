@@ -1,9 +1,5 @@
 [
     {
-        "merged": "com.example.project.app-debug-44:/xml_network_security_config.xml.flat",
-        "source": "com.example.project.app-main-46:/xml/network_security_config.xml"
-    },
-    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_recycle_view_type_page.xml.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\recycle_view_type_page.xml"
     },
@@ -112,6 +108,10 @@
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach_icon.png"
     },
     {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_admin.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_admin.xml"
+    },
+    {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_add.png.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\add.png"
     },
@@ -130,6 +130,10 @@
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_login_page.xml.flat",
         "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_admin.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_admin.xml"
     },
     {
         "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

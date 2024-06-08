@@ -55,6 +55,7 @@ id grillingBox
 id guideline
 id guideline2
 id guideline3
+id image
 id imageButton3
 id imageView
 id image_layout
@@ -67,6 +68,7 @@ id lHeader
 id lMainPage
 id layoutLocation
 id linearImage
+id listView
 id login_button
 id main
 id mainPage
@@ -114,6 +116,7 @@ id typeSpin
 id typelbl
 layout activity_add_company
 layout activity_add_trip
+layout activity_admin
 layout activity_login_page
 layout activity_main
 layout activity_main_page
