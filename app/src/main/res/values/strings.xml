@@ -43,4 +43,6 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="login">Login</string>
+    <string name="sign_in">Sign In</string>
+    <string name="create_an_account">Create an account</string>
 </resources>

@@ -3041,6 +3041,7 @@ int drawable beach2 0x7f07007e
 int drawable beach3 0x7f07007f
 int drawable beach4 0x7f070080
 int drawable beach_icon 0x7f070081
+int drawable bt_login 0x7f0700f6
 int drawable btn_checkbox_checked_mtrl 0x7f070082
 int drawable btn_checkbox_checked_to_unchecked_mtrl_animation 0x7f070083
 int drawable btn_checkbox_unchecked_mtrl 0x7f070084
@@ -3262,6 +3263,8 @@ int id bounce 0x7f080065
 int id bounceBoth 0x7f080066
 int id bounceEnd 0x7f080067
 int id bounceStart 0x7f080068
+int id btLogin 0x7f080259
+int id btNew 0x7f08025a
 int id buttonPanel 0x7f080069
 int id cache_measures 0x7f08006a
 int id callMeasure 0x7f08006b
@@ -3351,6 +3354,8 @@ int id east 0x7f0800be
 int id edge 0x7f0800bf
 int id edit_query 0x7f0800c0
 int id edit_text_id 0x7f0800c1
+int id edtName 0x7f08025b
+int id edtPassword 0x7f08025c
 int id elastic 0x7f0800c2
 int id email 0x7f0800c3
 int id email_label 0x7f0800c4
@@ -3417,6 +3422,7 @@ int id ignoreRequest 0x7f080100
 int id image 0x7f080101
 int id imageButton3 0x7f080102
 int id imageView 0x7f080103
+int id imageView4 0x7f08025d
 int id image_layout 0x7f080104
 int id imgLocationTypes 0x7f080105
 int id imgLogoMainPage 0x7f080106
@@ -3699,6 +3705,7 @@ int id textSpacerNoTitle 0x7f08021a
 int id textStart 0x7f08021b
 int id textTop 0x7f08021c
 int id textView 0x7f08021d
+int id textView2 0x7f08025e
 int id text_input_end_icon 0x7f08021e
 int id text_input_error_icon 0x7f08021f
 int id text_input_start_icon 0x7f080220
@@ -3731,6 +3738,9 @@ int id transition_transform 0x7f08023a
 int id triangle 0x7f08023b
 int id txtLocationTypes 0x7f08023c
 int id txtLogin 0x7f08023d
+int id txtMsg 0x7f08025f
+int id txtName 0x7f080260
+int id txtPassword 0x7f080261
 int id txtTripName 0x7f08023e
 int id txtType 0x7f08023f
 int id typeSpin 0x7f080240
@@ -3875,6 +3885,7 @@ int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_add_company 0x7f0b001c
 int layout activity_add_trip 0x7f0b001d
+int layout activity_login 0x7f0b0073
 int layout activity_login_page 0x7f0b001e
 int layout activity_main 0x7f0b001f
 int layout activity_main_page 0x7f0b0020
@@ -4011,6 +4022,7 @@ int string character_counter_content_description 0x7f10002b
 int string character_counter_overflowed_content_description 0x7f10002c
 int string character_counter_pattern 0x7f10002d
 int string clear_text_end_icon_content_description 0x7f10002e
+int string create_an_account 0x7f1000b1
 int string dest_title 0x7f10002f
 int string error_a11y_label 0x7f100030
 int string error_icon_content_description 0x7f100031
@@ -4139,6 +4151,7 @@ int string searchview_navigation_content_description 0x7f1000ab
 int string second_fragment_label 0x7f1000ac
 int string side_sheet_accessibility_pane_title 0x7f1000ad
 int string side_sheet_behavior 0x7f1000ae
+int string sign_in 0x7f1000b0
 int string status_bar_notification_info_overflow 0x7f1000af
 int style AddLabels 0x7f110000
 int style AddTextFields 0x7f110001
@@ -4886,6 +4899,7 @@ int style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText 0
 int style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary 0x7f1102e7
 int style ThemeOverlay_MaterialComponents_Toolbar_Primary 0x7f1102e8
 int style ThemeOverlay_MaterialComponents_Toolbar_Surface 0x7f1102e9
+int style Title 0x7f11046e
 int style Widget_AppCompat_ActionBar 0x7f1102ea
 int style Widget_AppCompat_ActionBar_Solid 0x7f1102eb
 int style Widget_AppCompat_ActionBar_TabBar 0x7f1102ec
@@ -5270,9 +5284,12 @@ int style Widget_MaterialComponents_Toolbar_PrimarySurface 0x7f110466
 int style Widget_MaterialComponents_Toolbar_Surface 0x7f110467
 int style Widget_MaterialComponents_Tooltip 0x7f110468
 int style Widget_Support_CoordinatorLayout 0x7f110469
+int style adapterType 0x7f11046d
 int style edtTextAddCompany 0x7f11046a
 int style login 0x7f11046b
+int style sign_in 0x7f11046f
 int style spinner 0x7f11046c
+int style text_login_page 0x7f110470
 int[] styleable ActionBar { 0x7f03004c, 0x7f030053, 0x7f030054, 0x7f030140, 0x7f030141, 0x7f030142, 0x7f030143, 0x7f030144, 0x7f030145, 0x7f03016e, 0x7f030185, 0x7f030186, 0x7f0301a6, 0x7f030221, 0x7f030229, 0x7f03022f, 0x7f030230, 0x7f030234, 0x7f030245, 0x7f03025c, 0x7f0302da, 0x7f03035f, 0x7f030398, 0x7f0303a0, 0x7f0303a1, 0x7f030421, 0x7f030425, 0x7f0304ae, 0x7f0304bc }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1

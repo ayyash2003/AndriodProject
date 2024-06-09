@@ -38,7 +38,7 @@
             android:name="com.example.project.addCompany"
             android:exported="false" />
         <activity
-            android:name="com.example.project.LoginPage"
+            android:name="com.example.project.SignInPage"
             android:exported="false" />
         <activity
             android:name="com.example.project.AddTrip"
@@ -49,6 +49,9 @@
             android:exported="true" />
         <activity
             android:name="com.example.project.MainActivityType"
+            android:exported="true" />
+        <activity
+            android:name="com.example.project.LoginActivity"
             android:exported="true" />
         <activity
             android:name="com.example.project.MainActivity"

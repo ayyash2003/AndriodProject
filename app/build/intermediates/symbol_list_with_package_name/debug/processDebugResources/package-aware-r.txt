@@ -3042,6 +3042,7 @@ drawable beach2
 drawable beach3
 drawable beach4
 drawable beach_icon
+drawable bt_login
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3263,6 +3264,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btLogin
+id btNew
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3352,6 +3355,8 @@ id east
 id edge
 id edit_query
 id edit_text_id
+id edtName
+id edtPassword
 id elastic
 id email
 id email_label
@@ -3418,6 +3423,7 @@ id ignoreRequest
 id image
 id imageButton3
 id imageView
+id imageView4
 id image_layout
 id imgLocationTypes
 id imgLogoMainPage
@@ -3700,6 +3706,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3732,6 +3739,9 @@ id transition_transform
 id triangle
 id txtLocationTypes
 id txtLogin
+id txtMsg
+id txtName
+id txtPassword
 id txtTripName
 id txtType
 id typeSpin
@@ -3876,6 +3886,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
+layout activity_login
 layout activity_login_page
 layout activity_main
 layout activity_main_page
@@ -4012,6 +4023,7 @@ string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string create_an_account
 string dest_title
 string error_a11y_label
 string error_icon_content_description
@@ -4140,6 +4152,7 @@ string searchview_navigation_content_description
 string second_fragment_label
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
+string sign_in
 string status_bar_notification_info_overflow
 style AddLabels
 style AddTextFields
@@ -4887,6 +4900,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style Title
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar
@@ -5271,9 +5285,12 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style adapterType
 style edtTextAddCompany
 style login
+style sign_in
 style spinner
+style text_login_page
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

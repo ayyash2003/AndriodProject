@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             });
 
             openLoginButton.setOnClickListener(v -> {
-                Intent intent = new Intent(MainActivity.this, LoginPage.class);
+                Intent intent = new Intent(MainActivity.this, SignInPage.class);
                 startActivity(intent);
             });
 

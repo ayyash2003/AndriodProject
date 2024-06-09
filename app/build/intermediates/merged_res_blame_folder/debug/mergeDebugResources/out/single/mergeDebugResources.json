@@ -1,7 +1,7 @@
 [
     {
-        "merged": "com.example.project.app-debug-44:/xml_network_security_config.xml.flat",
-        "source": "com.example.project.app-main-46:/xml/network_security_config.xml"
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login.xml"
     },
     {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
@@ -128,6 +128,10 @@
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\xml\\backup_rules.xml"
     },
     {
+        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_bt_login.xml.flat",
+        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\bt_login.xml"
+    },
+    {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_adventure.jpg.flat",
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\adventure.jpg"
     },
@@ -150,6 +154,10 @@
     {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_add_trip.xml.flat",
         "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_add_trip.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_login.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_login.xml"
     },
     {
         "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_search.png.flat",

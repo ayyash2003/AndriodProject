@@ -230,7 +230,7 @@ public class AddTrip extends AppCompatActivity {
         String checkbox = boxesString.toString();
         Log.e("TAG", "boxes is: " + checkbox);
 
-        String url = "http://192.168.1.249/AndroidProject/insert_trip.php";
+        String url = "http://192.168.1.244/Android/insert_trip.php";
         RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override
