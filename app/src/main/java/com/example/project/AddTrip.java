@@ -1,13 +1,15 @@
 package com.example.project;
-
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Base64;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -22,7 +24,7 @@ import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
-
+import android.Manifest;
 import androidx.activity.EdgeToEdge;
 import androidx.activity.result.ActivityResult;
 import androidx.activity.result.ActivityResultCallback;
@@ -47,6 +49,8 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -64,11 +68,12 @@ public class AddTrip extends AppCompatActivity {
 
     private List<String> typeItems, durItems;
 
-    private ActivityResultLauncher<Intent> resultLauncher;
-    private ImageView testimage;
-    private static final int PICK_IMAGE_REQUEST = 1;
 
-    private String imageName;
+    private ImageView testimage;
+
+    Bitmap bitmap;
+    Intent intent ;
+    String comapnyName ;
     private final StringBuilder boxesString = new StringBuilder();
 
     public AddTrip() {
@@ -85,42 +90,22 @@ public class AddTrip extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        intent =getIntent();
+        comapnyName=intent.getStringExtra("companyname");
         setupViews();
         populateTypeSpinner();
         populateDurSpinner();
         seekBarListner(riskbar, risklvl);
-        registerResult();
 
-        picturebtn.setOnClickListener(View -> pickImage());
         insertbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 getBoxes();
                 insertData();
 
             }
         });
-
-    }
-
-    private void pickImage() {
-        Intent intent = new Intent(MediaStore.ACTION_PICK_IMAGES);
-        resultLauncher.launch(intent);
-    }
-
-    private void registerResult() {
-        resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult o) {
-                        try {
-                            Uri imageUri = o.getData().getData();
-                            testimage.setImageURI(imageUri);
-                        } catch (Exception e) {
-                            Toast.makeText(AddTrip.this, "Error", Toast.LENGTH_SHORT);
-                        }
-                    }
-                });
 
     }
 
@@ -228,6 +213,8 @@ public class AddTrip extends AppCompatActivity {
         String risk = (String) risklvl.getText();
         String description = descfield.getText().toString().trim();
         String checkbox = boxesString.toString();
+
+
         Log.e("TAG", "boxes is: " + checkbox);
 
         String url = "http://192.168.1.244/Android/insert_trip.php";
@@ -283,6 +270,7 @@ public class AddTrip extends AppCompatActivity {
                 params.put("risk", risk);
                 params.put("description", description);
                 params.put("checkbox", checkbox);
+               // params.put("companyname",comapnyName);
                 return params;
 
             }

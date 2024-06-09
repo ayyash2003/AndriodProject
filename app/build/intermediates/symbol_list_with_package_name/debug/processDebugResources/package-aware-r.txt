@@ -2229,6 +2229,11 @@ dimen abc_text_size_subhead_material
 dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
+dimen activity_horizontal_margin
+dimen activity_vertical_margin
+dimen app_bar_height
+dimen appbar_padding
+dimen appbar_padding_top
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -2945,6 +2950,7 @@ dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
 dimen sliding_pane_detail_pane_width
+dimen text_margin
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin
@@ -3051,6 +3057,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable camping
 drawable cultural
 drawable cultural_icon
 drawable design_fab_background
@@ -3060,6 +3067,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable entertainment_icon
 drawable entertinment
+drawable grill
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3154,7 +3162,10 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable park
 drawable search
+drawable suitable
+drawable swimming
 drawable test
 drawable test_level_drawable
 drawable tooltip_frame_dark
@@ -3230,6 +3241,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_settings
 id action_text
 id actions
 id activity_chooser_view_content
@@ -3264,8 +3276,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+<<<<<<< HEAD
 id btLogin
 id btNew
+=======
+id boxlayout
+>>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3281,8 +3297,15 @@ id chain
 id chain2
 id chains
 id checkbox
+id checkboxCamping
 id checkboxContainer
+id checkboxGrilling
+id checkboxParking
+id checkboxSuitableForChildren
+id checkboxSwimming
 id checked
+id chip
+id chipGroup
 id chronometer
 id circle_center
 id city_label
@@ -3337,6 +3360,7 @@ id disableIntraAutoTransition
 id disablePostScroll
 id disableScroll
 id disjoint
+id divider
 id dragAnticlockwise
 id dragClockwise
 id dragDown
@@ -3453,6 +3477,7 @@ id line3
 id linear
 id linearImage
 id listMode
+id listView
 id list_item
 id locale
 id login_button
@@ -3496,6 +3521,7 @@ id month_navigation_fragment_toggle
 id month_navigation_next
 id month_navigation_previous
 id month_title
+id moodTextView
 id motion_base
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
@@ -3526,6 +3552,7 @@ id name_label
 id name_layout
 id nav_controller_view_tag
 id nav_graph
+id nav_graph2
 id nav_host_fragment_container
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3596,6 +3623,11 @@ id progress_circular
 id progress_horizontal
 id qaisbtn
 id radio
+id radioAdventure
+id radioBeach
+id radioCultural
+id radioEntertainment
+id radioGroup
 id ratio
 id rectangles
 id recyclerViewMainPage
@@ -3623,6 +3655,7 @@ id scrollIndicatorUp
 id scrollMainPage
 id scrollView
 id scrollable
+id searchAhmad
 id search_badge
 id search_bar
 id search_button
@@ -3633,6 +3666,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id secdivider
 id select_dialog_listview
 id selected
 id selectedImageView
@@ -3679,6 +3713,7 @@ id staticPostLayout
 id stop
 id stretch
 id submenuarrow
+id submitButton
 id submit_area
 id suitableBox
 id supportScrollUp
@@ -3706,7 +3741,11 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+<<<<<<< HEAD
 id textView2
+=======
+id textView3
+>>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3723,6 +3762,7 @@ id titleFld
 id title_template
 id titlelbl
 id toggle
+id toolbar
 id top
 id topPanel
 id touch_outside
@@ -3886,11 +3926,17 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
+<<<<<<< HEAD
 layout activity_login
+=======
+layout activity_admin
+>>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 layout activity_login_page
 layout activity_main
 layout activity_main_page
+layout activity_search
 layout activity_type
+layout chip_layout
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3972,9 +4018,11 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu menu_search
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
+navigation nav_graph2
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -4003,6 +4051,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string action_settings
+string action_sign_in
+string action_sign_in_short
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -4033,8 +4084,12 @@ string fab_transformation_sheet_behavior
 string first_fragment_label
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string invalid_password
+string invalid_username
 string item_view_role_description
+string large_text
 string login
+string login_failed
 string lorem_ipsum
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
@@ -4145,6 +4200,8 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
+string prompt_email
+string prompt_password
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
@@ -4154,6 +4211,11 @@ string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string sign_in
 string status_bar_notification_info_overflow
+string tab_text_1
+string tab_text_2
+string title_activity_login
+string title_activity_search
+string welcome
 style AddLabels
 style AddTextFields
 style AlertDialog_AppCompat
@@ -4245,6 +4307,7 @@ style Base_Theme_AppCompat_Light_Dialog_Alert
 style Base_Theme_AppCompat_Light_Dialog_FixedSize
 style Base_Theme_AppCompat_Light_Dialog_MinWidth
 style Base_Theme_AppCompat_Light_DialogWhenLarge
+style Base_Theme_ChipGroup
 style Base_Theme_Material3_Dark
 style Base_Theme_Material3_Dark_BottomSheetDialog
 style Base_Theme_Material3_Dark_Dialog
@@ -4702,6 +4765,7 @@ style Theme_AppCompat_Light_Dialog_MinWidth
 style Theme_AppCompat_Light_DialogWhenLarge
 style Theme_AppCompat_Light_NoActionBar
 style Theme_AppCompat_NoActionBar
+style Theme_ChipGroup
 style Theme_Design
 style Theme_Design_BottomSheetDialog
 style Theme_Design_Light
@@ -4786,6 +4850,9 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_Project
+style Theme_Project_AppBarOverlay
+style Theme_Project_NoActionBar
+style Theme_Project_PopupOverlay
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark
@@ -5285,7 +5352,11 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+<<<<<<< HEAD
 style adapterType
+=======
+style chips
+>>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style edtTextAddCompany
 style login
 style sign_in
