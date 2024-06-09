@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:id="@+id/toolbar"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Where do you like to go?"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:background="#E1D3D3"></com.google.android.material.chip.ChipGroup>
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/chipGroup"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/moodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="What is your mood?"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/moodTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioAdventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adventure" />
+
+        <RadioButton
+            android:id="@+id/radioCultural"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cultural" />
+
+        <RadioButton
+            android:id="@+id/radioBeach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beach" />
+
+        <RadioButton
+            android:id="@+id/radioEntertainment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Entertainment" />
+
+    </RadioGroup>
+    <View
+        android:id="@+id/secdivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray"/>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secdivider"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Anything Else?"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/boxlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkboxGrilling"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/grill"
+            android:text="Grilling" />
+
+        <CheckBox
+            android:id="@+id/checkboxParking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/park"
+            android:text="Parking" />
+
+        <CheckBox
+            android:id="@+id/checkboxSwimming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/swimming"
+            android:text="Swimming" />
+
+        <CheckBox
+            android:id="@+id/checkboxCamping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/camping"
+            android:text="Camping" />
+
+        <CheckBox
+            android:id="@+id/checkboxSuitableForChildren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@drawable/suitable"
+            android:text="Suitable for Children" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/boxlayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Search"
+        android:backgroundTint="#41514F"
+        android:fontFamily="sans-serif-medium"/>
+
+</RelativeLayout>

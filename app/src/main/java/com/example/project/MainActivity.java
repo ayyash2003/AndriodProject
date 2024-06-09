@@ -29,6 +29,11 @@ public class  MainActivity extends AppCompatActivity {
         Button ahmad = findViewById(R.id.ahmadbtn);
         Button openLoginButton = findViewById(R.id.login_button);
         Button addCompanyButton = findViewById(R.id.addCompany_button);
+        Button searchbtn = findViewById(R.id.searchAhmad);
+        searchbtn.setOnClickListener(v ->{
+            Intent intent = new Intent(MainActivity.this, Search.class);
+            startActivity(intent);
+        });
         ahmad.setOnClickListener(v -> {
                     Intent intent = new Intent(MainActivity.this, AddTrip.class);
                     startActivity(intent);
