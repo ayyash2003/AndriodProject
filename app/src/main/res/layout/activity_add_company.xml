@@ -148,7 +148,39 @@
             android:inputType="textUri"
             style="@style/edtTextAddCompany"/>
     </LinearLayout>
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_vertical">
 
+        <TextView
+            android:id="@+id/picture_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Image"
+            android:textSize="16sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/ic_menu_crop"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/selectedImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="Selected Image"/>
     <Button
         android:id="@+id/addCompany_button"
         android:layout_width="wrap_content"

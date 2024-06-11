@@ -1,8 +1,6 @@
 R_DEF: Internal format may change without notice
 local
-color baby_pink
 color black
-color button_color
 color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
@@ -20,16 +18,26 @@ drawable beach3
 drawable beach4
 drawable beach_icon
 drawable bt_login
+<<<<<<< HEAD
+=======
+drawable bus
+drawable bus1
+drawable calendar
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 drawable camping
 drawable cultural
 drawable cultural_icon
 drawable entertainment_icon
 drawable entertinment
 drawable grill
+drawable home_page
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable map_icon
+drawable map_icon1
+drawable map_icon2
 drawable park
+drawable reserved
 drawable search
 drawable suitable
 drawable swimming
@@ -73,7 +81,7 @@ id edtPassword
 id email
 id email_label
 id email_layout
-id enddateFld
+id endDatePicker
 id enddatelbl
 id faceUrl
 id faceUrl_label
@@ -86,17 +94,30 @@ id guideline
 id guideline2
 id guideline3
 id image
+id imageButton3
 id imageView
 id imageView4
+<<<<<<< HEAD
+=======
+id image_layout
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
 id imgType
+id imgView
 id insertbtn
 id lHeader
 id lMainPage
 id layoutLocation
+id linearCheckBoxes
+id linearCheckBoxes2
+id linearDate
+id linearDescription
 id linearImage
+id linearLayoutDestination
+id linearLayoutHeader
+id linearPrice
 id listView
 id login_button
 id main
@@ -118,6 +139,7 @@ id phoneNum_layout
 id phoneNumber
 id phoneNumber_label
 id picelbl
+id picture_label
 id picturebtn
 id picturelbl
 id priceFld
@@ -135,27 +157,38 @@ id risklvl
 id scrollMainPage
 id searchAhmad
 id secdivider
+<<<<<<< HEAD
 id sign_button
 id startdateFld
+=======
+id selectedImageView
+id spnLogin
+id startDatePicker
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id startdatelbl
 id startpointFld
 id startpointlbl
 id submitButton
 id suitableBox
 id swimBox
-id test
 id textView
 id textView2
 id textView3
 id titleFld
 id titlelbl
 id toolbar
+id txtDate
+id txtDescription
+id txtDestination
 id txtLocationTypes
 id txtLogin
 id txtMsg
 id txtName
 id txtPassword
+id txtPrice
+id txtStartPoint
 id txtTripName
+id txtTripNameViewPage
 id txtType
 id typeSpin
 id typelbl
@@ -169,7 +202,11 @@ layout activity_main_page
 layout activity_search
 layout activity_sign_page
 layout activity_type
+<<<<<<< HEAD
 layout activity_visa_card_form
+=======
+layout activity_view
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 layout chip_layout
 layout recycle_view_main_page
 layout recycle_view_type_page
@@ -192,6 +229,7 @@ string login_failed
 string lorem_ipsum
 string next
 string previous
+string price
 string prompt_email
 string prompt_password
 string second_fragment_label
@@ -212,6 +250,10 @@ style Theme.Project.NoActionBar
 style Theme.Project.PopupOverlay
 style Title
 style adapterType
+<<<<<<< HEAD
+=======
+style checkBoxes
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 style chips
 style edtTextAddCompany
 style login

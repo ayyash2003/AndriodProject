@@ -11,7 +11,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#66bb6a"
+        android:background="#B3BDB3"
         android:padding="40dp"
         tools:context=".MainActivity">
 
@@ -195,7 +195,7 @@
             android:id="@+id/startdatelbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="84dp"
             android:text="ٍStart Date"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="18sp"
@@ -204,14 +204,15 @@
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/durationlbl" />
 
-        <EditText
-            android:id="@+id/startdateFld"
-            style="@style/AddTextFields"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="28dp"
-            android:inputType="date"
+        <DatePicker
+            android:id="@+id/startDatePicker"
+            android:layout_width="232dp"
+            android:layout_height="345dp"
+            android:layout_marginTop="12dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.566"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/startdatelbl"
             app:layout_constraintTop_toBottomOf="@+id/durationSpin" />
 
@@ -219,30 +220,32 @@
             android:id="@+id/enddatelbl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="352dp"
             android:text="End Date"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="18sp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintHorizontal_bias="0.007"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/startdatelbl" />
 
-        <EditText
-            android:id="@+id/enddateFld"
-            style="@style/AddTextFields"
-            android:layout_marginTop="28dp"
-            android:inputType="date"
+        <DatePicker
+            android:id="@+id/endDatePicker"
+            android:layout_width="232dp"
+            android:layout_height="345dp"
+            android:layout_marginTop="40dp"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.671"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/enddatelbl"
-            app:layout_constraintTop_toBottomOf="@+id/startdateFld" />
+            app:layout_constraintTop_toBottomOf="@+id/startDatePicker" />
 
         <TextView
             android:id="@+id/picelbl"
             android:layout_width="77dp"
             android:layout_height="31dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="296dp"
             android:layout_marginEnd="236dp"
             android:text="Price($)"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -255,12 +258,12 @@
         <EditText
             android:id="@+id/priceFld"
             style="@style/AddTextFields"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="8dp"
             android:inputType="number"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.741"
+            app:layout_constraintHorizontal_bias="0.758"
             app:layout_constraintStart_toEndOf="@+id/picelbl"
-            app:layout_constraintTop_toBottomOf="@+id/enddateFld" />
+            app:layout_constraintTop_toBottomOf="@+id/endDatePicker" />
 
         <TextView
             android:id="@+id/risklbl"
@@ -302,11 +305,11 @@
             android:id="@+id/descriptionFld"
             style="@style/AddTextFields"
             android:layout_marginStart="12dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="24dp"
             android:gravity="start|top"
             android:inputType="textMultiLine"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintHorizontal_bias="0.533"
             app:layout_constraintStart_toEndOf="@+id/descriptionlbl"
             app:layout_constraintTop_toBottomOf="@+id/riskBar" />
 
@@ -332,6 +335,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@drawable/grill"
                     android:text="Grilling" />
 
                 <CheckBox
@@ -339,6 +343,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@drawable/camping"
                     android:text="Camping" />
 
                 <CheckBox
@@ -346,6 +351,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@drawable/swimming"
                     android:text="Swimming" />
             </LinearLayout>
 
@@ -361,6 +367,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@drawable/suitable"
                     android:text="Suitable for children" />
 
                 <CheckBox
@@ -368,6 +375,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:button="@drawable/park"
                     android:text="Parking" />
             </LinearLayout>
         </LinearLayout>
@@ -376,9 +384,9 @@
             android:id="@+id/insertbtn"
             android:layout_width="79dp"
             android:layout_height="73dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="20dp"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/checkboxContainer"
             app:srcCompat="@android:drawable/ic_input_add" />
@@ -391,21 +399,10 @@
             android:text="Level: 0"
             app:layout_constraintBottom_toTopOf="@+id/riskBar"
             app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.986"
+            app:layout_constraintHorizontal_bias="0.923"
             app:layout_constraintStart_toStartOf="@+id/guideline2"
             app:layout_constraintTop_toBottomOf="@+id/priceFld"
             app:layout_constraintVertical_bias="1.0" />
-
-        <ImageView
-            android:id="@+id/test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="68dp"
-            app:layout_constraintEnd_toStartOf="@+id/guideline3"
-            app:layout_constraintHorizontal_bias="0.517"
-            app:layout_constraintStart_toStartOf="@+id/guideline2"
-            app:layout_constraintTop_toBottomOf="@+id/insertbtn"
-            tools:srcCompat="@tools:sample/avatars" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

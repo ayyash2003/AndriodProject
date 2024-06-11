@@ -43,10 +43,18 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="login">Login</string>
+<<<<<<< HEAD
 
     <string name="sign_in">Sign In</string>
     <string name="create_an_account">Create an account</string>
 
+=======
+    <string name="sign_in">Sign In</string>
+    <string name="create_an_account">Create an account</string>
+
+=======
+>>>>>>> c8ba5d927816f9cd29c1e8df2deab4bec7325e16
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     <string name="title_activity_search">Search</string>
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
@@ -149,4 +157,9 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="action_settings">Settings</string>
+<<<<<<< HEAD
+=======
+    <string name="price">Price:</string>
+
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 </resources>

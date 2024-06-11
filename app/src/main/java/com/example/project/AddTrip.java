@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -57,9 +58,9 @@ import java.util.List;
 import java.util.Map;
 
 public class AddTrip extends AppCompatActivity {
-    private EditText titlefield, destfield, startPointfield, startDatefield,
-            endDatefield, pricefield, descfield;
+    private EditText titlefield, destfield, startPointfield, pricefield, descfield;
     private TextView risklvl;
+    private DatePicker startDatefield, endDatefield;
 
     private Spinner typeSpnMenu, durSpnMenu;
     private ImageButton picturebtn, insertbtn;
@@ -143,8 +144,8 @@ public class AddTrip extends AppCompatActivity {
         titlefield = findViewById(R.id.titleFld);
         destfield = findViewById(R.id.destinationFld);
         startPointfield = findViewById(R.id.startpointFld);
-        startDatefield = findViewById(R.id.startdateFld);
-        endDatefield = findViewById(R.id.enddateFld);
+        startDatefield = findViewById(R.id.startDatePicker);
+        endDatefield = findViewById(R.id.endDatePicker);
         pricefield = findViewById(R.id.priceFld);
         descfield = findViewById(R.id.descriptionFld);
         typeSpnMenu = findViewById(R.id.typeSpin);
@@ -158,7 +159,6 @@ public class AddTrip extends AppCompatActivity {
         insertbtn = findViewById(R.id.insertbtn);
         riskbar = findViewById(R.id.riskBar);
         risklvl = findViewById(R.id.risklvl);
-        testimage = findViewById(R.id.test);
 
     }
 
@@ -207,8 +207,17 @@ public class AddTrip extends AppCompatActivity {
         String image = "image_placeholder"; // Replace this with actual image handling code
         String startingpoint = startPointfield.getText().toString().trim();
         String duration = durSpnMenu.getSelectedItem().toString();
-        String startdate = startDatefield.getText().toString().trim();
-        String enddate = endDatefield.getText().toString().trim();
+        int startYear = startDatefield.getYear();
+        int startMonth = startDatefield.getMonth() + 1; // Month is 0-based, so add 1
+        int startDay = startDatefield.getDayOfMonth();
+
+        int endYear = endDatefield.getYear();
+        int endMonth = endDatefield.getMonth() + 1; // Month is 0-based, so add 1
+        int endDay = endDatefield.getDayOfMonth();
+
+        // Format the dates as "yyyy-MM-dd"
+        String startdate = String.format("%04d-%02d-%02d", startYear, startMonth, startDay);
+        String enddate = String.format("%04d-%02d-%02d", endYear, endMonth, endDay);
         String price = pricefield.getText().toString().trim();
         String risk = (String) risklvl.getText();
         String description = descfield.getText().toString().trim();
@@ -217,7 +226,7 @@ public class AddTrip extends AppCompatActivity {
 
         Log.e("TAG", "boxes is: " + checkbox);
 
-        String url = "http://192.168.1.244/Android/insert_trip.php";
+        String url = "http://192.168.1.103/Android/insert_trip.php";
         RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override

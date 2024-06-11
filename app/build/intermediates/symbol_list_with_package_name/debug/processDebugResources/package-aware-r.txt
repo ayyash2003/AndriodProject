@@ -1402,7 +1402,6 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
-color baby_pink
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1414,7 +1413,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color button_color
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -3059,6 +3057,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bus
+drawable bus1
+drawable calendar
 drawable camping
 drawable cultural
 drawable cultural_icon
@@ -3070,6 +3071,7 @@ drawable design_snackbar_background
 drawable entertainment_icon
 drawable entertinment
 drawable grill
+drawable home_page
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3103,6 +3105,8 @@ drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable map_icon
+drawable map_icon1
+drawable map_icon2
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3165,6 +3169,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable park
+drawable reserved
 drawable search
 drawable suitable
 drawable swimming
@@ -3388,8 +3393,8 @@ id email_label
 id email_layout
 id embed
 id end
+id endDatePicker
 id endToStart
-id enddateFld
 id enddatelbl
 id enterAlways
 id enterAlwaysCollapsed
@@ -3446,12 +3451,18 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton3
 id imageView
 id imageView4
+<<<<<<< HEAD
+=======
+id image_layout
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
 id imgType
+id imgView
 id immediateStop
 id included
 id indeterminate
@@ -3474,7 +3485,14 @@ id legacy
 id line1
 id line3
 id linear
+id linearCheckBoxes
+id linearCheckBoxes2
+id linearDate
+id linearDescription
 id linearImage
+id linearLayoutDestination
+id linearLayoutHeader
+id linearPrice
 id listMode
 id listView
 id list_item
@@ -3611,6 +3629,7 @@ id phoneNum_layout
 id phoneNumber
 id phoneNumber_label
 id picelbl
+id picture_label
 id picturebtn
 id picturelbl
 id pin
@@ -3668,6 +3687,7 @@ id search_voice_btn
 id secdivider
 id select_dialog_listview
 id selected
+id selectedImageView
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3675,7 +3695,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id sign_button
 id sin
 id skipCollapsed
 id skipped
@@ -3691,6 +3710,7 @@ id spacer
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
+id spnLogin
 id spread
 id spread_inside
 id spring
@@ -3700,10 +3720,10 @@ id src_in
 id src_over
 id standard
 id start
+id startDatePicker
 id startHorizontal
 id startToEnd
 id startVertical
-id startdateFld
 id startdatelbl
 id startpointFld
 id startpointlbl
@@ -3731,7 +3751,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id test
 id text
 id text2
 id textEnd
@@ -3773,12 +3792,18 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtDate
+id txtDescription
+id txtDestination
 id txtLocationTypes
 id txtLogin
 id txtMsg
 id txtName
 id txtPassword
+id txtPrice
+id txtStartPoint
 id txtTripName
+id txtTripNameViewPage
 id txtType
 id typeSpin
 id typelbl
@@ -3930,7 +3955,11 @@ layout activity_main_page
 layout activity_search
 layout activity_sign_page
 layout activity_type
+<<<<<<< HEAD
 layout activity_visa_card_form
+=======
+layout activity_view
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 layout chip_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4195,6 +4224,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
+string price
 string prompt_email
 string prompt_password
 string search_menu_title
@@ -5348,6 +5378,10 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style adapterType
+<<<<<<< HEAD
+=======
+style checkBoxes
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 style chips
 style edtTextAddCompany
 style login

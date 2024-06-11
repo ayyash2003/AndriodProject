@@ -41,6 +41,7 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
+<<<<<<< HEAD
     implementation("androidx.recyclerview:recyclerview:1.2.1")
     implementation("com.google.android.material:material:1.4.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
@@ -48,10 +49,13 @@ dependencies {
     implementation("com.stripe:stripe-android:20.8.1")
     implementation("com.android.volley:volley:1.2.1")
 
+=======
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+    implementation ("com.google.android.material:material:1.4.0")
+    implementation ("androidx.appcompat:appcompat:1.6.1")
+    implementation(libs.volley)
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     implementation(libs.glide)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.viewmodel.ktx)
-    implementation(libs.annotation)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

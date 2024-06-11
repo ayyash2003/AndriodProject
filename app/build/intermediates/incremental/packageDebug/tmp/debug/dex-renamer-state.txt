@@ -1,9 +1,18 @@
+<<<<<<< HEAD
 #Tue Jun 11 17:01:01 EET 2024
 base.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.2=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
 base.3=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
 base.4=C\:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+=======
+#Tue Jun 11 19:21:54 EEST 2024
+base.0=C\:\\Users\\hp\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\hp\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=C\:\\Users\\hp\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\2\\classes.dex
+base.3=C\:\\Users\\hp\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\9\\classes.dex
+base.4=C\:\\Users\\hp\\AndroidStudioProjects\\AndriodProject\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=2/classes.dex

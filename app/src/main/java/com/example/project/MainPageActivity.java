@@ -3,6 +3,10 @@ package com.example.project;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -19,6 +23,9 @@ import java.util.List;
 public class MainPageActivity extends AppCompatActivity implements SelectMainPage {
     RecyclerView mainRecyclerView ;
     List<TripTypes> items ;
+    TextView txtLogin ;
+    Spinner spnLogin ;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -40,12 +47,60 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
         items.add(new TripTypes(R.drawable.entertinment,R.drawable.entertainment_icon,"Entertainment"));
 
-
+        intent();
 
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mainRecyclerView.setAdapter(new MainPageAdapter(getApplicationContext(),items,this) );
+//        spnLogin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                OnSpinnerClick(position);
+//            }
+//        });
+        spnLogin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                // Handle item selection
+                String selectedItem = parent.getItemAtPosition(position).toString();
+                Toast.makeText(MainPageActivity.this, "Selected: " + selectedItem, Toast.LENGTH_SHORT).show();
+                                OnSpinnerClick(position);
+
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+                // Do nothing
+            }
+        });
     }
+    private void intent(){
+        Intent intent =getIntent();
+        String name =intent.getStringExtra("name");
+        if(name!=null) {
+            List<String> typeItems = new ArrayList<>();
+            typeItems.add(name);
+            typeItems.add("Log out");
+
+            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                    android.R.layout.simple_spinner_item, typeItems);
+            spnLogin.setAdapter(adapter);
+            spnLogin.setSelection(0);
+            spnLogin.setVisibility(View.VISIBLE);
+            txtLogin.setVisibility(View.GONE);
+
+
+        }
+    }
+    public void OnSpinnerClick(int position){
+        if (position ==1){
+            spnLogin.setVisibility(View.GONE);
+            txtLogin.setVisibility(View.VISIBLE);
+        }
+    }
+
     private void set(){
+        txtLogin=findViewById(R.id.txtLogin);
+        spnLogin=findViewById(R.id.spnLogin);
         mainRecyclerView=findViewById(R.id.recyclerViewMainPage);
 
     }
@@ -59,9 +114,13 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
     }
 
     public void onLoginClick(View view){
-        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
         Intent intent =new Intent(MainPageActivity.this,LoginActivity.class);
         startActivity(intent);
     }
+    public void onSearchClick(View view ){
+        Intent intent =new Intent(this,Search.class);
+        startActivity(intent);
+    }
+
 
 }

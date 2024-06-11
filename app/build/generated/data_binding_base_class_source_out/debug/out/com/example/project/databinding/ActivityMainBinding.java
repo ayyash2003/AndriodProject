@@ -37,17 +37,24 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final Button searchAhmad;
+<<<<<<< HEAD
 
   @NonNull
   public final Button signButton;
+=======
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 
   @NonNull
   public final TextView textView;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button addCompanyButton,
       @NonNull Button ahmadbtn, @NonNull Button loginButton, @NonNull ConstraintLayout main,
+<<<<<<< HEAD
       @NonNull Button qaisbtn, @NonNull Button searchAhmad, @NonNull Button signButton,
       @NonNull TextView textView) {
+=======
+      @NonNull Button qaisbtn, @NonNull Button searchAhmad, @NonNull TextView textView) {
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     this.rootView = rootView;
     this.addCompanyButton = addCompanyButton;
     this.ahmadbtn = ahmadbtn;
@@ -55,7 +62,10 @@ public final class ActivityMainBinding implements ViewBinding {
     this.main = main;
     this.qaisbtn = qaisbtn;
     this.searchAhmad = searchAhmad;
+<<<<<<< HEAD
     this.signButton = signButton;
+=======
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     this.textView = textView;
   }
 
@@ -115,12 +125,15 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.searchAhmad;
       Button searchAhmad = ViewBindings.findChildViewById(rootView, id);
       if (searchAhmad == null) {
+<<<<<<< HEAD
         break missingId;
       }
 
       id = R.id.sign_button;
       Button signButton = ViewBindings.findChildViewById(rootView, id);
       if (signButton == null) {
+=======
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
         break missingId;
       }
 
@@ -131,7 +144,11 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, addCompanyButton, ahmadbtn,
+<<<<<<< HEAD
           loginButton, main, qaisbtn, searchAhmad, signButton, textView);
+=======
+          loginButton, main, qaisbtn, searchAhmad, textView);
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

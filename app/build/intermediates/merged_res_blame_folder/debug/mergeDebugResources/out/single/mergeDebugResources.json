@@ -1,7 +1,12 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_ic_launcher_background.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\ic_launcher_background.xml"
+=======
+        "merged": "com.example.project.app-debug-44:/xml_network_security_config.xml.flat",
+        "source": "com.example.project.app-main-46:/xml/network_security_config.xml"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_cultural.jpg.flat",
@@ -24,6 +29,7 @@
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\menu\\menu_search.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_sign_page.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_sign_page.xml"
     },
@@ -46,22 +52,44 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_add.png.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\add.png"
+=======
+        "merged": "com.example.project.app-debug-44:/drawable_camping.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/camping.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_reserved.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/reserved.png"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_search.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_search.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_login.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_login.xml"
+=======
+        "merged": "com.example.project.app-debug-44:/drawable_grill.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/grill.png"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach_icon.png.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach_icon.png"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_add_trip.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_add_trip.xml"
+=======
+        "merged": "com.example.project.app-debug-44:/drawable_home_page.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/home_page.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_map_icon1.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/map_icon1.png"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach3.jpg.flat",
@@ -80,6 +108,7 @@
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\xml\\network_security_config.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_adventrue_icon.jpeg.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\adventrue_icon.jpeg"
     },
@@ -102,12 +131,25 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_test.jpg.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\test.jpg"
+=======
+        "merged": "com.example.project.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_beach.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/beach.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_bus.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/bus.png"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_entertinment.jpg.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\entertinment.jpg"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\navigation_nav_graph.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\navigation\\nav_graph.xml"
     },
@@ -118,20 +160,38 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_grill.png.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\grill.png"
+=======
+        "merged": "com.example.project.app-debug-44:/drawable_adventure.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/adventure.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_suitable.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/suitable.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_bt_login.xml.flat",
+        "source": "com.example.project.app-main-46:/drawable/bt_login.xml"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_main.xml"
+=======
+        "merged": "com.example.project.app-debug-44:/menu_menu_search.xml.flat",
+        "source": "com.example.project.app-main-46:/menu/menu_search.xml"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\navigation_nav_graph2.xml.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\navigation\\nav_graph2.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach4.jpg.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach4.jpg"
     },
@@ -218,5 +278,145 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach2.jpg.flat",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach2.jpg"
+=======
+        "merged": "com.example.project.app-debug-44:/drawable_cultural_icon.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/cultural_icon.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/xml_backup_rules.xml.flat",
+        "source": "com.example.project.app-main-46:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_beach3.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/beach3.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_cultural.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/cultural.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_swimming.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/swimming.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_bus1.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/bus1.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_map_icon2.jpeg.flat",
+        "source": "com.example.project.app-main-46:/drawable/map_icon2.jpeg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/navigation_nav_graph2.xml.flat",
+        "source": "com.example.project.app-main-46:/navigation/nav_graph2.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_view.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_view.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_add.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/add.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_entertainment_icon.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/entertainment_icon.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.project.app-main-46:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.project.app-main-46:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_search.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_search.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_beach4.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/beach4.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_entertinment.jpg.flat",
+        "source": "com.example.project.app-main-46:/drawable/entertinment.jpg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "com.example.project.app-main-46:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_calendar.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/calendar.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_map_icon.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/map_icon.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "com.example.project.app-main-46:/mipmap-anydpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_chip_layout.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/chip_layout.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_sign_page.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_sign_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_adventrue_icon.jpeg.flat",
+        "source": "com.example.project.app-main-46:/drawable/adventrue_icon.jpeg"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_login_page.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_login_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_admin.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_login.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/drawable_park.png.flat",
+        "source": "com.example.project.app-main-46:/drawable/park.png"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/layout_activity_add_trip.xml.flat",
+        "source": "com.example.project.app-main-46:/layout/activity_add_trip.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/navigation_nav_graph.xml.flat",
+        "source": "com.example.project.app-main-46:/navigation/nav_graph.xml"
+    },
+    {
+        "merged": "com.example.project.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.project.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     }
 ]

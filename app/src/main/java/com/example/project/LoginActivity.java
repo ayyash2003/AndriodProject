@@ -26,17 +26,16 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class LoginActivity extends AppCompatActivity {
-    private EditText edtName ;
-    private EditText edtPassword ;
+    private EditText edtName;
+    private EditText edtPassword;
     private TextView txtMsg;
     SharedPreferences sharedpreferences;
 
-    public static final String MyPREFERENCES = "MyPrefs" ;
+    public static final String MyPREFERENCES = "MyPrefs";
     public static final String EMAIL = "EmailKey";
-    private String email ;
-    private String password ;
-    private String BASE_URL ;
-
+    private String email;
+    private String password;
+    private String BASE_URL;
 
 
     @Override
@@ -44,56 +43,58 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
-     //   sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        //   sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         set();
 //        String email = sharedpreferences.getString(EMAIL,"");
 //        edtName.setText(email);
 
     }
-    private void set(){
-        edtName=findViewById(R.id.edtName);
-        edtPassword=findViewById(R.id.edtPassword);
-        txtMsg=findViewById(R.id.txtMsg);
+
+    private void set() {
+        edtName = findViewById(R.id.edtName);
+        edtPassword = findViewById(R.id.edtPassword);
+        txtMsg = findViewById(R.id.txtMsg);
     }
-//    public void onClickCreateAccount(View view){
+
+    //    public void onClickCreateAccount(View view){
 //        Intent intent =new Intent(this,SignUpActivity.class);
 //        startActivity(intent);
 //    }
-private String url(String type,String email,String password){
-    return "http://192.168.1.244/Android/login.php?type="+type+"&email="+email+"&pass="+password ;
-}
-    public void onClickLogin(View view){
-        email =edtName.getText().toString();
-        password =edtPassword.getText().toString();
-        if(check()){
-            char user=user(email,password);
-            if(user=='u'){
+    private String url(String type, String email, String password) {
+        return "http://192.168.1.103/Android/check.php?type=" + type + "&email=" + email + "&pass=" + password;
+    }
+
+    public void onClickLogin(View view) {
+        email = edtName.getText().toString();
+        password = edtPassword.getText().toString();
+        if (check()) {
+            char user = user(email, password);
+            if (user == 'u') {
+                BASE_URL = url("u", email, password);
+                loadItems('u');
+
                 Toast.makeText(this, "User", Toast.LENGTH_SHORT).show();
-            }
-            else if(user=='a'){
-                if(email.equals("qmta@admin.com")&& password.equals("qmta****")){
-                    Intent intent =new Intent(this,addCompany.class);
+            } else if (user == 'a') {
+                if (email.equals("qmta@admin.com") && password.equals("qmta****")) {
+                    Intent intent = new Intent(this, addCompany.class);
                     startActivity(intent);
-                }
-                else {
-                    txtMsg.setText("Email or password are wrong");
+                } else {
+                    txtMsg.setText("تاكدلي من البريد والرقم السري بعد اذنك");
                 }
 
-            }
-            else if(user =='c'){
+            } else if (user == 'c') {
 
                 Toast.makeText(this, "Company", Toast.LENGTH_SHORT).show();
-                BASE_URL =url("c",email,password);
-                loadItems();
-            }
-            else
+                BASE_URL = url("c", email, password);
+                loadItems('c');
+
+            } else
                 Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
 
 
-        }
-        else {
-            txtMsg.setText("There an empty field ");
+        } else {
+            txtMsg.setText("بعينك الله عبي الفاضي ");
 
         }
 //        SharedPreferences.Editor editor = sharedpreferences.edit();
@@ -102,13 +103,13 @@ private String url(String type,String email,String password){
 //        editor.apply();
 
     }
-    private void loadItems(){
-        Toast.makeText(LoginActivity.this,BASE_URL,Toast.LENGTH_SHORT).show();
+
+    private void loadItems(char type) {
+        Toast.makeText(LoginActivity.this, BASE_URL, Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-
 
 
                         try {
@@ -128,15 +129,24 @@ private String url(String type,String email,String password){
 //                                Trips trips = new Trips(title,type,destination, image,startingpoint,duration,startdate,enddate,price,risk,description,checkbox);
 //                                items.add(trips);
 //                            }
-                            if (array.length()==0){
-                                txtMsg.setText("password or email are wrong");
-                            } else if (array.length()==1) {
-                                Toast.makeText(LoginActivity.this,"Done",Toast.LENGTH_SHORT).show();
+                            if (array.length() == 0) {
+                                txtMsg.setText("يا حبيبي فش عنا حساب بهاد البريد والرقم السري");
+
+                            } else if (array.length() == 1) {
+                                if (type == 'u') {
+                                    JSONObject object = array.getJSONObject(0);
+
+                                    Intent intent = new Intent(LoginActivity.this, MainPageActivity.class);
+                                    String name = object.getString("name");
+                                    intent.putExtra("name", name);
+                                    startActivity(intent);
+
+                                    Toast.makeText(LoginActivity.this, "Done", Toast.LENGTH_SHORT).show();
+                                }
                             }
-                        }catch (Exception e){
+                        } catch (Exception e) {
 
                         }
-
 
 
                     }
@@ -144,9 +154,9 @@ private String url(String type,String email,String password){
             @Override
             public void onErrorResponse(VolleyError error) {
 
-                Log.e("TAG",  ""+error);
+                Log.e("TAG", "" + error);
 
-                Toast.makeText(LoginActivity.this, error.toString(),Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, error.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
@@ -155,6 +165,8 @@ private String url(String type,String email,String password){
 
 
     }
+
+
 
     public boolean check(){
        if( !email.isEmpty()&&!password.isEmpty()){

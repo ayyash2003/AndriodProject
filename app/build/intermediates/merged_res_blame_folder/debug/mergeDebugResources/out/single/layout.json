@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-44:\\layout\\recycle_view_main_page.xml",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\recycle_view_main_page.xml"
     },
@@ -10,6 +11,46 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-44:\\layout\\activity_sign_page.xml",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_sign_page.xml"
+=======
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_login_page.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_login_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_admin.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_add_trip.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_add_trip.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_view.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_view.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_sign_page.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_sign_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_main.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_login.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/chip_layout.xml",
+        "source": "com.example.project.app-main-46:/layout/chip_layout.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/recycle_view_main_page.xml",
+        "source": "com.example.project.app-main-46:/layout/recycle_view_main_page.xml"
+    },
+    {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_search.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_search.xml"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     },
     {
         "merged": "com.example.project.app-mergeDebugResources-44:/layout/activity_visa_card_form.xml",
@@ -24,6 +65,7 @@
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_type.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-44:\\layout\\activity_login_page.xml",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_login_page.xml"
     },
@@ -54,5 +96,9 @@
     {
         "merged": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-mergeDebugResources-44:\\layout\\activity_admin.xml",
         "source": "C:\\Users\\dell\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_admin.xml"
+=======
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/recycle_view_type_page.xml",
+        "source": "com.example.project.app-main-46:/layout/recycle_view_type_page.xml"
+>>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
     }
 ]
