@@ -18,9 +18,7 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
-        <activity
-            android:name=".VisaCardForm"
-            android:exported="false" />
+
         <activity
             android:name=".Search"
             android:exported="false"
@@ -29,13 +27,13 @@
 
         <activity
             android:name=".addCompany"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SignInPage"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AddTrip"
-            android:exported="false"
+            android:exported="true"
             android:theme="@style/Theme.Project" />
         <activity
             android:name=".MainPageActivity"

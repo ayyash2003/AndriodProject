@@ -26,14 +26,10 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-<<<<<<< HEAD
         Button ahmadButton = findViewById(R.id.ahmadbtn);
-        Button openSignButton = findViewById(R.id.sign_button);
-=======
 
         Button ahmad = findViewById(R.id.ahmadbtn);
         Button openLoginButton = findViewById(R.id.login_button);
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
         Button addCompanyButton = findViewById(R.id.addCompany_button);
         Button searchButton = findViewById(R.id.searchAhmad);
         Button qaisButton = findViewById(R.id.qaisbtn);
@@ -54,13 +50,8 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-<<<<<<< HEAD
-        openSignButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, SignInPage.class);
-            startActivity(intent);
-        });
-=======
-            });
+
+
 
             openLoginButton.setOnClickListener(v -> {
                 Intent intent = new Intent(MainActivity.this, SignInPage.class);
@@ -73,11 +64,7 @@ public class MainActivity extends AppCompatActivity {
             });
 
         }
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 
-        addCompanyButton.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, addCompany.class);
-            startActivity(intent);
-        });
+
     }
-}
+

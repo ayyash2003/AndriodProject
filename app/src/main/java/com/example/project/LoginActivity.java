@@ -72,9 +72,10 @@ public class LoginActivity extends AppCompatActivity {
             char user = user(email, password);
             if (user == 'u') {
                 BASE_URL = url("u", email, password);
+
                 loadItems('u');
 
-                Toast.makeText(this, "User", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "FD", Toast.LENGTH_SHORT).show();
             } else if (user == 'a') {
                 if (email.equals("qmta@admin.com") && password.equals("qmta****")) {
                     Intent intent = new Intent(this, addCompany.class);
@@ -105,7 +106,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void loadItems(char type) {
-        Toast.makeText(LoginActivity.this, BASE_URL, Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
                 new Response.Listener<String>() {
                     @Override
@@ -113,8 +113,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         try {
+                            Toast.makeText(LoginActivity.this, "FD2", Toast.LENGTH_SHORT).show();
 
                             JSONArray array = new JSONArray(response);
+                            Toast.makeText(LoginActivity.this, "FD3", Toast.LENGTH_SHORT).show();
+
 //                            for (int i = 0; i<array.length(); i++){
 //
 //                                JSONObject object = array.getJSONObject(i);
@@ -131,8 +134,9 @@ public class LoginActivity extends AppCompatActivity {
 //                            }
                             if (array.length() == 0) {
                                 txtMsg.setText("يا حبيبي فش عنا حساب بهاد البريد والرقم السري");
-
+//Qais
                             } else if (array.length() == 1) {
+                                Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
                                 if (type == 'u') {
                                     JSONObject object = array.getJSONObject(0);
 
@@ -145,7 +149,7 @@ public class LoginActivity extends AppCompatActivity {
                                 }
                             }
                         } catch (Exception e) {
-
+                            Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
                         }
 
 
@@ -156,7 +160,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 Log.e("TAG", "" + error);
 
-                Toast.makeText(LoginActivity.this, error.toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(LoginActivity.this, "err"+error.toString(), Toast.LENGTH_LONG).show();
 
             }
         });
