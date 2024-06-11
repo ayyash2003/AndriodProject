@@ -146,18 +146,16 @@
     </string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="price">Price:</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
     <string name="second_fragment_label">Second Fragment</string>
-<<<<<<< HEAD
     <string name="sign_in">Sign In</string>
-=======
     <string name="tab_text_1">Tab 1</string>
     <string name="tab_text_2">Tab 2</string>
     <string name="title_activity_login">LoginActivity</string>
     <string name="title_activity_search">Search</string>
     <string name="welcome">"Welcome !"</string>
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
     <style name="AddLabels">
         <item name="android:layout_width">82dp</item>
         <item name="android:layout_height">34dp</item>
@@ -183,7 +181,12 @@
     </style>
     <style name="Theme.ChipGroup" parent="Base.Theme.ChipGroup"/>
     <style name="Theme.Project" parent="Base.Theme.Project"/>
-<<<<<<< HEAD
+    <style name="Theme.Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.Project.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
     <style name="Title">
         <item name="android:background">#2E4E4A</item>
         <item name="android:gravity">center</item>
@@ -193,13 +196,13 @@
         <item name="android:textAppearance">"@style/TextAppearance.AppCompat.Body2"</item>
         <item name="android:textStyle">italic</item>
         <item name="android:textSize">22sp</item>
-=======
-    <style name="Theme.Project.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
-    <style name="Theme.Project.NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
     </style>
-    <style name="Theme.Project.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+    <style name="checkBoxes">
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">120dp</item>
+
+    </style>
     <style name="chips">
         <item name="android:layout_width">96dp</item>
         <item name="android:layout_height">53dp</item>
@@ -207,7 +210,6 @@
         <item name="android:layout_marginEnd">8dp</item>
         <item name="android:textSize">13sp</item>
 
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
     </style>
     <style name="edtTextAddCompany">
         <item name="android:layout_marginLeft">10dp</item>

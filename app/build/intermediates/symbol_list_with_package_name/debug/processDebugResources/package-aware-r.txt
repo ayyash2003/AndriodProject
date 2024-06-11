@@ -3057,6 +3057,9 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable bus
+drawable bus1
+drawable calendar
 drawable camping
 drawable cultural
 drawable cultural_icon
@@ -3068,6 +3071,7 @@ drawable design_snackbar_background
 drawable entertainment_icon
 drawable entertinment
 drawable grill
+drawable home_page
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
 drawable ic_call_answer_low
@@ -3101,6 +3105,8 @@ drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
 drawable map_icon
+drawable map_icon1
+drawable map_icon2
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3163,6 +3169,7 @@ drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable park
+drawable reserved
 drawable search
 drawable suitable
 drawable swimming
@@ -3276,12 +3283,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-<<<<<<< HEAD
+id boxlayout
 id btLogin
 id btNew
-=======
-id boxlayout
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3453,6 +3457,7 @@ id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
 id imgType
+id imgView
 id immediateStop
 id included
 id indeterminate
@@ -3475,7 +3480,14 @@ id legacy
 id line1
 id line3
 id linear
+id linearCheckBoxes
+id linearCheckBoxes2
+id linearDate
+id linearDescription
 id linearImage
+id linearLayoutDestination
+id linearLayoutHeader
+id linearPrice
 id listMode
 id listView
 id list_item
@@ -3692,6 +3704,7 @@ id spacer
 id special_effects_controller_view_tag
 id spline
 id split_action_bar
+id spnLogin
 id spread
 id spread_inside
 id spring
@@ -3741,11 +3754,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-<<<<<<< HEAD
 id textView2
-=======
 id textView3
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3777,12 +3787,18 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtDate
+id txtDescription
+id txtDestination
 id txtLocationTypes
 id txtLogin
 id txtMsg
 id txtName
 id txtPassword
+id txtPrice
+id txtStartPoint
 id txtTripName
+id txtTripNameViewPage
 id txtType
 id typeSpin
 id typelbl
@@ -3926,16 +3942,14 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
-<<<<<<< HEAD
-layout activity_login
-=======
 layout activity_admin
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
+layout activity_login
 layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
 layout activity_type
+layout activity_view
 layout chip_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4200,6 +4214,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string previous
+string price
 string prompt_email
 string prompt_password
 string search_menu_title
@@ -5352,11 +5367,9 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
-<<<<<<< HEAD
 style adapterType
-=======
+style checkBoxes
 style chips
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style edtTextAddCompany
 style login
 style sign_in

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="25dp"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:id="@+id/linearLayoutHeader">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgView"
+
+            />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="340dp"
+            android:translationY="40dp"
+            android:src="@drawable/home_page"
+            android:onClick="onHomePageClick"
+
+            />
+
+    </FrameLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTripNameViewPage"
+        android:layout_below="@+id/linearLayoutHeader"
+        android:text="Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTripNameViewPage"
+        android:layout_marginTop="15dp"
+        android:id="@+id/linearLayoutDestination"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/map_icon1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDestination"
+            android:text="Nablus"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/bus1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtStartPoint"
+            android:text="Nablus"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/linearDate"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearLayoutDestination"
+        android:layout_marginTop="20dp"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/calendar"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtDate"
+            android:text="Date"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="20sp"
+            />
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearCheckBoxes"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@id/linearDate"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkboxGrilling"
+                android:button="@drawable/grill"
+                style="@style/checkBoxes"
+
+                android:text="Grilling" />
+
+            <CheckBox
+                android:id="@+id/checkboxParking"
+
+                android:button="@drawable/park"
+                android:text="Parking"
+                style="@style/checkBoxes"
+
+                />
+
+            <CheckBox
+                android:id="@+id/checkboxSwimming"
+                android:button="@drawable/swimming"
+                style="@style/checkBoxes"
+
+
+                android:text="Swimming" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/linearCheckBoxes2"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:layout_below="@+id/linearCheckBoxes"
+            >
+            <CheckBox
+                android:id="@+id/checkboxCamping"
+
+                android:button="@drawable/camping"
+                style="@style/checkBoxes"
+                android:layout_marginTop="10dp"
+                android:text="Camping" />
+
+            <CheckBox
+                android:id="@+id/checkboxSuitableForChildren"
+                android:button="@drawable/suitable"
+                style="@style/checkBoxes"
+                android:layout_marginBottom="10dp"
+                android:text="Suitable for Children" />
+        </LinearLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/linearDescription"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearCheckBoxes2"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDescription"
+        />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/linearPrice"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linearDescription"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="22sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="22"
+            android:id="@+id/txtPrice"
+            android:textSize="22sp"
+            />
+
+    </LinearLayout>
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="Reserve"
+            android:onClick="onReservedClick"
+            android:layout_below="@+id/linearPrice"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="150dp"
+            android:src="@drawable/reserved"
+            />
+    </RelativeLayout>
+
+</ScrollView>

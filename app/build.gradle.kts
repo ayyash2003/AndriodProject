@@ -47,9 +47,6 @@ dependencies {
     implementation ("androidx.appcompat:appcompat:1.6.1")
     implementation(libs.volley)
     implementation(libs.glide)
-    implementation(libs.lifecycle.livedata.ktx)
-    implementation(libs.lifecycle.viewmodel.ktx)
-    implementation(libs.annotation)
 
 
     testImplementation(libs.junit)

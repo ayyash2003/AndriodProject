@@ -39,10 +39,6 @@
             android:label="@string/title_activity_search"
             android:theme="@style/Theme.Project.NoActionBar" />
         <activity
-            android:name="com.example.project.ui.login.LoginActivity"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
-        <activity
             android:name="com.example.project.addCompany"
             android:exported="false" />
         <activity
@@ -60,6 +56,9 @@
             android:exported="true" />
         <activity
             android:name="com.example.project.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.project.ViewActivity"
             android:exported="true" />
         <activity
             android:name="com.example.project.MainActivity"

@@ -1,6 +1,7 @@
 package com.example.project;
 
 public class Trips {
+    private int id ;
     private String title ;
     private String type ;
     private String destination ;
@@ -15,8 +16,9 @@ public class Trips {
     private String description ;
     private String checkbox ;
 
-    public Trips(String title, String type, String destination, String image, String startingpoint,String duration,String startdate,String enddate
+    public Trips(int id ,String title, String type, String destination, String image, String startingpoint,String duration,String startdate,String enddate
 , double price, String risk, String description, String checkbox) {
+        this.id=id ;
         this.title = title;
         this.type = type;
         this.destination = destination;
@@ -29,6 +31,14 @@ public class Trips {
         this.risk = risk;
         this.description = description;
         this.checkbox = checkbox;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTitle() {

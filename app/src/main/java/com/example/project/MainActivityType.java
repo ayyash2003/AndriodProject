@@ -30,7 +30,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivityType extends AppCompatActivity {
+public class MainActivityType extends AppCompatActivity implements SelectType{
 
     private List<Trips> items = new ArrayList<>();
 
@@ -79,7 +79,7 @@ public class MainActivityType extends AppCompatActivity {
                             for (int i = 0; i<array.length(); i++){
 
                                 JSONObject object = array.getJSONObject(i);
-
+                                int id =object.getInt("id");
                                 String title = object.getString("title");
                                 String type = object.getString("type");
                                 String destination = object.getString("destination");
@@ -95,7 +95,7 @@ public class MainActivityType extends AppCompatActivity {
 
 
 
-                                Trips trips = new Trips(title,type,destination, image,startingpoint,duration,startdate,enddate,price,risk,description,checkbox);
+                                Trips trips = new Trips(id,title,type,destination, image,startingpoint,duration,startdate,enddate,price,risk,description,checkbox);
                                 items.add(trips);
                             }
 
@@ -103,7 +103,7 @@ public class MainActivityType extends AppCompatActivity {
 
                         }
 
-                        TypeAdapter adapter = new TypeAdapter(getApplicationContext(), items);
+                        TypeAdapter adapter = new TypeAdapter(getApplicationContext(), items,MainActivityType.this);
                         recyclerViewType.setAdapter(adapter);
 
                     }
@@ -122,11 +122,14 @@ public class MainActivityType extends AppCompatActivity {
 
     }
 
+    @Override
+    public void onTypeClick(Trips item) {
+        Toast.makeText(this,item.getId()+"",Toast.LENGTH_SHORT).show();
+        Intent intent =new Intent(this,ViewActivity.class);
+        intent.putExtra("id",item.getId());
+        startActivity(intent);
+    }
 
 
 
-//    @Override
-//    public void onTypeClick(Trips item) {
-//
-//    }
 }
