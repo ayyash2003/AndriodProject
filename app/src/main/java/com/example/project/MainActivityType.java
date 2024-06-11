@@ -61,7 +61,7 @@ public class MainActivityType extends AppCompatActivity implements SelectType{
         recyclerViewType=findViewById(R.id.recyclerViewType);
     }
     private String url(String type){
-        return "http://192.168.1.244/Android/type.php?type="+type ;
+        return "http://192.168.1.103/Android/type.php?type="+type ;
     }
 
     private void loadItems(){

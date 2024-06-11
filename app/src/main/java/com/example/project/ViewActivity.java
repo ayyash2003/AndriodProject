@@ -55,7 +55,7 @@ public class ViewActivity extends AppCompatActivity {
 
     }
     private String url(String id){
-        return "http://192.168.1.244/Android/view.php?id="+id ;
+        return "http://192.168.1.103/Android/view.php?id="+id ;
     }
     private void set(){
         imgView=(ImageView) findViewById(R.id.imgView);

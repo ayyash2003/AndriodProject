@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -53,7 +54,7 @@ public final class ActivityAddTripBinding implements ViewBinding {
   public final TextView durationlbl;
 
   @NonNull
-  public final EditText enddateFld;
+  public final DatePicker endDatePicker;
 
   @NonNull
   public final TextView enddatelbl;
@@ -104,7 +105,7 @@ public final class ActivityAddTripBinding implements ViewBinding {
   public final TextView risklvl;
 
   @NonNull
-  public final EditText startdateFld;
+  public final DatePicker startDatePicker;
 
   @NonNull
   public final TextView startdatelbl;
@@ -122,9 +123,6 @@ public final class ActivityAddTripBinding implements ViewBinding {
   public final CheckBox swimBox;
 
   @NonNull
-  public final ImageView test;
-
-  @NonNull
   public final EditText titleFld;
 
   @NonNull
@@ -140,15 +138,15 @@ public final class ActivityAddTripBinding implements ViewBinding {
       @NonNull LinearLayout checkboxContainer, @NonNull EditText descriptionFld,
       @NonNull TextView descriptionlbl, @NonNull EditText destinationFld,
       @NonNull TextView destinationlbl, @NonNull Spinner durationSpin,
-      @NonNull TextView durationlbl, @NonNull EditText enddateFld, @NonNull TextView enddatelbl,
-      @NonNull CheckBox grillingBox, @NonNull Guideline guideline, @NonNull Guideline guideline2,
-      @NonNull Guideline guideline3, @NonNull ImageView imageView, @NonNull ImageButton insertbtn,
-      @NonNull ConstraintLayout main, @NonNull CheckBox parkingBox, @NonNull TextView picelbl,
-      @NonNull ImageButton picturebtn, @NonNull TextView picturelbl, @NonNull EditText priceFld,
-      @NonNull SeekBar riskBar, @NonNull TextView risklbl, @NonNull TextView risklvl,
-      @NonNull EditText startdateFld, @NonNull TextView startdatelbl,
-      @NonNull EditText startpointFld, @NonNull TextView startpointlbl,
-      @NonNull CheckBox suitableBox, @NonNull CheckBox swimBox, @NonNull ImageView test,
+      @NonNull TextView durationlbl, @NonNull DatePicker endDatePicker,
+      @NonNull TextView enddatelbl, @NonNull CheckBox grillingBox, @NonNull Guideline guideline,
+      @NonNull Guideline guideline2, @NonNull Guideline guideline3, @NonNull ImageView imageView,
+      @NonNull ImageButton insertbtn, @NonNull ConstraintLayout main, @NonNull CheckBox parkingBox,
+      @NonNull TextView picelbl, @NonNull ImageButton picturebtn, @NonNull TextView picturelbl,
+      @NonNull EditText priceFld, @NonNull SeekBar riskBar, @NonNull TextView risklbl,
+      @NonNull TextView risklvl, @NonNull DatePicker startDatePicker,
+      @NonNull TextView startdatelbl, @NonNull EditText startpointFld,
+      @NonNull TextView startpointlbl, @NonNull CheckBox suitableBox, @NonNull CheckBox swimBox,
       @NonNull EditText titleFld, @NonNull TextView titlelbl, @NonNull Spinner typeSpin,
       @NonNull TextView typelbl) {
     this.rootView = rootView;
@@ -160,7 +158,7 @@ public final class ActivityAddTripBinding implements ViewBinding {
     this.destinationlbl = destinationlbl;
     this.durationSpin = durationSpin;
     this.durationlbl = durationlbl;
-    this.enddateFld = enddateFld;
+    this.endDatePicker = endDatePicker;
     this.enddatelbl = enddatelbl;
     this.grillingBox = grillingBox;
     this.guideline = guideline;
@@ -177,13 +175,12 @@ public final class ActivityAddTripBinding implements ViewBinding {
     this.riskBar = riskBar;
     this.risklbl = risklbl;
     this.risklvl = risklvl;
-    this.startdateFld = startdateFld;
+    this.startDatePicker = startDatePicker;
     this.startdatelbl = startdatelbl;
     this.startpointFld = startpointFld;
     this.startpointlbl = startpointlbl;
     this.suitableBox = suitableBox;
     this.swimBox = swimBox;
-    this.test = test;
     this.titleFld = titleFld;
     this.titlelbl = titlelbl;
     this.typeSpin = typeSpin;
@@ -265,9 +262,9 @@ public final class ActivityAddTripBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.enddateFld;
-      EditText enddateFld = ViewBindings.findChildViewById(rootView, id);
-      if (enddateFld == null) {
+      id = R.id.endDatePicker;
+      DatePicker endDatePicker = ViewBindings.findChildViewById(rootView, id);
+      if (endDatePicker == null) {
         break missingId;
       }
 
@@ -367,9 +364,9 @@ public final class ActivityAddTripBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.startdateFld;
-      EditText startdateFld = ViewBindings.findChildViewById(rootView, id);
-      if (startdateFld == null) {
+      id = R.id.startDatePicker;
+      DatePicker startDatePicker = ViewBindings.findChildViewById(rootView, id);
+      if (startDatePicker == null) {
         break missingId;
       }
 
@@ -403,12 +400,6 @@ public final class ActivityAddTripBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.test;
-      ImageView test = ViewBindings.findChildViewById(rootView, id);
-      if (test == null) {
-        break missingId;
-      }
-
       id = R.id.titleFld;
       EditText titleFld = ViewBindings.findChildViewById(rootView, id);
       if (titleFld == null) {
@@ -435,10 +426,10 @@ public final class ActivityAddTripBinding implements ViewBinding {
 
       return new ActivityAddTripBinding((ScrollView) rootView, campingBox, checkboxContainer,
           descriptionFld, descriptionlbl, destinationFld, destinationlbl, durationSpin, durationlbl,
-          enddateFld, enddatelbl, grillingBox, guideline, guideline2, guideline3, imageView,
+          endDatePicker, enddatelbl, grillingBox, guideline, guideline2, guideline3, imageView,
           insertbtn, main, parkingBox, picelbl, picturebtn, picturelbl, priceFld, riskBar, risklbl,
-          risklvl, startdateFld, startdatelbl, startpointFld, startpointlbl, suitableBox, swimBox,
-          test, titleFld, titlelbl, typeSpin, typelbl);
+          risklvl, startDatePicker, startdatelbl, startpointFld, startpointlbl, suitableBox,
+          swimBox, titleFld, titlelbl, typeSpin, typelbl);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

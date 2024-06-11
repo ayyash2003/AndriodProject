@@ -3313,6 +3313,7 @@ id chipGroup
 id chronometer
 id circle_center
 id city_label
+id city_layout
 id city_spinner
 id clear_text
 id clip_horizontal
@@ -3325,6 +3326,7 @@ id confirmPass_layout
 id confirm_button
 id confirm_password
 id confirm_password_label
+id confirm_password_layout
 id constraint
 id container
 id content
@@ -3391,8 +3393,8 @@ id email_label
 id email_layout
 id embed
 id end
+id endDatePicker
 id endToStart
-id enddateFld
 id enddatelbl
 id enterAlways
 id enterAlwaysCollapsed
@@ -3614,6 +3616,7 @@ id parkingBox
 id pass_layout
 id password
 id password_label
+id password_layout
 id password_toggle
 id path
 id pathRelative
@@ -3714,10 +3717,10 @@ id src_in
 id src_over
 id standard
 id start
+id startDatePicker
 id startHorizontal
 id startToEnd
 id startVertical
-id startdateFld
 id startdatelbl
 id startpointFld
 id startpointlbl
@@ -3745,7 +3748,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id test
 id text
 id text2
 id textEnd
@@ -3948,6 +3950,7 @@ layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
+layout activity_sign_page
 layout activity_type
 layout activity_view
 layout chip_layout

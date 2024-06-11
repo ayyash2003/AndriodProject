@@ -59,10 +59,12 @@ id checkboxSwimming
 id chip
 id chipGroup
 id city_label
+id city_layout
 id city_spinner
 id confirmPass_layout
 id confirm_password
 id confirm_password_label
+id confirm_password_layout
 id create_account_button
 id descriptionFld
 id descriptionlbl
@@ -76,7 +78,7 @@ id edtPassword
 id email
 id email_label
 id email_layout
-id enddateFld
+id endDatePicker
 id enddatelbl
 id faceUrl
 id faceUrl_label
@@ -126,6 +128,7 @@ id parkingBox
 id pass_layout
 id password
 id password_label
+id password_layout
 id phoneNum_layout
 id phoneNumber
 id phoneNumber_label
@@ -150,14 +153,13 @@ id searchAhmad
 id secdivider
 id selectedImageView
 id spnLogin
-id startdateFld
+id startDatePicker
 id startdatelbl
 id startpointFld
 id startpointlbl
 id submitButton
 id suitableBox
 id swimBox
-id test
 id textView
 id textView2
 id textView3
@@ -187,6 +189,7 @@ layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
+layout activity_sign_page
 layout activity_type
 layout activity_view
 layout chip_layout

@@ -62,7 +62,7 @@ public class LoginActivity extends AppCompatActivity {
 //        startActivity(intent);
 //    }
     private String url(String type, String email, String password) {
-        return "http://192.168.1.244/Android/check.php?type=" + type + "&email=" + email + "&pass=" + password;
+        return "http://192.168.1.103/Android/check.php?type=" + type + "&email=" + email + "&pass=" + password;
     }
 
     public void onClickLogin(View view) {
