@@ -1,419 +1,222 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "com.example.project.app-debug-44:/xml_network_security_config.xml.flat",
-        "source": "com.example.project.app-main-46:/xml/network_security_config.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_bt_login.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\bt_login.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_activity_main.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_main.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_suitable.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\suitable.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_swimming.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\swimming.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.project.app-main-46:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_beach_icon.png.flat",
-        "source": "com.example.project.app-main-46:/drawable/beach_icon.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_beach.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach.jpg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_add.png.flat",
-        "source": "com.example.project.app-main-46:/drawable/add.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-anydpi\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.project.app-main-46:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\navigation_nav_graph2.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\navigation\\nav_graph2.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_entertainment_icon.png.flat",
-        "source": "com.example.project.app-main-46:/drawable/entertainment_icon.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_test.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\test.jpg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.example.project.app-main-46:/drawable/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_chip_layout.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\chip_layout.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_beach4.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/beach4.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_map_icon.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\map_icon.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_beach3.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach3.jpg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_recycle_view_main_page.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/recycle_view_main_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_entertainment_icon.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\entertainment_icon.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_entertinment.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/entertinment.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_adventrue_icon.jpeg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\adventrue_icon.jpeg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_main_page.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_main_page.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.example.project.app-main-46:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_park.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\park.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_beach2.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/beach2.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_recycle_view_type_page.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/recycle_view_type_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-anydpi\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_activity_type.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_type.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_search.png.flat",
-        "source": "com.example.project.app-main-46:/drawable/search.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_map_icon.png.flat",
-        "source": "com.example.project.app-main-46:/drawable/map_icon.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_beach2.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach2.jpg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\menu_menu_search.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\menu\\menu_search.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\navigation_nav_graph.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\navigation\\nav_graph.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_beach.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/beach.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_add_trip.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_add_trip.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_activity_main_page.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_main_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.example.project.app-main-46:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_grill.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\grill.png"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_adventure.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/adventure.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_recycle_view_type_page.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\recycle_view_type_page.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_activity_sign_page.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_sign_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_test.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/test.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_search.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_search.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_adventrue_icon.jpeg.flat",
-        "source": "com.example.project.app-main-46:/drawable/adventrue_icon.jpeg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_recycle_view_main_page.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\recycle_view_main_page.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/layout_activity_add_company.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_add_company.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_cultural_icon.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/cultural_icon.jpg"
-=======
-<<<<<<< HEAD
-        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_login.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login.xml"
-=======
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_grilling.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\grilling.jpg"
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_recycle_view_type_page.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\recycle_view_type_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_adventure.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\adventure.jpg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_recycle_view_main_page.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\recycle_view_main_page.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_search.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\search.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach4.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach4.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_type.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_type.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_suitable.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\suitable.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_cultural.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\cultural.jpg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\navigation_nav_graph2.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\navigation\\nav_graph2.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\xml_network_security_config.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\xml\\network_security_config.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_entertinment.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\entertinment.jpg"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_map_icon.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\map_icon.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\xml_network_security_config.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\xml\\network_security_config.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_camping.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\camping.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_add.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\add.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_beach_icon.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach_icon.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_swimming.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\swimming.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_admin.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_admin.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_adventure.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\adventure.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_add.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\add.png"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_park.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\park.png"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_login_page.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_login_page.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_cultural.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\cultural.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_add_company.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_add_company.xml"
     },
     {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-anydpi\\ic_launcher.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_main_page.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_main_page.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_type.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_type.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_admin.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_admin.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_chip_layout.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\chip_layout.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-mdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_login_page.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_login_page.xml"
-    },
-    {
-        "merged": "com.example.project.app-debug-45:/drawable_camping.png.flat",
-        "source": "com.example.project.app-main-47:/drawable/camping.png"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_search.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-hdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_cultural_icon.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\cultural_icon.jpg"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-mdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_parking.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\parking.jpg"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_bt_login.xml.flat",
-        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\bt_login.xml"
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
-    },
-    {
-        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_adventure.jpg.flat",
-        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\adventure.jpg"
-=======
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_grill.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\grill.png"
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
-    },
-    {
-<<<<<<< HEAD
-        "merged": "com.example.project.app-debug-44:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.project.app-debug-44:/xml_backup_rules.xml.flat",
-        "source": "com.example.project.app-main-46:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_cultural_icon.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\cultural_icon.jpg"
     },
     {
         "merged": "com.example.project.app-debug-44:/layout_activity_add_trip.xml.flat",
         "source": "com.example.project.app-main-46:/layout/activity_add_trip.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/navigation_nav_graph.xml.flat",
-        "source": "com.example.project.app-main-46:/navigation/nav_graph.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_beach4.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\beach4.jpg"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_beach3.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/beach3.jpg"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.example.project.app-debug-44:/drawable_cultural.jpg.flat",
-        "source": "com.example.project.app-main-46:/drawable/cultural.jpg"
-    },
-    {
-        "merged": "com.example.project.app-debug-44:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.project.app-main-46:/mipmap-xxxhdpi/ic_launcher.webp"
-=======
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_add_trip.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_add_trip.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_adventrue_icon.jpeg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\adventrue_icon.jpeg"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_entertainment_icon.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\entertainment_icon.png"
-    },
-    {
-        "merged": "com.example.project.app-debug-45:/drawable_suitable.png.flat",
-        "source": "com.example.project.app-main-47:/drawable/suitable.png"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach2.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach2.jpg"
-    },
-    {
-<<<<<<< HEAD
-        "merged": "com.example.project.app-debug-44:/layout_activity_login.xml.flat",
-        "source": "com.example.project.app-main-46:/layout/activity_login.xml"
-    },
-    {
-        "merged": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\drawable_search.png.flat",
-        "source": "C:\\Users\\hp\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\drawable\\search.png"
-=======
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_search.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\search.png"
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach_icon.png.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach_icon.png"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_entertinment.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\entertinment.jpg"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\navigation_nav_graph.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\navigation\\nav_graph.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\menu_menu_search.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\menu\\menu_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_camping.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\camping.jpg"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach3.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach3.jpg"
-    },
-    {
-        "merged": "com.example.project.app-debug-45:/layout_activity_search.xml.flat",
-        "source": "com.example.project.app-main-47:/layout/activity_search.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_test.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\test.jpg"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.project.app-debug-45:/drawable_swimming.png.flat",
-        "source": "com.example.project.app-main-47:/drawable/swimming.png"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xhdpi\\ic_launcher_round.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-hdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-xxhdpi\\ic_launcher.webp"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\layout_activity_add_company.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\layout\\activity_add_company.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\mipmap-anydpi\\ic_launcher_round.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\xml\\backup_rules.xml"
-    },
-    {
-        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-45:\\drawable_beach.jpg.flat",
-        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-47:\\drawable\\beach.jpg"
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-debug-44:\\layout_activity_sign_page.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\8.4\\com.example.project.app-main-46:\\layout\\activity_sign_page.xml"
     }
 ]

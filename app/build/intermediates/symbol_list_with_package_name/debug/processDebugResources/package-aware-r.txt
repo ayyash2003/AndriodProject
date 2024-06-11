@@ -1402,7 +1402,6 @@ color accent_material_dark
 color accent_material_light
 color androidx_core_ripple_material_light
 color androidx_core_secondary_text_default_material_light
-color baby_pink
 color background_floating_material_dark
 color background_floating_material_light
 color background_material_dark
@@ -1414,7 +1413,6 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
-color button_color
 color button_material_dark
 color button_material_light
 color call_notification_answer_color
@@ -3278,12 +3276,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-<<<<<<< HEAD
+id boxlayout
 id btLogin
 id btNew
-=======
-id boxlayout
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3391,8 +3386,8 @@ id email_label
 id email_layout
 id embed
 id end
+id endDatePicker
 id endToStart
-id enddateFld
 id enddatelbl
 id enterAlways
 id enterAlwaysCollapsed
@@ -3449,12 +3444,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageButton3
 id imageView
-<<<<<<< HEAD
-=======
 id imageView4
 id image_layout
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
@@ -3486,6 +3479,7 @@ id listMode
 id listView
 id list_item
 id locale
+id login_button
 id ltr
 id m3_side_sheet
 id main
@@ -3617,6 +3611,7 @@ id phoneNum_layout
 id phoneNumber
 id phoneNumber_label
 id picelbl
+id picture_label
 id picturebtn
 id picturelbl
 id pin
@@ -3674,6 +3669,7 @@ id search_voice_btn
 id secdivider
 id select_dialog_listview
 id selected
+id selectedImageView
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3681,7 +3677,6 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id sign_button
 id sin
 id skipCollapsed
 id skipped
@@ -3706,10 +3701,10 @@ id src_in
 id src_over
 id standard
 id start
+id startDatePicker
 id startHorizontal
 id startToEnd
 id startVertical
-id startdateFld
 id startdatelbl
 id startpointFld
 id startpointlbl
@@ -3737,7 +3732,6 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
-id test
 id text
 id text2
 id textEnd
@@ -3746,11 +3740,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-<<<<<<< HEAD
 id textView2
-=======
 id textView3
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3931,21 +3922,13 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
-<<<<<<< HEAD
-layout activity_login
-=======
 layout activity_admin
-<<<<<<< HEAD
-layout activity_main
-layout activity_main_page
-layout activity_sign_page
-=======
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
+layout activity_login
 layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+layout activity_sign_page
 layout activity_type
 layout chip_layout
 layout custom_dialog
@@ -5363,11 +5346,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
-<<<<<<< HEAD
 style adapterType
-=======
 style chips
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style edtTextAddCompany
 style login
 style sign_in

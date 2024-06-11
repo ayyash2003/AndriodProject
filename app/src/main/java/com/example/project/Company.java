@@ -6,18 +6,17 @@ public class Company {
     private String email;
     private String password;
     private String confirmPassword;
-
     private String image;
     private String phone;
     private String facebookLink;
 
     // Constructor
-    public Company(String name, String email, String password, String confirmPassword,String image, String phone, String facebookLink) {
+    public Company(String name, String email, String password, String confirmPassword, String image, String phone, String facebookLink) {
         this.name = name;
         this.email = email;
         this.password = password;
         this.confirmPassword = confirmPassword;
-        this.image=image;
+        this.image = image;
         this.phone = phone;
         this.facebookLink = facebookLink;
     }
@@ -58,13 +57,15 @@ public class Company {
     public void setConfirmPassword(String confirmPassword) {
         this.confirmPassword = confirmPassword;
     }
-    public String getImage() {
+
+    public  String getImage() {
         return image;
     }
 
     public void setImage(String image) {
         this.image = image;
     }
+
     public String getPhone() {
         return phone;
     }
@@ -88,7 +89,7 @@ public class Company {
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", confirmPassword='" + confirmPassword + '\'' +
-                ", image='" + phone + '\'' +
+                ", image='" + image + '\'' +
                 ", phone='" + phone + '\'' +
                 ", facebookLink='" + facebookLink + '\'' +
                 '}';

@@ -27,7 +27,7 @@ public class  MainActivity extends AppCompatActivity {
 
 
         Button ahmad = findViewById(R.id.ahmadbtn);
-        Button openSignButton = findViewById(R.id.sign_button);
+        Button openLoginButton = findViewById(R.id.login_button);
         Button addCompanyButton = findViewById(R.id.addCompany_button);
         Button searchbtn = findViewById(R.id.searchAhmad);
         searchbtn.setOnClickListener(v ->{
@@ -59,11 +59,7 @@ public class  MainActivity extends AppCompatActivity {
 
             });
 
-<<<<<<< HEAD
-            openSignButton.setOnClickListener(v -> {
-=======
             openLoginButton.setOnClickListener(v -> {
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
                 Intent intent = new Intent(MainActivity.this, SignInPage.class);
                 startActivity(intent);
             });
