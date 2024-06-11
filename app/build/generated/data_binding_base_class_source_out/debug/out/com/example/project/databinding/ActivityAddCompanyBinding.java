@@ -6,8 +6,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -54,12 +52,6 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
   public final LinearLayout faceUrlLayout;
 
   @NonNull
-  public final ImageButton imageButton3;
-
-  @NonNull
-  public final LinearLayout imageLayout;
-
-  @NonNull
   public final LinearLayout main;
 
   @NonNull
@@ -89,24 +81,16 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
   @NonNull
   public final TextView phoneNumberLabel;
 
-  @NonNull
-  public final TextView pictureLabel;
-
-  @NonNull
-  public final ImageView selectedImageView;
-
   private ActivityAddCompanyBinding(@NonNull LinearLayout rootView,
       @NonNull Button addCompanyButton, @NonNull LinearLayout confirmPassLayout,
       @NonNull EditText confirmPassword, @NonNull TextView confirmPasswordLabel,
       @NonNull EditText email, @NonNull TextView emailLabel, @NonNull LinearLayout emailLayout,
       @NonNull EditText faceUrl, @NonNull TextView faceUrlLabel,
-      @NonNull LinearLayout faceUrlLayout, @NonNull ImageButton imageButton3,
-      @NonNull LinearLayout imageLayout, @NonNull LinearLayout main, @NonNull EditText name,
+      @NonNull LinearLayout faceUrlLayout, @NonNull LinearLayout main, @NonNull EditText name,
       @NonNull TextView nameLabel, @NonNull LinearLayout nameLayout,
       @NonNull LinearLayout passLayout, @NonNull EditText password, @NonNull TextView passwordLabel,
       @NonNull LinearLayout phoneNumLayout, @NonNull EditText phoneNumber,
-      @NonNull TextView phoneNumberLabel, @NonNull TextView pictureLabel,
-      @NonNull ImageView selectedImageView) {
+      @NonNull TextView phoneNumberLabel) {
     this.rootView = rootView;
     this.addCompanyButton = addCompanyButton;
     this.confirmPassLayout = confirmPassLayout;
@@ -118,8 +102,6 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
     this.faceUrl = faceUrl;
     this.faceUrlLabel = faceUrlLabel;
     this.faceUrlLayout = faceUrlLayout;
-    this.imageButton3 = imageButton3;
-    this.imageLayout = imageLayout;
     this.main = main;
     this.name = name;
     this.nameLabel = nameLabel;
@@ -130,8 +112,6 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
     this.phoneNumLayout = phoneNumLayout;
     this.phoneNumber = phoneNumber;
     this.phoneNumberLabel = phoneNumberLabel;
-    this.pictureLabel = pictureLabel;
-    this.selectedImageView = selectedImageView;
   }
 
   @Override
@@ -221,18 +201,6 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.imageButton3;
-      ImageButton imageButton3 = ViewBindings.findChildViewById(rootView, id);
-      if (imageButton3 == null) {
-        break missingId;
-      }
-
-      id = R.id.image_layout;
-      LinearLayout imageLayout = ViewBindings.findChildViewById(rootView, id);
-      if (imageLayout == null) {
-        break missingId;
-      }
-
       LinearLayout main = (LinearLayout) rootView;
 
       id = R.id.name;
@@ -289,23 +257,10 @@ public final class ActivityAddCompanyBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.picture_label;
-      TextView pictureLabel = ViewBindings.findChildViewById(rootView, id);
-      if (pictureLabel == null) {
-        break missingId;
-      }
-
-      id = R.id.selectedImageView;
-      ImageView selectedImageView = ViewBindings.findChildViewById(rootView, id);
-      if (selectedImageView == null) {
-        break missingId;
-      }
-
       return new ActivityAddCompanyBinding((LinearLayout) rootView, addCompanyButton,
           confirmPassLayout, confirmPassword, confirmPasswordLabel, email, emailLabel, emailLayout,
-          faceUrl, faceUrlLabel, faceUrlLayout, imageButton3, imageLayout, main, name, nameLabel,
-          nameLayout, passLayout, password, passwordLabel, phoneNumLayout, phoneNumber,
-          phoneNumberLabel, pictureLabel, selectedImageView);
+          faceUrl, faceUrlLabel, faceUrlLayout, main, name, nameLabel, nameLayout, passLayout,
+          password, passwordLabel, phoneNumLayout, phoneNumber, phoneNumberLabel);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

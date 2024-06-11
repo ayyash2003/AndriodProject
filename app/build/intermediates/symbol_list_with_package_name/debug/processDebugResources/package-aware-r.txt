@@ -3093,6 +3093,7 @@ drawable m3_tabs_background
 drawable m3_tabs_line_indicator
 drawable m3_tabs_rounded_line_indicator
 drawable m3_tabs_transparent_background
+drawable map_icon
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -3364,8 +3365,6 @@ id end
 id endToStart
 id enddateFld
 id enddatelbl
-id endpointFld
-id endpointlbl
 id enterAlways
 id enterAlwaysCollapsed
 id escape
@@ -3397,6 +3396,7 @@ id gender_group
 id gender_label
 id ghost_view
 id ghost_view_holder
+id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
@@ -3420,12 +3420,11 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
-id imageButton3
 id imageView
-id image_layout
+id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
-id imgTripMainPage
+id imgType
 id immediateStop
 id included
 id indeterminate
@@ -3441,6 +3440,7 @@ id lHeader
 id lMainPage
 id labeled
 id layout
+id layoutLocation
 id left
 id leftToRight
 id legacy
@@ -3449,12 +3449,14 @@ id line3
 id linear
 id linearImage
 id listMode
+id listView
 id list_item
 id locale
 id ltr
 id m3_side_sheet
 id main
 id mainPage
+id main_type
 id male
 id marquee
 id masked
@@ -3579,7 +3581,6 @@ id phoneNum_layout
 id phoneNumber
 id phoneNumber_label
 id picelbl
-id picture_label
 id picturebtn
 id picturelbl
 id pin
@@ -3594,6 +3595,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewMainPage
+id recyclerViewType
 id report_drawn
 id reverseSawtooth
 id right
@@ -3602,6 +3604,7 @@ id right_icon
 id right_side
 id riskBar
 id risklbl
+id risklvl
 id rounded
 id row_index_key
 id rtl
@@ -3628,7 +3631,6 @@ id search_src_text
 id search_voice_btn
 id select_dialog_listview
 id selected
-id selectedImageView
 id selection_type
 id sharedValueSet
 id sharedValueUnset
@@ -3691,6 +3693,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id test
 id text
 id text2
 id textEnd
@@ -3729,6 +3732,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id txtLocationTypes
 id txtLogin
 id txtTripName
 id txtType
@@ -3874,9 +3878,11 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
+layout activity_admin
 layout activity_main
 layout activity_main_page
 layout activity_sign_page
+layout activity_type
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3953,7 +3959,7 @@ layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
 layout recycle_view_main_page
-layout recycle_view_view_page
+layout recycle_view_type_page
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

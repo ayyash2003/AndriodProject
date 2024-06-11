@@ -1,11 +1,11 @@
 package com.example.project;
 
-public class TripeTypes {
+public class TripTypes {
     private int Mainimage ;
     private int logoImage ;
     private String type ;
 
-    public TripeTypes(int mainimage, int logoImage, String type) {
+    public TripTypes(int mainimage, int logoImage, String type) {
         Mainimage = mainimage;
         this.logoImage = logoImage;
         this.type = type;
