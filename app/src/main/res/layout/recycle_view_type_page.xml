@@ -2,14 +2,17 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
+    android:layout_margin="20dp"
     >
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+
+    >
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="165dp"
+        android:layout_height="235dp"
         android:id="@+id/imgType"
         />
     <TextView
@@ -17,6 +20,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtTripName"
         android:text="Name"
+        style="@style/adapterType"
         android:textSize="22sp"
         android:textStyle="italic"
         android:layout_below="@+id/imgType"
@@ -48,7 +52,9 @@
             android:layout_height="wrap_content"
             android:text="Nablus"
             android:id="@+id/txtLocationTypes"
+            style="@style/adapterType"
             android:layout_marginLeft="0dp"
+            android:textColor="#D80A0A"
             />
     </LinearLayout>
 

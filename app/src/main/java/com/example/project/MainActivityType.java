@@ -61,10 +61,11 @@ public class MainActivityType extends AppCompatActivity {
         recyclerViewType=findViewById(R.id.recyclerViewType);
     }
     private String url(String type){
-        return "http://192.168.1.103/AndroidProject/type.php?type="+type ;
+        return "http://192.168.1.244/Android/type.php?type="+type ;
     }
 
     private void loadItems(){
+        Toast.makeText(MainActivityType.this,"First",Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
                 new Response.Listener<String>() {
                     @Override

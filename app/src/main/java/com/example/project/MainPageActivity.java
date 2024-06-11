@@ -2,6 +2,7 @@ package com.example.project;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -15,7 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainPageActivity extends AppCompatActivity implements SelectMainPage ,SelectType{
+public class MainPageActivity extends AppCompatActivity implements SelectMainPage {
     RecyclerView mainRecyclerView ;
     List<TripTypes> items ;
     @Override
@@ -57,10 +58,10 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
     }
 
-    @Override
-    public void onTypeClick(Trips item) {
-
-
+    public void onLoginClick(View view){
+        Toast.makeText(this, "Hello", Toast.LENGTH_SHORT).show();
+        Intent intent =new Intent(MainPageActivity.this,LoginActivity.class);
+        startActivity(intent);
     }
 
 }

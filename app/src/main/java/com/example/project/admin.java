@@ -53,7 +53,7 @@ public class admin extends AppCompatActivity {
     private RecyclerView recycler;
     private ListView listView;
     private String[] listViewItems = {"Add Trip", "Details", "Link"};
-    private static final String BASE_URL = "http://10.0.2.2:84/rest2/get_items.php";
+    private static final String BASE_URL = "http://192.168.1.244/Android/get_items.php";
 
     @SuppressLint("MissingInflatedId")
     protected void onCreate(Bundle savedInstanceState) {

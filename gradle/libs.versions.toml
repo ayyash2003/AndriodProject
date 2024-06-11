@@ -13,6 +13,9 @@ volley = "1.2.1"
 
 
 glide = "5.0.0-rc01"
+lifecycleLivedataKtx = "2.6.1"
+lifecycleViewmodelKtx = "2.6.1"
+annotation = "1.6.0"
 
 
 [libraries]
@@ -27,6 +30,13 @@ navigation-fragment = { group = "androidx.navigation", name = "navigation-fragme
 navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
 volley = { group = "com.android.volley", name = "volley", version.ref = "volley" }
 
+<<<<<<< HEAD
+=======
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+lifecycle-livedata-ktx = { group = "androidx.lifecycle", name = "lifecycle-livedata-ktx", version.ref = "lifecycleLivedataKtx" }
+lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycleViewmodelKtx" }
+annotation = { group = "androidx.annotation", name = "annotation", version.ref = "annotation" }
+>>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 
 glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
 

@@ -1,5 +1,6 @@
 package com.example.project;
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
@@ -67,11 +68,12 @@ public class AddTrip extends AppCompatActivity {
 
     private List<String> typeItems, durItems;
 
-    private ActivityResultLauncher<Intent> resultLauncher;
-    private ImageView testimage;
-    private static final int PICK_IMAGE_REQUEST = 1;
 
-    private String imageName;
+    private ImageView testimage;
+
+    Bitmap bitmap;
+    Intent intent ;
+    String comapnyName ;
     private final StringBuilder boxesString = new StringBuilder();
 
     public AddTrip() {
@@ -88,17 +90,17 @@ public class AddTrip extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+        intent =getIntent();
+        comapnyName=intent.getStringExtra("companyname");
         setupViews();
         populateTypeSpinner();
         populateDurSpinner();
         seekBarListner(riskbar, risklvl);
-        checkPermissions();
-        registerResult();
 
-        picturebtn.setOnClickListener(View -> pickImage());
         insertbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 getBoxes();
                 insertData();
 
@@ -106,88 +108,6 @@ public class AddTrip extends AppCompatActivity {
         });
 
     }
-
-    private void pickImage() {
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-        resultLauncher.launch(intent);
-    }
-
-
-
-    private void registerResult() {
-        resultLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(),
-                new ActivityResultCallback<ActivityResult>() {
-                    @Override
-                    public void onActivityResult(ActivityResult result) {
-                        if (result.getResultCode() == RESULT_OK && result.getData() != null) {
-                            Uri imageUri = result.getData().getData();
-                            if (imageUri != null) {
-                                testimage.setImageURI(imageUri);
-                                uploadImage(imageUri);
-                            }
-                        } else {
-                            Toast.makeText(AddTrip.this, "Error selecting image", Toast.LENGTH_SHORT).show();
-                        }
-                    }
-                });
-    }
-    private void uploadImage(Uri imageUri) {
-        try {
-            Bitmap bitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(), imageUri);
-            ByteArrayOutputStream baos = new ByteArrayOutputStream();
-            bitmap.compress(Bitmap.CompressFormat.JPEG, 100, baos);
-            byte[] imageBytes = baos.toByteArray();
-            String encodedImage = Base64.encodeToString(imageBytes, Base64.DEFAULT);
-
-            String url = "http://192.168.1.244/AndroidProject/upload_image.php";
-            RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
-            StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    Log.e("TAG", "RESPONSE IS " + response);
-                    try {
-                        JSONObject jsonObject = new JSONObject(response);
-                        String msg = jsonObject.getString("message");
-                        Toast.makeText(AddTrip.this, msg, Toast.LENGTH_SHORT).show();
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }, new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Toast.makeText(AddTrip.this, "Fail to upload image: " + error, Toast.LENGTH_SHORT).show();
-                }
-            }) {
-                @Override
-                public String getBodyContentType() {
-                    return "application/x-www-form-urlencoded; charset=UTF-8";
-                }
-
-                @Override
-                protected Map<String, String> getParams() {
-                    Map<String, String> params = new HashMap<>();
-                    params.put("image", encodedImage);
-                    return params;
-                }
-            };
-
-            queue.add(request);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    private void checkPermissions() {
-        if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.READ_EXTERNAL_STORAGE}, 100);
-        }
-    }
-
-
-
 
     private void populateTypeSpinner() {
         typeItems = new ArrayList<>();
@@ -293,9 +213,11 @@ public class AddTrip extends AppCompatActivity {
         String risk = (String) risklvl.getText();
         String description = descfield.getText().toString().trim();
         String checkbox = boxesString.toString();
+
+
         Log.e("TAG", "boxes is: " + checkbox);
 
-        String url = "http://192.168.1.244/AndroidProject/insert_trip.php";
+        String url = "http://192.168.1.244/Android/insert_trip.php";
         RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override
@@ -348,6 +270,7 @@ public class AddTrip extends AppCompatActivity {
                 params.put("risk", risk);
                 params.put("description", description);
                 params.put("checkbox", checkbox);
+               // params.put("companyname",comapnyName);
                 return params;
 
             }
