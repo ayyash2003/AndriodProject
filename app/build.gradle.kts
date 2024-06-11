@@ -35,28 +35,23 @@ android {
 }
 
 dependencies {
-
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)
-    implementation ("androidx.recyclerview:recyclerview:1.2.1")
-    implementation ("com.google.android.material:material:1.4.0")
-    implementation ("androidx.appcompat:appcompat:1.6.1")
-    implementation(libs.volley)
-<<<<<<< HEAD
+    implementation("androidx.recyclerview:recyclerview:1.2.1")
+    implementation("com.google.android.material:material:1.4.0")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.github.fevziomurtekin:PayView:1.0.3")
+    implementation("com.stripe:stripe-android:20.8.1")
+    implementation("com.android.volley:volley:1.2.1")
 
-
-
-=======
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
     implementation(libs.glide)
     implementation(libs.lifecycle.livedata.ktx)
     implementation(libs.lifecycle.viewmodel.ktx)
     implementation(libs.annotation)
-
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)

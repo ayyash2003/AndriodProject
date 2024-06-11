@@ -13,7 +13,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-<<<<<<< HEAD
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -27,8 +26,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
-=======
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 public class SignInPage extends AppCompatActivity {
 
     TextView nameLabel, emailLabel, passwordLabel, confirmPasswordLabel, genderLabel, cityLabel;
@@ -85,11 +82,11 @@ public class SignInPage extends AppCompatActivity {
             } else if (!password.equals(confirmPassword)) {
                 Toast.makeText(SignInPage.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
             } else {
-<<<<<<< HEAD
+
                 addLoginInfo(name, email, password, gender, city);
-=======
+
                 Toast.makeText(SignInPage.this, "Account created successfully!", Toast.LENGTH_SHORT).show();
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+
             }
         });
     }

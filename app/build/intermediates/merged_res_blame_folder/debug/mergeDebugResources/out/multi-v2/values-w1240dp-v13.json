@@ -6,19 +6,11 @@
                 {
                     "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\src\\main\\res\\values-w1240dp\\dimens.xml",
                     "from": {
-<<<<<<< HEAD
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "42",
-                        "endOffsets": "55"
-=======
                         "startLines": "2,1",
                         "startColumns": "4,4",
-                        "startOffsets": "59,16",
+                        "startOffsets": "61,17",
                         "endColumns": "58,42",
-                        "endOffsets": "113,54"
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+                        "endOffsets": "115,55"
                     },
                     "to": {
                         "startLines": "2,3",

@@ -32,7 +32,7 @@
         <item name="android:textAppearance">"@style/TextAppearance.AppCompat.Body2"</item>
         <item name="android:textSize">20sp</item>
     </style>
-<<<<<<< HEAD
+
     <style name="adapterType">
         <item name="android:textAppearance">"@style/TextAppearance.AppCompat.Body2"</item>
         <item name="android:textStyle">italic</item>
@@ -50,9 +50,7 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:textSize">30sp</item>
     </style>
-=======
 
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
     <style name="AddTextFields">
         <item name="android:layout_width">192dp</item>
         <item name="android:layout_height">42dp</item>

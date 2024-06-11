@@ -19,11 +19,8 @@ drawable beach2
 drawable beach3
 drawable beach4
 drawable beach_icon
-<<<<<<< HEAD
 drawable bt_login
-=======
 drawable camping
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 drawable cultural
 drawable cultural_icon
 drawable entertainment_icon
@@ -44,12 +41,9 @@ id action_SecondFragment_to_FirstFragment
 id action_settings
 id addCompany_button
 id ahmadbtn
-<<<<<<< HEAD
+id boxlayout
 id btLogin
 id btNew
-=======
-id boxlayout
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id campingBox
 id checkboxCamping
 id checkboxContainer
@@ -93,11 +87,7 @@ id guideline2
 id guideline3
 id image
 id imageView
-<<<<<<< HEAD
-=======
 id imageView4
-id image_layout
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
@@ -108,6 +98,7 @@ id lMainPage
 id layoutLocation
 id linearImage
 id listView
+id login_button
 id main
 id mainPage
 id main_type
@@ -142,13 +133,9 @@ id riskBar
 id risklbl
 id risklvl
 id scrollMainPage
-<<<<<<< HEAD
-id sign_button
-=======
 id searchAhmad
 id secdivider
-id selectedImageView
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+id sign_button
 id startdateFld
 id startdatelbl
 id startpointFld
@@ -158,11 +145,8 @@ id suitableBox
 id swimBox
 id test
 id textView
-<<<<<<< HEAD
 id textView2
-=======
 id textView3
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id titleFld
 id titlelbl
 id toolbar
@@ -177,22 +161,15 @@ id typeSpin
 id typelbl
 layout activity_add_company
 layout activity_add_trip
-<<<<<<< HEAD
-layout activity_login
-=======
 layout activity_admin
-<<<<<<< HEAD
-layout activity_main
-layout activity_main_page
-layout activity_sign_page
-=======
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
+layout activity_login
 layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+layout activity_sign_page
 layout activity_type
+layout activity_visa_card_form
 layout chip_layout
 layout recycle_view_main_page
 layout recycle_view_type_page
@@ -218,30 +195,24 @@ string previous
 string prompt_email
 string prompt_password
 string second_fragment_label
-<<<<<<< HEAD
 string sign_in
-=======
 string tab_text_1
 string tab_text_2
 string title_activity_login
 string title_activity_search
 string welcome
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style AddLabels
 style AddTextFields
 style Base.Theme.ChipGroup
 style Base.Theme.Project
 style Theme.ChipGroup
 style Theme.Project
-<<<<<<< HEAD
-style Title
-style adapterType
-=======
 style Theme.Project.AppBarOverlay
 style Theme.Project.NoActionBar
 style Theme.Project.PopupOverlay
+style Title
+style adapterType
 style chips
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style edtTextAddCompany
 style login
 style sign_in

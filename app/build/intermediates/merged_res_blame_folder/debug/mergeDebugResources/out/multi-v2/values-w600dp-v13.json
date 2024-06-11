@@ -6,19 +6,11 @@
                 {
                     "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndriodProject\\app\\src\\main\\res\\values-w600dp\\dimens.xml",
                     "from": {
-<<<<<<< HEAD
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "41",
-                        "endOffsets": "54"
-=======
                         "startLines": "2,1,3",
                         "startColumns": "4,4,4",
-                        "startOffsets": "58,16,116",
+                        "startOffsets": "60,17,119",
                         "endColumns": "57,41,42",
-                        "endOffsets": "111,53,154"
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+                        "endOffsets": "113,54,157"
                     },
                     "to": {
                         "startLines": "2,3,4",

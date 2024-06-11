@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-
-    xmlns:tools="http://schemas.android.com/tools">-->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-<<<<<<< HEAD
-    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
-   
-=======
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 
     <application
         android:allowBackup="true"
@@ -28,6 +18,9 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
+        <activity
+            android:name=".VisaCardForm"
+            android:exported="false" />
         <activity
             android:name=".Search"
             android:exported="false"
@@ -55,8 +48,7 @@
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

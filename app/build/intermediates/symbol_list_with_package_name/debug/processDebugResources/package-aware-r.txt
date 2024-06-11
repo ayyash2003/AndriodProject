@@ -3278,12 +3278,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-<<<<<<< HEAD
+id boxlayout
 id btLogin
 id btNew
-=======
-id boxlayout
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3450,11 +3447,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-<<<<<<< HEAD
-=======
 id imageView4
-id image_layout
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
@@ -3486,6 +3479,7 @@ id listMode
 id listView
 id list_item
 id locale
+id login_button
 id ltr
 id m3_side_sheet
 id main
@@ -3746,11 +3740,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
-<<<<<<< HEAD
 id textView2
-=======
 id textView3
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3931,22 +3922,15 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
-<<<<<<< HEAD
-layout activity_login
-=======
 layout activity_admin
-<<<<<<< HEAD
-layout activity_main
-layout activity_main_page
-layout activity_sign_page
-=======
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
+layout activity_login
 layout activity_login_page
 layout activity_main
 layout activity_main_page
 layout activity_search
->>>>>>> b5754ccfbf0ab3bf77ca419206c3e1adaaa01da7
+layout activity_sign_page
 layout activity_type
+layout activity_visa_card_form
 layout chip_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -5363,11 +5347,8 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
-<<<<<<< HEAD
 style adapterType
-=======
 style chips
->>>>>>> 940027f27600937db18a7b5bce57118bddf600e0
 style edtTextAddCompany
 style login
 style sign_in
