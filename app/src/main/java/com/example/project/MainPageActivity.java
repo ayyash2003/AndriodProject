@@ -37,7 +37,7 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-
+        Toast.makeText(this,Data.UserID+"r",Toast.LENGTH_SHORT).show();
         setContentView(R.layout.activity_main_page);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainPage), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
@@ -76,10 +76,10 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
     }
 
     public void userName(){
-        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-        int empty = sharedpreferences.getInt(EMPTY,-1);
-        Toast.makeText(this,"name3",Toast.LENGTH_SHORT).show();
+        sharedpreferences = getSharedPreferences("Pref", Context.MODE_PRIVATE);
 
+        int empty = sharedpreferences.getInt("empty",-1);
+        Toast.makeText(this,"name3"+empty,Toast.LENGTH_SHORT).show();
         // int empty=
         if (empty!=-1){
             int id=sharedpreferences.getInt("id",-1);
@@ -111,6 +111,7 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
         Intent intent =getIntent();
         String name =intent.getStringExtra("name");
         if(name!=null) {
+            Toast.makeText(this,"intent",Toast.LENGTH_SHORT).show();
             spinner(name);
             spnLogin.setVisibility(View.VISIBLE);
             txtLogin.setVisibility(View.GONE);
@@ -134,6 +135,10 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
             txtLogin.setVisibility(View.VISIBLE);
             Data.UserID=-1;
             Data.user=null ;
+            SharedPreferences.Editor editor = sharedpreferences.edit();
+            editor.clear();
+            editor.apply();
+
         }
     }
 
@@ -156,6 +161,29 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
     @Override
     public void onStop(Bundle savedInstanceState) {
 
+        super.onStop();
+        Toast.makeText(this,"name2",Toast.LENGTH_SHORT).show();
+
+        sharedpreferences = getSharedPreferences("Pref", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sharedpreferences.edit();
+        int userId=Data.UserID;
+        editor.putInt(EMPTY,userId);
+        if(userId!=-1) {
+            Toast.makeText(this,userId+"i",Toast.LENGTH_SHORT).show();
+            editor.putInt("id", Data.get().getId());
+            editor.putString("name",Data.get().getName());
+            editor.putString("email",Data.get().getEmail());
+            editor.putString("pass",Data.get().getPass());
+            editor.putString("gender",Data.get().getGender());
+            editor.putString("city",Data.get().getCity());
+            editor.apply();
+
+
+        }
+        else{
+            editor.clear();
+        }
+        Toast.makeText(this,"name",Toast.LENGTH_SHORT).show();
     }
 
 //    @Override
@@ -196,4 +224,5 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 //
 //    }
 // }
+
 }
