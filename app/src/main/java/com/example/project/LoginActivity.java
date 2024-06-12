@@ -118,9 +118,11 @@ public class LoginActivity extends AppCompatActivity {
                                 txtMsg.setText("يا حبيبي فش عنا حساب بهاد البريد والرقم السري");
 //Qais
                             } else if (array.length() == 1) {
-                                Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
+                                JSONObject object = array.getJSONObject(0);
+
                                 if (type == 'u') {
-                                    JSONObject object = array.getJSONObject(0);
+                                    Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
+
 
                                     Intent intent = new Intent(LoginActivity.this, MainPageActivity.class);
                                     String name = object.getString("name");
@@ -134,6 +136,14 @@ public class LoginActivity extends AppCompatActivity {
                                     Data.UserID=u.getId();
                                     startActivity(intent);
 
+                                }
+                                else if (type == 'c'){
+                                    Toast.makeText(LoginActivity.this, "DD2", Toast.LENGTH_SHORT).show();
+
+                                    Intent intent = new Intent(LoginActivity.this, admin.class);
+                                    intent.putExtra("email",email);
+                                    intent.putExtra("pass",password);
+                                    startActivity(intent);
                                 }
                             }
                         } catch (Exception e) {

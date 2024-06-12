@@ -51,8 +51,8 @@ public class admin extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String pass = intent.getStringExtra("Pass");
-        String email = intent.getStringExtra("Email");
+        String pass = intent.getStringExtra("pass");
+        String email = intent.getStringExtra("email");
 
 
 
@@ -67,6 +67,7 @@ public class admin extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if (listViewItems[position].equals("Add Trip")) {
                     Intent intent = new Intent(admin.this, AddTrip.class);
+                    intent.putExtra("companyname", companyNameTextView.getText());
                     startActivity(intent);
                 } else if (listViewItems[position].equals("Details")) {
                     Intent intent = new Intent(admin.this, details.class);
@@ -81,7 +82,7 @@ public class admin extends AppCompatActivity {
     }
 
     private String url(String email, String pass) {
-        return "http://192.168.1.244/Android/passEmail.php?email=" + email + "&pass=" + pass;
+        return "http://192.168.1.103/Android/passEmail.php?email=" + email + "&pass=" + pass;
     }
 
 

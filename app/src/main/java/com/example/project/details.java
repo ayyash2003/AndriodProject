@@ -29,8 +29,8 @@ public class details extends AppCompatActivity {
     private List<String> tripList = new ArrayList<>();
     private ArrayAdapter<String> tripListAdapter;
 
-    private static final String COMPANY_DETAILS_URL = "http://192.168.1.244/Android/query.php";
-    private static final String TRIP_LIST_URL = "http://192.168.1.244/Android/query.php";
+    private static final String COMPANY_DETAILS_URL = "http://192.168.1.103/Android/query.php";
+    private static final String TRIP_LIST_URL = "http://192.168.1.103/Android/query.php";
 
 
     @SuppressLint("MissingInflatedId")

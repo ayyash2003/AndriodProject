@@ -69,10 +69,6 @@ public class AddTrip extends AppCompatActivity {
 
     private List<String> typeItems, durItems;
 
-
-    private ImageView testimage;
-
-    Bitmap bitmap;
     Intent intent ;
     String comapnyName ;
     private final StringBuilder boxesString = new StringBuilder();
@@ -279,7 +275,7 @@ public class AddTrip extends AppCompatActivity {
                 params.put("risk", risk);
                 params.put("description", description);
                 params.put("checkbox", checkbox);
-               // params.put("companyname",comapnyName);
+                params.put("companyname",comapnyName);
                 return params;
 
             }

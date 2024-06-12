@@ -37,6 +37,9 @@
             android:name="com.example.project.details"
             android:exported="false" />
         <activity
+            android:name="com.example.project.admin"
+            android:exported="false" />
+        <activity
             android:name="com.example.project.Search"
             android:exported="true"
             android:theme="@style/Theme.Project.NoActionBar" />
