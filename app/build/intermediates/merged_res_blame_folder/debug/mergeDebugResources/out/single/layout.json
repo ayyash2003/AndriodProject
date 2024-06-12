@@ -16,6 +16,10 @@
         "source": "com.example.project.app-main-46:/layout/activity_view.xml"
     },
     {
+        "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_details.xml",
+        "source": "com.example.project.app-main-46:/layout/activity_details.xml"
+    },
+    {
         "merged": "com.example.project.app-mergeDebugResources-43:/layout/activity_sign_page.xml",
         "source": "com.example.project.app-main-46:/layout/activity_sign_page.xml"
     },

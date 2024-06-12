@@ -74,6 +74,7 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
             }
         });
     }
+
     public void userName(){
         sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
         int empty = sharedpreferences.getInt(EMPTY,-1);
@@ -100,6 +101,12 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
         }
 
     }
+
+    private String url(String type){
+        return "http://192.168.1.103/Android/type.php?type="+type ;
+    }
+
+
     private void intent(){
         Intent intent =getIntent();
         String name =intent.getStringExtra("name");
@@ -140,17 +147,23 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
     @Override
     public void onItemClick(TripTypes item) {
         Intent intent =new Intent(this,MainActivityType.class);
-        intent.putExtra("type",item.getType());
+        String url=url(item.getType());
+        intent.putExtra("url",url);
         startActivity(intent);
 
     }
 
     @Override
     public void onStop(Bundle savedInstanceState) {
-        super.onStop();
-        Toast.makeText(this,"name",Toast.LENGTH_SHORT).show();
-        onStop();
+
     }
+
+//    @Override
+//    public void onStop(Bundle savedInstanceState) {
+//        super.onStop();
+//        Toast.makeText(this,"name",Toast.LENGTH_SHORT).show();
+//        onStop();
+//    }
 
 
     public void onLoginClick(View view){
@@ -161,30 +174,26 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
         Intent intent =new Intent(this,Search.class);
         startActivity(intent);
     }
-@Override
-public void onStop() {
-        super.onStop();
-    Toast.makeText(this,"name2",Toast.LENGTH_SHORT).show();
-
-    sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
-    SharedPreferences.Editor editor = sharedpreferences.edit();
-    int userId=Data.UserID;
-    editor.putInt(EMPTY,userId);
-    if(userId!=-1) {
-        Toast.makeText(this,userId+"i",Toast.LENGTH_SHORT).show();
-        editor.putInt("id", Data.get().getId());
-        editor.putString("name",Data.get().getName());
-        editor.putString("email",Data.get().getEmail());
-        editor.putString("pass",Data.get().getPass());
-        editor.putString("gender",Data.get().getGender());
-        editor.putString("city",Data.get().getCity());
-        editor.apply();
-
-
-    }
-
-
-
-
-}
+//@Override
+//public void onStop() {
+//    super.onStop();
+//    Toast.makeText(this, "name2", Toast.LENGTH_SHORT).show();
+//
+//    sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+//    SharedPreferences.Editor editor = sharedpreferences.edit();
+//    int userId = Data.UserID;
+//    editor.putInt(EMPTY, userId);
+//    if (userId != -1) {
+//        Toast.makeText(this, userId + "i", Toast.LENGTH_SHORT).show();
+//        editor.putInt("id", Data.get().getId());
+//        editor.putString("name", Data.get().getName());
+//        editor.putString("email", Data.get().getEmail());
+//        editor.putString("pass", Data.get().getPass());
+//        editor.putString("gender", Data.get().getGender());
+//        editor.putString("city", Data.get().getCity());
+//        editor.apply();
+//
+//
+//    }
+// }
 }

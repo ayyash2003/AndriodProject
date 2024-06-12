@@ -3177,6 +3177,7 @@ drawable test
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable welcome
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3193,6 +3194,7 @@ id SYM
 id SecondFragment
 id TOP_END
 id TOP_START
+id TextImage
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3254,7 +3256,6 @@ id actions
 id activity_chooser_view_content
 id add
 id addCompany_button
-id ahmadbtn
 id alertTitle
 id aligned
 id all
@@ -3321,6 +3322,9 @@ id clip_vertical
 id clockwise
 id closest
 id collapseActionView
+id company_email
+id company_name
+id company_phone
 id compress
 id confirmPass_layout
 id confirm_button
@@ -3451,6 +3455,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageA
 id imageButton3
 id imageView
 id imageView4
@@ -3494,7 +3499,6 @@ id listMode
 id listView
 id list_item
 id locale
-id login_button
 id ltr
 id m3_side_sheet
 id main
@@ -3614,6 +3618,7 @@ id parentRelative
 id parent_matrix
 id parkingBox
 id pass_layout
+id passenger_count
 id password
 id password_label
 id password_layout
@@ -3636,7 +3641,6 @@ id pressed
 id priceFld
 id progress_circular
 id progress_horizontal
-id qaisbtn
 id radio
 id radioAdventure
 id radioBeach
@@ -3670,7 +3674,6 @@ id scrollIndicatorUp
 id scrollMainPage
 id scrollView
 id scrollable
-id searchAhmad
 id search_badge
 id search_bar
 id search_button
@@ -3789,6 +3792,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id trip_cost
+id trip_list_view
 id txtDate
 id txtDescription
 id txtDestination
@@ -3945,6 +3950,7 @@ layout abc_tooltip
 layout activity_add_company
 layout activity_add_trip
 layout activity_admin
+layout activity_details
 layout activity_login
 layout activity_login_page
 layout activity_main
@@ -4528,6 +4534,8 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style DetailHeaderTextView
+style DetailTextView
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Animation
 style MaterialAlertDialog_Material3_Body_Text

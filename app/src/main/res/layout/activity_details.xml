@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/company_name"
+        style="@style/DetailHeaderTextView"
+        android:text="Company Name" />
+
+    <TextView
+        android:id="@+id/company_email"
+        style="@style/DetailTextView"
+        android:text="Company Email" />
+
+    <TextView
+        android:id="@+id/company_phone"
+        style="@style/DetailTextView"
+        android:text="Company Phone" />
+
+    <TextView
+        android:id="@+id/passenger_count"
+        style="@style/DetailTextView"
+        android:text="Number of Passengers" />
+
+
+    <TextView
+        android:id="@+id/trip_cost"
+        style="@style/DetailTextView"
+        android:text="Trip Cost" />
+
+    <ListView
+        android:id="@+id/trip_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp" />
+</LinearLayout>

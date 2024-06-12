@@ -34,9 +34,11 @@
         android:testOnly="true"
         android:theme="@style/Theme.Project" >
         <activity
+            android:name="com.example.project.details"
+            android:exported="false" />
+        <activity
             android:name="com.example.project.Search"
-            android:exported="false"
-            android:label="@string/title_activity_search"
+            android:exported="true"
             android:theme="@style/Theme.Project.NoActionBar" />
         <activity
             android:name="com.example.project.addCompany"

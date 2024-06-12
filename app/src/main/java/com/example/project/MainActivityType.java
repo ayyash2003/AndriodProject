@@ -50,18 +50,13 @@ public class MainActivityType extends AppCompatActivity implements SelectType{
         set();
         recyclerViewType.setLayoutManager(new LinearLayoutManager(this));
         Intent intent = getIntent();
-        String type = intent.getStringExtra("type");
-        BASE_URL=url(type);
-        Toast.makeText(MainActivityType.this,type,Toast.LENGTH_SHORT).show();
+        BASE_URL = intent.getStringExtra("url");
         loadItems();
 
 
     }
     private void set(){
         recyclerViewType=findViewById(R.id.recyclerViewType);
-    }
-    private String url(String type){
-        return "http://192.168.1.103/Android/type.php?type="+type ;
     }
 
     private void loadItems(){

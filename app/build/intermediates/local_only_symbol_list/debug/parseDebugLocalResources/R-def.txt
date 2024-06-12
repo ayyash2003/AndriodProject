@@ -39,13 +39,14 @@ drawable search
 drawable suitable
 drawable swimming
 drawable test
+drawable welcome
 id FirstFragment
 id SecondFragment
+id TextImage
 id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id action_settings
 id addCompany_button
-id ahmadbtn
 id boxlayout
 id btLogin
 id btNew
@@ -61,6 +62,9 @@ id chipGroup
 id city_label
 id city_layout
 id city_spinner
+id company_email
+id company_name
+id company_phone
 id confirmPass_layout
 id confirm_password
 id confirm_password_label
@@ -90,7 +94,7 @@ id grillingBox
 id guideline
 id guideline2
 id guideline3
-id image
+id imageA
 id imageButton3
 id imageView
 id imageView4
@@ -113,7 +117,6 @@ id linearLayoutDestination
 id linearLayoutHeader
 id linearPrice
 id listView
-id login_button
 id main
 id mainPage
 id main_type
@@ -126,6 +129,7 @@ id nav_graph
 id nav_graph2
 id parkingBox
 id pass_layout
+id passenger_count
 id password
 id password_label
 id password_layout
@@ -137,7 +141,6 @@ id picture_label
 id picturebtn
 id picturelbl
 id priceFld
-id qaisbtn
 id radioAdventure
 id radioBeach
 id radioCultural
@@ -149,7 +152,6 @@ id riskBar
 id risklbl
 id risklvl
 id scrollMainPage
-id searchAhmad
 id secdivider
 id selectedImageView
 id spnLogin
@@ -166,6 +168,8 @@ id textView3
 id titleFld
 id titlelbl
 id toolbar
+id trip_cost
+id trip_list_view
 id txtDate
 id txtDescription
 id txtDestination
@@ -184,6 +188,7 @@ id typelbl
 layout activity_add_company
 layout activity_add_trip
 layout activity_admin
+layout activity_details
 layout activity_login
 layout activity_login_page
 layout activity_main
@@ -228,6 +233,8 @@ style AddLabels
 style AddTextFields
 style Base.Theme.ChipGroup
 style Base.Theme.Project
+style DetailHeaderTextView
+style DetailTextView
 style Theme.ChipGroup
 style Theme.Project
 style Theme.Project.AppBarOverlay

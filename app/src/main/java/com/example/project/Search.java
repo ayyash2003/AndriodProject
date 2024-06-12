@@ -47,7 +47,7 @@ public class Search extends AppCompatActivity {
             return insets;
         });
 
-         setupViews();
+        setupViews();
         setSupportActionBar(toolbar);
 
 
@@ -61,6 +61,8 @@ public class Search extends AppCompatActivity {
         arraylist.add("Salfit");
         arraylist.add("Jerusalem");
         arraylist.add("Bethlehem");
+        arraylist.add("Jericho");
+        arraylist.add("Qalqilyah");
 
         for (String s: arraylist){
             Chip chip =(Chip) LayoutInflater.from(Search.this).inflate(R.layout.chip_layout, null);
@@ -74,10 +76,10 @@ public class Search extends AppCompatActivity {
                 if(checkedIds.isEmpty()){
                 }
                 else {
-                        for(int id: checkedIds){
-                            Chip chip = findViewById(id);
-                            selectedchips.append(",").append(chip.getText());
-                        }
+                    for(int id: checkedIds){
+                        Chip chip = findViewById(id);
+                        selectedchips.append(",").append(chip.getText());
+                    }
                 }
 
             }
@@ -95,11 +97,12 @@ public class Search extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                destination = selectedchips.toString().trim();
-                boxes = boxesString.toString().trim();
-                url =  "http://192.168.1.103/Android.search.php?type="+type+"&destination="+destination+"&checkbox="+boxes;
+                destination = selectedchips.toString();
+                boxes = boxesString.toString();
+                url =  "http://192.168.1.103/Android/search.php?type="+type+"&destination="+destination+"&checkbox="+boxes;
                 Intent intent = new Intent(Search.this, MainActivityType.class);
                 intent.putExtra("url",url);
+                startActivity(intent);
             }
         });
 

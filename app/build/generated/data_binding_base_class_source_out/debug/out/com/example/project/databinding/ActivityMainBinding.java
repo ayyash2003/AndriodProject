@@ -4,59 +4,29 @@ package com.example.project.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import com.example.project.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final RelativeLayout rootView;
 
   @NonNull
-  public final Button addCompanyButton;
+  public final RelativeLayout main;
 
-  @NonNull
-  public final Button ahmadbtn;
-
-  @NonNull
-  public final Button loginButton;
-
-  @NonNull
-  public final ConstraintLayout main;
-
-  @NonNull
-  public final Button qaisbtn;
-
-  @NonNull
-  public final Button searchAhmad;
-
-  @NonNull
-  public final TextView textView;
-
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull Button addCompanyButton,
-      @NonNull Button ahmadbtn, @NonNull Button loginButton, @NonNull ConstraintLayout main,
-      @NonNull Button qaisbtn, @NonNull Button searchAhmad, @NonNull TextView textView) {
+  private ActivityMainBinding(@NonNull RelativeLayout rootView, @NonNull RelativeLayout main) {
     this.rootView = rootView;
-    this.addCompanyButton = addCompanyButton;
-    this.ahmadbtn = ahmadbtn;
-    this.loginButton = loginButton;
     this.main = main;
-    this.qaisbtn = qaisbtn;
-    this.searchAhmad = searchAhmad;
-    this.textView = textView;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public RelativeLayout getRoot() {
     return rootView;
   }
 
@@ -77,52 +47,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMainBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      id = R.id.addCompany_button;
-      Button addCompanyButton = ViewBindings.findChildViewById(rootView, id);
-      if (addCompanyButton == null) {
-        break missingId;
-      }
-
-      id = R.id.ahmadbtn;
-      Button ahmadbtn = ViewBindings.findChildViewById(rootView, id);
-      if (ahmadbtn == null) {
-        break missingId;
-      }
-
-      id = R.id.login_button;
-      Button loginButton = ViewBindings.findChildViewById(rootView, id);
-      if (loginButton == null) {
-        break missingId;
-      }
-
-      ConstraintLayout main = (ConstraintLayout) rootView;
-
-      id = R.id.qaisbtn;
-      Button qaisbtn = ViewBindings.findChildViewById(rootView, id);
-      if (qaisbtn == null) {
-        break missingId;
-      }
-
-      id = R.id.searchAhmad;
-      Button searchAhmad = ViewBindings.findChildViewById(rootView, id);
-      if (searchAhmad == null) {
-        break missingId;
-      }
-
-      id = R.id.textView;
-      TextView textView = ViewBindings.findChildViewById(rootView, id);
-      if (textView == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((ConstraintLayout) rootView, addCompanyButton, ahmadbtn,
-          loginButton, main, qaisbtn, searchAhmad, textView);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    RelativeLayout main = (RelativeLayout) rootView;
+
+    return new ActivityMainBinding((RelativeLayout) rootView, main);
   }
 }
