@@ -2,6 +2,7 @@ package com.example.project;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
@@ -24,7 +25,11 @@ import com.android.volley.toolbox.Volley;
 import com.bumptech.glide.Glide;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class ViewActivity extends AppCompatActivity {
     private int id ;
@@ -39,6 +44,8 @@ public class ViewActivity extends AppCompatActivity {
     private TextView txtDescription;
     private TextView txtPrice ;
     private CheckBox checkboxGrilling,checkboxParking,checkboxSwimming,checkboxCamping,checkboxSuitableForChildren;
+    private String companyName ;
+    private String enddate;
 
 
     @Override
@@ -77,7 +84,6 @@ public class ViewActivity extends AppCompatActivity {
 
 
     private void loadItems(){
-        Toast.makeText(ViewActivity.this,"First",Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
                 new Response.Listener<String>() {
                     @Override
@@ -91,7 +97,7 @@ public class ViewActivity extends AppCompatActivity {
 
 
                                 JSONObject object = array.getJSONObject(0);
-                                int id =object.getInt("id");
+                                id =object.getInt("id");
                                 String title = object.getString("title");
                                 String type = object.getString("type");
                                 String destination = object.getString("destination");
@@ -99,11 +105,12 @@ public class ViewActivity extends AppCompatActivity {
                                 String startingpoint = object.getString("startingpoint");
                                 String duration = object.getString("duration");
                                 String startdate = object.getString("startdate");
-                                String enddate = object.getString("enddate");
+                                enddate = object.getString("enddate");
                                 double price = object.getDouble("price");
                                 String risk = object.getString("risk");
                                 String description = object.getString("description");
                                 String checkbox	 = object.getString("checkbox");
+                                companyName=object.getString("companyname");
                                 Glide.with(ViewActivity.this).load(image).into(imgView);
                                 txtTripNameViewPage.setText(title);
                                 txtDestination.setText(destination);
@@ -178,7 +185,57 @@ public class ViewActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void onReservedClick(View view){
+        User user=Data.get();
+        String name=(user!=null)?user.getName():"";
+        if (Data.UserID==-1){
+            Toast.makeText(this, "يا حبيبي سجل اول اشي عشان تقدر تشترك", Toast.LENGTH_LONG).show();
+        }else {
+            Toast.makeText(this, user.getName()+"FF"+companyName+"ff"+enddate+"tripid"+id, Toast.LENGTH_SHORT).show();
+            RegisterUser(user.getId(),id,enddate);
+        }
+    }
+    private void RegisterUser(int uid ,int tid, String date) {
+        String url = "http://192.168.1.103/Android/registeruser2.php";
+        RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
 
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Toast.makeText(ViewActivity.this, "1!", Toast.LENGTH_SHORT).show();
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    Toast.makeText(ViewActivity.this, "2!", Toast.LENGTH_SHORT).show();
+                    String msg = jsonObject.getString("message");
+                    Toast.makeText(ViewActivity.this, "getMessage1 "+msg, Toast.LENGTH_SHORT).show();
+                } catch (JSONException e) {
+                    Toast.makeText(ViewActivity.this, "getMessage "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    Log.d("Log",e.getMessage());
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(ViewActivity.this, "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
+
+            }
+        }) {
+            @Override
+            public String getBodyContentType() {
+                return "application/x-www-form-urlencoded; charset=UTF-8";
+            }
+
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                params.put("uid", uid+"");
+                params.put("tid", tid+"");
+                params.put("date", date);
+
+                return params;
+            }
+        };
+        queue.add(request);
     }
 
 }

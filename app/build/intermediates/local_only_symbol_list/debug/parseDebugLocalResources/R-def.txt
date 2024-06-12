@@ -18,12 +18,9 @@ drawable beach3
 drawable beach4
 drawable beach_icon
 drawable bt_login
-<<<<<<< HEAD
-=======
 drawable bus
 drawable bus1
 drawable calendar
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 drawable camping
 drawable cultural
 drawable cultural_icon
@@ -97,10 +94,7 @@ id image
 id imageButton3
 id imageView
 id imageView4
-<<<<<<< HEAD
-=======
 id image_layout
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
@@ -157,14 +151,9 @@ id risklvl
 id scrollMainPage
 id searchAhmad
 id secdivider
-<<<<<<< HEAD
-id sign_button
-id startdateFld
-=======
 id selectedImageView
 id spnLogin
 id startDatePicker
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id startdatelbl
 id startpointFld
 id startpointlbl
@@ -202,11 +191,7 @@ layout activity_main_page
 layout activity_search
 layout activity_sign_page
 layout activity_type
-<<<<<<< HEAD
-layout activity_visa_card_form
-=======
 layout activity_view
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 layout chip_layout
 layout recycle_view_main_page
 layout recycle_view_type_page
@@ -250,10 +235,7 @@ style Theme.Project.NoActionBar
 style Theme.Project.PopupOverlay
 style Title
 style adapterType
-<<<<<<< HEAD
-=======
 style checkBoxes
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 style chips
 style edtTextAddCompany
 style login

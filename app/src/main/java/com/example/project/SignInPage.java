@@ -1,5 +1,6 @@
 package com.example.project;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -80,12 +81,51 @@ public class SignInPage extends AppCompatActivity {
                 Toast.makeText(SignInPage.this, "Passwords do not match", Toast.LENGTH_SHORT).show();
             } else {
 
-              //  addLoginInfo(name, email, password, gender, city);
+                addLoginInfo(name, email, password, gender, city);
 
-                Toast.makeText(SignInPage.this, "Account created successfully!", Toast.LENGTH_SHORT).show();
-
-                Toast.makeText(SignInPage.this, "Account created successfully!", Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(this,LoginActivity.class);
+                startActivity(intent);
             }
         });
+    }
+    private void addLoginInfo(String name, String email, String password, String gender, String city) {
+        String url = "http://192.168.1.103/Android/user.php";
+        RequestQueue queue = Volley.newRequestQueue(SignInPage.this);
+
+        StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonObject = new JSONObject(response);
+                    String msg = jsonObject.getString("message");
+                } catch (JSONException e) {
+                    Toast.makeText(SignInPage.this, "getMessage "+e.getMessage(), Toast.LENGTH_SHORT).show();
+                    e.printStackTrace();
+                }
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                Toast.makeText(SignInPage.this, "Fail to get response = " + error, Toast.LENGTH_SHORT).show();
+
+            }
+        }) {
+            @Override
+            public String getBodyContentType() {
+                return "application/x-www-form-urlencoded; charset=UTF-8";
+            }
+
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> params = new HashMap<>();
+                params.put("name", name);
+                params.put("email", email);
+                params.put("password", password);
+                params.put("gender", gender);
+                params.put("city", city);
+                return params;
+            }
+        };
+        queue.add(request);
     }
 }

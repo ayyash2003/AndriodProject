@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         Button addCompanyButton = findViewById(R.id.addCompany_button);
         Button searchButton = findViewById(R.id.searchAhmad);
         Button qaisButton = findViewById(R.id.qaisbtn);
-
+        Data.UserID=-1 ;
         searchButton.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, Search.class);
             startActivity(intent);

@@ -4,15 +4,25 @@ public class User {
     private String Email ;
     private String pass ;
     private String Name;
-    private char gender ;
+    private String gender ;
     private String city ;
+    private int id ;
 
-    public User(String email, String pass, String name, char gender, String city) {
+    public User(int id , String name,String email, String pass, String gender, String city) {
+        this.id=id;
         Email = email;
         this.pass = pass;
         Name = name;
         this.gender = gender;
         this.city = city;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getEmail() {
@@ -39,11 +49,11 @@ public class User {
         Name = name;
     }
 
-    public char getGender() {
+    public String getGender() {
         return gender;
     }
 
-    public void setGender(char gender) {
+    public void setGender(String gender) {
         this.gender = gender;
     }
 

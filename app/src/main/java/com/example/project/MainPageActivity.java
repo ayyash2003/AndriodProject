@@ -1,6 +1,8 @@
 package com.example.project;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -25,6 +27,10 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
     List<TripTypes> items ;
     TextView txtLogin ;
     Spinner spnLogin ;
+    SharedPreferences sharedpreferences ;
+    public static final String MyPREFERENCES = "MyPrefs";
+    public static final String EMPTY = "empty";
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +45,7 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
             return insets;
         });
         set();
+        userName();
 
         items =new ArrayList<>();
         items.add(new TripTypes(R.drawable.adventure,R.drawable.adventrue_icon,"Adventure"));
@@ -51,19 +58,13 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
         mainRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mainRecyclerView.setAdapter(new MainPageAdapter(getApplicationContext(),items,this) );
-//        spnLogin.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-//                OnSpinnerClick(position);
-//            }
-//        });
+
         spnLogin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 // Handle item selection
                 String selectedItem = parent.getItemAtPosition(position).toString();
-                Toast.makeText(MainPageActivity.this, "Selected: " + selectedItem, Toast.LENGTH_SHORT).show();
-                                OnSpinnerClick(position);
+                OnSpinnerClick(position);
 
             }
 
@@ -73,28 +74,59 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
             }
         });
     }
+    public void userName(){
+        sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+        int empty = sharedpreferences.getInt(EMPTY,-1);
+        Toast.makeText(this,"name3",Toast.LENGTH_SHORT).show();
+
+        // int empty=
+        if (empty!=-1){
+            int id=sharedpreferences.getInt("id",-1);
+            String name=sharedpreferences.getString("name","");
+            String email=sharedpreferences.getString("email","");
+            String pass=sharedpreferences.getString("pass","");
+            String gender=sharedpreferences.getString("gender","");
+            String city=sharedpreferences.getString("city","");
+            Data.UserID=empty;
+            Data.user=new User(id,name,email,pass,gender,city);
+            Toast.makeText(this,"name",Toast.LENGTH_SHORT).show();
+            txtLogin.setVisibility(View.GONE);
+            spinner(name);
+            spnLogin.setVisibility(View.VISIBLE);
+
+
+
+
+        }
+
+    }
     private void intent(){
         Intent intent =getIntent();
         String name =intent.getStringExtra("name");
         if(name!=null) {
-            List<String> typeItems = new ArrayList<>();
-            typeItems.add(name);
-            typeItems.add("Log out");
-
-            ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                    android.R.layout.simple_spinner_item, typeItems);
-            spnLogin.setAdapter(adapter);
-            spnLogin.setSelection(0);
+            spinner(name);
             spnLogin.setVisibility(View.VISIBLE);
             txtLogin.setVisibility(View.GONE);
 
 
         }
     }
+    public void spinner(String name ){
+        List<String> typeItems = new ArrayList<>();
+        typeItems.add(name);
+        typeItems.add("Log out");
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_spinner_item, typeItems);
+        spnLogin.setAdapter(adapter);
+        spnLogin.setSelection(0);
+    }
     public void OnSpinnerClick(int position){
         if (position ==1){
             spnLogin.setVisibility(View.GONE);
             txtLogin.setVisibility(View.VISIBLE);
+            Data.UserID=-1;
+            Data.user=null ;
         }
     }
 
@@ -113,6 +145,14 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
 
     }
 
+    @Override
+    public void onStop(Bundle savedInstanceState) {
+        super.onStop();
+        Toast.makeText(this,"name",Toast.LENGTH_SHORT).show();
+        onStop();
+    }
+
+
     public void onLoginClick(View view){
         Intent intent =new Intent(MainPageActivity.this,LoginActivity.class);
         startActivity(intent);
@@ -121,6 +161,30 @@ public class MainPageActivity extends AppCompatActivity implements SelectMainPag
         Intent intent =new Intent(this,Search.class);
         startActivity(intent);
     }
+@Override
+public void onStop() {
+        super.onStop();
+    Toast.makeText(this,"name2",Toast.LENGTH_SHORT).show();
+
+    sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+    SharedPreferences.Editor editor = sharedpreferences.edit();
+    int userId=Data.UserID;
+    editor.putInt(EMPTY,userId);
+    if(userId!=-1) {
+        Toast.makeText(this,userId+"i",Toast.LENGTH_SHORT).show();
+        editor.putInt("id", Data.get().getId());
+        editor.putString("name",Data.get().getName());
+        editor.putString("email",Data.get().getEmail());
+        editor.putString("pass",Data.get().getPass());
+        editor.putString("gender",Data.get().getGender());
+        editor.putString("city",Data.get().getCity());
+        editor.apply();
 
 
+    }
+
+
+
+
+}
 }

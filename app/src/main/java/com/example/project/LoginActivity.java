@@ -43,11 +43,11 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login);
-        //   sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
+           sharedpreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         set();
-//        String email = sharedpreferences.getString(EMAIL,"");
-//        edtName.setText(email);
+        String email = sharedpreferences.getString(EMAIL,"");
+        edtName.setText(email);
 
     }
 
@@ -75,7 +75,6 @@ public class LoginActivity extends AppCompatActivity {
 
                 loadItems('u');
 
-                Toast.makeText(this, "FD", Toast.LENGTH_SHORT).show();
             } else if (user == 'a') {
                 if (email.equals("qmta@admin.com") && password.equals("qmta****")) {
                     Intent intent = new Intent(this, addCompany.class);
@@ -86,7 +85,6 @@ public class LoginActivity extends AppCompatActivity {
 
             } else if (user == 'c') {
 
-                Toast.makeText(this, "Company", Toast.LENGTH_SHORT).show();
                 BASE_URL = url("c", email, password);
                 loadItems('c');
 
@@ -98,11 +96,10 @@ public class LoginActivity extends AppCompatActivity {
             txtMsg.setText("بعينك الله عبي الفاضي ");
 
         }
-//        SharedPreferences.Editor editor = sharedpreferences.edit();
-//
-//        editor.putString(EMAIL, email);
-//        editor.apply();
+        SharedPreferences.Editor editor = sharedpreferences.edit();
 
+        editor.putString(EMAIL, email);
+        editor.apply();
     }
 
     private void loadItems(char type) {
@@ -113,25 +110,10 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         try {
-                            Toast.makeText(LoginActivity.this, "FD2", Toast.LENGTH_SHORT).show();
 
                             JSONArray array = new JSONArray(response);
-                            Toast.makeText(LoginActivity.this, "FD3", Toast.LENGTH_SHORT).show();
 
-//                            for (int i = 0; i<array.length(); i++){
-//
-//                                JSONObject object = array.getJSONObject(i);
-//
-//                                String email = object.getString("title");
-//                                String password = object.getString("type");
-//                                String name = object.getString("destination");
-//
-//
-//
-//
-//                                Trips trips = new Trips(title,type,destination, image,startingpoint,duration,startdate,enddate,price,risk,description,checkbox);
-//                                items.add(trips);
-//                            }
+
                             if (array.length() == 0) {
                                 txtMsg.setText("يا حبيبي فش عنا حساب بهاد البريد والرقم السري");
 //Qais
@@ -143,13 +125,18 @@ public class LoginActivity extends AppCompatActivity {
                                     Intent intent = new Intent(LoginActivity.this, MainPageActivity.class);
                                     String name = object.getString("name");
                                     intent.putExtra("name", name);
+                                    int id=object.getInt("ID");
+                                    String email=object.getString("email");
+                                    String pass =object.getString("password");
+
+                                    User u =new User(id,name,email,object.getString("password"),object.getString("gender"),object.getString("city"));
+                                    Data.user=u;
+                                    Data.UserID=u.getId();
                                     startActivity(intent);
 
-                                    Toast.makeText(LoginActivity.this, "Done", Toast.LENGTH_SHORT).show();
                                 }
                             }
                         } catch (Exception e) {
-                            Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
                         }
 
 

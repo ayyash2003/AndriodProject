@@ -3454,10 +3454,7 @@ id image
 id imageButton3
 id imageView
 id imageView4
-<<<<<<< HEAD
-=======
 id image_layout
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 id imgLocationTypes
 id imgLogoMainPage
 id imgMainPage
@@ -3955,11 +3952,7 @@ layout activity_main_page
 layout activity_search
 layout activity_sign_page
 layout activity_type
-<<<<<<< HEAD
-layout activity_visa_card_form
-=======
 layout activity_view
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 layout chip_layout
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -5378,10 +5371,7 @@ style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
 style adapterType
-<<<<<<< HEAD
-=======
 style checkBoxes
->>>>>>> 1360e89e427f7e11f9217899928763ab44c63caa
 style chips
 style edtTextAddCompany
 style login

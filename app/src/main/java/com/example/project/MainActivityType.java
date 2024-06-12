@@ -65,7 +65,6 @@ public class MainActivityType extends AppCompatActivity implements SelectType{
     }
 
     private void loadItems(){
-        Toast.makeText(MainActivityType.this,"First",Toast.LENGTH_SHORT).show();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, BASE_URL,
                 new Response.Listener<String>() {
                     @Override
@@ -124,7 +123,6 @@ public class MainActivityType extends AppCompatActivity implements SelectType{
 
     @Override
     public void onTypeClick(Trips item) {
-        Toast.makeText(this,item.getId()+"",Toast.LENGTH_SHORT).show();
         Intent intent =new Intent(this,ViewActivity.class);
         intent.putExtra("id",item.getId());
         startActivity(intent);
