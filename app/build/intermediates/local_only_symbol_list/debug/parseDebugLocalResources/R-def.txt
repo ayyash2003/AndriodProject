@@ -20,6 +20,7 @@ drawable beach_icon
 drawable bt_login
 drawable bus
 drawable bus1
+drawable bus_red
 drawable calendar
 drawable camping
 drawable cultural
@@ -30,6 +31,7 @@ drawable grill
 drawable home_page
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable lets_go
 drawable map_icon
 drawable map_icon1
 drawable map_icon2
@@ -97,7 +99,6 @@ id guideline3
 id imageA
 id imageButton3
 id imageView
-id imageView4
 id image_layout
 id imgLocationTypes
 id imgLogoMainPage
@@ -117,6 +118,7 @@ id linearLayoutDestination
 id linearLayoutHeader
 id linearPrice
 id listView
+id logo
 id main
 id mainPage
 id main_type

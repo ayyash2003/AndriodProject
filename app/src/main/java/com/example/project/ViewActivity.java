@@ -62,7 +62,7 @@ public class ViewActivity extends AppCompatActivity {
 
     }
     private String url(String id){
-        return "http://192.168.1.103/Android/view.php?id="+id ;
+        return "http://172.19.49.100/Android/view.php?id="+id ;
     }
     private void set(){
         imgView=(ImageView) findViewById(R.id.imgView);
@@ -195,7 +195,7 @@ public class ViewActivity extends AppCompatActivity {
         }
     }
     private void RegisterUser(int uid ,int tid, String date) {
-        String url = "http://192.168.1.103/Android/registeruser2.php";
+        String url = "http://172.19.49.100/Android/registeruser2.php";
         RequestQueue queue = Volley.newRequestQueue(ViewActivity.this);
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {

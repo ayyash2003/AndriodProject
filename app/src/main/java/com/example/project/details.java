@@ -29,8 +29,8 @@ public class details extends AppCompatActivity {
     private List<String> tripList = new ArrayList<>();
     private ArrayAdapter<String> tripListAdapter;
 
-    private static final String COMPANY_DETAILS_URL = "http://192.168.1.244/Android/query.php";
-    private static final String TRIP_LIST_URL = "http://192.168.1.244/Android/query.php";
+    private static final String COMPANY_DETAILS_URL = "http://172.19.49.100/Android/query.php";
+    private static final String TRIP_LIST_URL = "http://172.19.49.100/Android/query.php";
 
 
     @SuppressLint("MissingInflatedId")
@@ -68,13 +68,13 @@ public class details extends AppCompatActivity {
                                 String name = companyObject.getString("company_name");
                                 String email = companyObject.getString("company_email");
                                 String phone = companyObject.getString("company_phone");
-                                // int numberOfPassengers = companyObject.getInt("number_of_passengers");
+                                 int numberOfPassengers = companyObject.getInt("number_of_passengers");
                                 double cost = companyObject.getDouble("trip_cost");
 
                                 companyNameTextView.setText(name);
                                 companyEmailTextView.setText(email);
                                 companyPhoneTextView.setText(phone);
-                                // numberOfPassengersTextView.setText("Number of Passengers: " );
+                                 numberOfPassengersTextView.setText(numberOfPassengers);
                                 tripCostTextView.setText("Cost: " + cost);
 
                                 for (int i = 0; i < tripsArray.length(); i++) {

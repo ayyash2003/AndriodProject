@@ -1,6 +1,8 @@
 package com.example.project;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -34,11 +36,14 @@ public class SignInPage extends AppCompatActivity {
     RadioButton maleBtn, femaleBtn;
     Spinner citySpinner;
     Button createAccountButton;
-
+    String name,email,password,confirmPassword,city;
+    SharedPreferences sharedPreferences;
+    final static String MyPREFERENCES="MyRefrence";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_page);
+        sharedPreferences = getSharedPreferences(MyPREFERENCES, Context.MODE_PRIVATE);
 
         nameLabel = findViewById(R.id.name_label);
         emailLabel = findViewById(R.id.email_label);
@@ -55,9 +60,16 @@ public class SignInPage extends AppCompatActivity {
         genderGroup = findViewById(R.id.gender_group);
         maleBtn = findViewById(R.id.male);
         femaleBtn = findViewById(R.id.female);
-
         citySpinner = findViewById(R.id.city_spinner);
         createAccountButton = findViewById(R.id.create_account_button);
+
+        Toast.makeText(this,sharedPreferences.getString("email","ff"),Toast.LENGTH_SHORT).show();
+        emailTxt.setText(sharedPreferences.getString("email",""));
+        passwordTxt.setText(sharedPreferences.getString("password",""));
+        nameTxt.setText(sharedPreferences.getString("name",""));
+        confirmPasswordTxt.setText(sharedPreferences.getString("confirmPassword",""));
+        citySpinner.setSelection(sharedPreferences.getInt("city",0));
+
 
         String[] cities = {"Ramallah", "Nablus", "Jericho", "Hebron", "Jenin","Bethlehem"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, cities);
@@ -65,11 +77,11 @@ public class SignInPage extends AppCompatActivity {
         citySpinner.setAdapter(adapter);
 
         createAccountButton.setOnClickListener(view -> {
-            String name = nameTxt.getText().toString();
-            String email = emailTxt.getText().toString();
-            String password = passwordTxt.getText().toString();
-            String confirmPassword = confirmPasswordTxt.getText().toString();
-            String city = citySpinner.getSelectedItem().toString();
+             name = nameTxt.getText().toString();
+             email = emailTxt.getText().toString();
+             password = passwordTxt.getText().toString();
+             confirmPassword = confirmPasswordTxt.getText().toString();
+             city = citySpinner.getSelectedItem().toString();
             int selectedGenderId = genderGroup.getCheckedRadioButtonId();
             RadioButton selectedGenderButton = findViewById(selectedGenderId);
             String gender = (selectedGenderButton != null) ? selectedGenderButton.getText().toString() : "";
@@ -89,7 +101,7 @@ public class SignInPage extends AppCompatActivity {
         });
     }
     private void addLoginInfo(String name, String email, String password, String gender, String city) {
-        String url = "http://192.168.1.103/Android/user.php";
+        String url = "http://172.19.49.100/Android/user.php";
         RequestQueue queue = Volley.newRequestQueue(SignInPage.this);
 
         StringRequest request = new StringRequest(Request.Method.POST, url, new Response.Listener<String>() {
@@ -127,5 +139,19 @@ public class SignInPage extends AppCompatActivity {
             }
         };
         queue.add(request);
+    }
+    @Override
+    protected void onStop() {
+
+        super.onStop();
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("name", name);
+        editor.putString("email", email);
+        Toast.makeText(this,email+"email",Toast.LENGTH_SHORT).show();
+        editor.putString("password", password);
+        editor.putString("confirmPassword", confirmPassword);
+        editor.putInt("city", citySpinner.getSelectedItemPosition());
+        editor.apply();
+
     }
 }

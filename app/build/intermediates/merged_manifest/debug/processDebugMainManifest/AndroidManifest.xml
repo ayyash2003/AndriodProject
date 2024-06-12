@@ -35,33 +35,46 @@
         android:theme="@style/Theme.Project" >
         <activity
             android:name="com.example.project.details"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.project.admin"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.Search"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Project.NoActionBar" />
         <activity
             android:name="com.example.project.addCompany"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.SignInPage"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.AddTrip"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/Theme.Project" />
         <activity
             android:name="com.example.project.MainPageActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.MainActivityType"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.LoginActivity"
+            android:configChanges="orientation|screenSize"
             android:exported="true" />
         <activity
             android:name="com.example.project.ViewActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name="com.example.project.MainActivity"
             android:exported="true" >

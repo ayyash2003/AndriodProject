@@ -167,7 +167,7 @@
         <item name="android:layout_width">192dp</item>
         <item name="android:layout_height">42dp</item>
         <item name="android:ems">10</item>
-        <item name="android:text">n</item>
+        <item name="android:text">""</item>
         <item name="android:layout_marginTop">24dp</item>
     </style>
     <style name="Base.Theme.ChipGroup" parent="Theme.Material3.DayNight.NoActionBar">

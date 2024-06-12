@@ -64,13 +64,14 @@
             android:text="Nablus"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="8dp"
-            android:textSize="20sp"
+            android:textSize="22sp"
+            android:textStyle="italic"
             />
         <ImageView
             android:layout_width="50dp"
             android:layout_height="40dp"
             android:layout_marginLeft="25dp"
-            android:src="@drawable/bus1"
+            android:src="@drawable/bus_red"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -79,7 +80,9 @@
             android:text="Nablus"
             android:layout_marginTop="10dp"
             android:layout_marginLeft="10dp"
-            android:textSize="20sp"
+            android:textSize="22sp"
+            android:textStyle="italic"
+
             />
 
 

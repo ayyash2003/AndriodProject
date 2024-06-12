@@ -99,7 +99,7 @@ public class Search extends AppCompatActivity {
             public void onClick(View v) {
                 destination = selectedchips.toString();
                 boxes = boxesString.toString();
-                url =  "http://192.168.1.103/Android/search.php?type="+type+"&destination="+destination+"&checkbox="+boxes;
+                url =  "http://172.19.49.100/Android/search.php?type="+type+"&destination="+destination+"&checkbox="+boxes;
                 Intent intent = new Intent(Search.this, MainActivityType.class);
                 intent.putExtra("url",url);
                 startActivity(intent);

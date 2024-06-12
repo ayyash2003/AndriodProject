@@ -31,7 +31,7 @@
             android:id="@+id/txtLogin"
             style="@style/login"
             android:layout_width="130dp"
-            android:layout_height="35dp"
+            android:layout_height="55dp"
             android:onClick="onLoginClick"
             android:text="@string/login" />
         </FrameLayout>
@@ -40,7 +40,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="50dp"
-            android:src="@drawable/test" />
+            android:src="@drawable/lets_go" />
 
         <ImageView
             android:layout_width="30dp"

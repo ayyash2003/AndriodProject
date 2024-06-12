@@ -3,10 +3,12 @@ package com.example.project;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText edtName;
     private EditText edtPassword;
     private TextView txtMsg;
+    private ImageView logo ;
     SharedPreferences sharedpreferences;
 
     public static final String MyPREFERENCES = "MyPrefs";
@@ -48,6 +51,9 @@ public class LoginActivity extends AppCompatActivity {
         set();
         String email = sharedpreferences.getString(EMAIL,"");
         edtName.setText(email);
+        if (getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE) {
+            logo.setTranslationY(logo.getTranslationY()-10);
+        }
 
     }
 
@@ -55,14 +61,12 @@ public class LoginActivity extends AppCompatActivity {
         edtName = findViewById(R.id.edtName);
         edtPassword = findViewById(R.id.edtPassword);
         txtMsg = findViewById(R.id.txtMsg);
+        logo=findViewById(R.id.logo);
     }
 
-    //    public void onClickCreateAccount(View view){
-//        Intent intent =new Intent(this,SignUpActivity.class);
-//        startActivity(intent);
-//    }
+
     private String url(String type, String email, String password) {
-        return "http://192.168.1.103/Android/check.php?type=" + type + "&email=" + email + "&pass=" + password;
+        return "http://172.19.49.100/Android/check.php?type=" + type + "&email=" + email + "&pass=" + password;
     }
 
     public void onClickLogin(View view) {
@@ -118,9 +122,11 @@ public class LoginActivity extends AppCompatActivity {
                                 txtMsg.setText("يا حبيبي فش عنا حساب بهاد البريد والرقم السري");
 //Qais
                             } else if (array.length() == 1) {
-                                Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
+                                JSONObject object = array.getJSONObject(0);
+
                                 if (type == 'u') {
-                                    JSONObject object = array.getJSONObject(0);
+                                    Toast.makeText(LoginActivity.this, "DD", Toast.LENGTH_SHORT).show();
+
 
                                     Intent intent = new Intent(LoginActivity.this, MainPageActivity.class);
                                     String name = object.getString("name");
@@ -134,6 +140,14 @@ public class LoginActivity extends AppCompatActivity {
                                     Data.UserID=u.getId();
                                     startActivity(intent);
 
+                                }
+                                else if (type == 'c'){
+                                    Toast.makeText(LoginActivity.this, "DD2", Toast.LENGTH_SHORT).show();
+
+                                    Intent intent = new Intent(LoginActivity.this, admin.class);
+                                    intent.putExtra("email",email);
+                                    intent.putExtra("pass",password);
+                                    startActivity(intent);
                                 }
                             }
                         } catch (Exception e) {
@@ -187,5 +201,12 @@ public class LoginActivity extends AppCompatActivity {
     public void onClickCreateAccount(View view){
         Intent intent =new Intent(this,SignInPage.class);
         startActivity(intent);
+    }
+    @Override
+    protected void onSaveInstanceState(Bundle onSavedInstance) {
+        super.onSaveInstanceState(onSavedInstance);
+        onSavedInstance.putString("email", email);
+        onSavedInstance.putString("password", password);
+        onSavedInstance.putString("message", txtMsg.getText().toString());
     }
 }

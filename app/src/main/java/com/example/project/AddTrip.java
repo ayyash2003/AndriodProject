@@ -69,10 +69,6 @@ public class AddTrip extends AppCompatActivity {
 
     private List<String> typeItems, durItems;
 
-
-    private ImageView testimage;
-
-    Bitmap bitmap;
     Intent intent ;
     String comapnyName ;
     private final StringBuilder boxesString = new StringBuilder();
@@ -226,7 +222,7 @@ public class AddTrip extends AppCompatActivity {
 
         Log.e("TAG", "boxes is: " + checkbox);
 
-        String url = "http://192.168.1.103/Android/insert_trip.php";
+        String url = "http://172.19.49.100/Android/insert_trip.php";
         RequestQueue queue = Volley.newRequestQueue(AddTrip.this);
         StringRequest request = new StringRequest(Request.Method.POST, url, new com.android.volley.Response.Listener<String>() {
             @Override
@@ -279,7 +275,7 @@ public class AddTrip extends AppCompatActivity {
                 params.put("risk", risk);
                 params.put("description", description);
                 params.put("checkbox", checkbox);
-               // params.put("companyname",comapnyName);
+                params.put("companyname",comapnyName);
                 return params;
 
             }
